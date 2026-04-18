@@ -1,0 +1,13 @@
+wix-custom_autogen/timestamp: \
+	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CPack.cmake \
+	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CPackComponent.cmake \
+	C:/Program\ Files/CMake/share/cmake-4.3/Modules/InstallRequiredSystemLibraries.cmake \
+	C:/Program\ Files/CMake/share/cmake-4.3/Templates/CPackConfig.cmake.in \
+	C:/Users/gersan.munoz/Downloads/Programas\ Creados/deskflow-master/deskflow-m/deploy/CMakeLists.txt \
+	C:/Users/gersan.munoz/Downloads/Programas\ Creados/deskflow-master/deskflow-m/deploy/windows/cpack-options.cmake.in \
+	C:/Users/gersan.munoz/Downloads/Programas\ Creados/deskflow-master/deskflow-m/deploy/windows/deploy.cmake \
+	C:/Users/gersan.munoz/Downloads/Programas\ Creados/deskflow-master/deskflow-m/deploy/windows/pre-cpack.cmake.in \
+	C:/Users/gersan.munoz/Downloads/Programas\ Creados/deskflow-master/deskflow-m/deploy/windows/wix-custom.cpp \
+	C:/Users/gersan.munoz/Downloads/Programas\ Creados/deskflow-master/deskflow-m/deploy/windows/wix-custom.h.in \
+	C:/Users/gersan.munoz/Downloads/Programas\ Creados/deskflow-master/deskflow-m/deploy/windows/wix-patch.xml.in \
+	C:/Program\ Files/CMake/bin/cmake.exe

@@ -1,0 +1,5 @@
+C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Debug\vcpkg_installed\vcpkg\blds\gtest\config-x64-windows-dbg-CMakeCache.txt.log
+C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Debug\vcpkg_installed\vcpkg\blds\gtest\config-x64-windows-rel-CMakeCache.txt.log
+C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Debug\vcpkg_installed\vcpkg\blds\gtest\config-x64-windows-dbg-CMakeConfigureLog.yaml.log
+C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Debug\vcpkg_installed\vcpkg\blds\gtest\config-x64-windows-rel-CMakeConfigureLog.yaml.log
+C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Debug\vcpkg_installed\vcpkg\blds\gtest\config-x64-windows-out.log

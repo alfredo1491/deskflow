@@ -1,0 +1,66 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"src/unittests/base/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "arch::@b43736e049515855b18a"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "base::@502b5caad324c3969999"
+		}
+	],
+	"id" : "BaseExceptionTests_autogen_timestamp_deps::@e7f33c201c8e66ceb536",
+	"isGeneratorProvided" : true,
+	"name" : "BaseExceptionTests_autogen_timestamp_deps",
+	"orderDependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::moc::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::uic::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::Test::@920421ea08e7804adbee"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "arch::@b43736e049515855b18a"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "base::@502b5caad324c3969999"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/unittests/base",
+		"source" : "src/unittests/base"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

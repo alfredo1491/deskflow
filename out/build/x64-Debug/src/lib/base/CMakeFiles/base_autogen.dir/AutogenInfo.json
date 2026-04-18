@@ -1,0 +1,272 @@
+{
+	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
+	"BUILD_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Debug/src/lib/base/base_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Debug/src/lib/base",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base",
+	"CMAKE_EXECUTABLE" : "C:/Program Files/CMake/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/CMakeLists.txt"
+	],
+	"CMAKE_SOURCE_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Debug/src/lib/base/base_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "base_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/BaseException.h",
+			"MU",
+			"EWIEGA46WW/moc_BaseException.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/DirectionTypes.h",
+			"MU",
+			"EWIEGA46WW/moc_DirectionTypes.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/Event.h",
+			"MU",
+			"EWIEGA46WW/moc_Event.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/EventQueue.h",
+			"MU",
+			"EWIEGA46WW/moc_EventQueue.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/EventQueueTimer.h",
+			"MU",
+			"EWIEGA46WW/moc_EventQueueTimer.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/EventTypes.h",
+			"MU",
+			"EWIEGA46WW/moc_EventTypes.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/FinalAction.h",
+			"MU",
+			"EWIEGA46WW/moc_FinalAction.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/FunctionEventJob.h",
+			"MU",
+			"EWIEGA46WW/moc_FunctionEventJob.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/FunctionJob.h",
+			"MU",
+			"EWIEGA46WW/moc_FunctionJob.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/IEventQueue.h",
+			"MU",
+			"EWIEGA46WW/moc_IEventQueue.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/IEventQueueBuffer.h",
+			"MU",
+			"EWIEGA46WW/moc_IEventQueueBuffer.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/IJob.h",
+			"MU",
+			"EWIEGA46WW/moc_IJob.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/ILogOutputter.h",
+			"MU",
+			"EWIEGA46WW/moc_ILogOutputter.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/Log.h",
+			"MU",
+			"EWIEGA46WW/moc_Log.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/LogLevel.h",
+			"MU",
+			"EWIEGA46WW/moc_LogLevel.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/LogOutputters.h",
+			"MU",
+			"EWIEGA46WW/moc_LogOutputters.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/NetworkProtocol.h",
+			"MU",
+			"EWIEGA46WW/moc_NetworkProtocol.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/PriorityQueue.h",
+			"MU",
+			"EWIEGA46WW/moc_PriorityQueue.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/SimpleEventQueueBuffer.h",
+			"MU",
+			"EWIEGA46WW/moc_SimpleEventQueueBuffer.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/Stopwatch.h",
+			"MU",
+			"EWIEGA46WW/moc_Stopwatch.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/String.h",
+			"MU",
+			"EWIEGA46WW/moc_String.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/TMethodJob.h",
+			"MU",
+			"EWIEGA46WW/moc_TMethodJob.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/Unicode.h",
+			"MU",
+			"EWIEGA46WW/moc_Unicode.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Debug/src/lib/base/base_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Debug/src/lib/base/base_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"HAVE_FORMAT",
+		"QT_CORE_LIB",
+		"QT_NO_KEYWORDS",
+		"UNICODE",
+		"WIN32",
+		"WIN64",
+		"_CRT_SECURE_NO_WARNINGS",
+		"_ENABLE_EXTENDED_ALIGNED_STORAGE",
+		"_UNICODE",
+		"_WIN64",
+		"_WINDOWS",
+		"_XKEYCHECK_H"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib",
+		"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Debug/src/lib",
+		"C:/Qt/6.11.0/msvc2022_64/include/QtCore",
+		"C:/Qt/6.11.0/msvc2022_64/include",
+		"C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : [],
+	"MOC_PREDEFS_FILE" : "",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 6,
+	"PARSE_CACHE_FILE" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Debug/src/lib/base/CMakeFiles/base_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "C:/Qt/6.11.0/msvc2022_64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "C:/Qt/6.11.0/msvc2022_64/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 11,
+	"SETTINGS_FILE" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Debug/src/lib/base/CMakeFiles/base_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/BaseException.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/EventQueue.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/FunctionEventJob.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/FunctionJob.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/Log.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/LogOutputters.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/SimpleEventQueueBuffer.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/Stopwatch.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/String.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/Unicode.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

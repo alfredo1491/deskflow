@@ -1,0 +1,54 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"src/lib/io/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "common::@a72075f8f48ba5338622"
+		}
+	],
+	"id" : "io_autogen_timestamp_deps::@b438e512d69c9539202f",
+	"isGeneratorProvided" : true,
+	"name" : "io_autogen_timestamp_deps",
+	"orderDependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::moc::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::uic::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "common::@a72075f8f48ba5338622"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/lib/io",
+		"source" : "src/lib/io"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

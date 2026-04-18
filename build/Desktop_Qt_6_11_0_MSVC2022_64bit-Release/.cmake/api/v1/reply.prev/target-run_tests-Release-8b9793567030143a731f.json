@@ -1,0 +1,215 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"src/unittests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 85,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "deskflow::@4b92613d058b1c97c92b"
+		},
+		{
+			"id" : "UnicodeTests::@e7f33c201c8e66ceb536"
+		},
+		{
+			"id" : "LogTests::@e7f33c201c8e66ceb536"
+		},
+		{
+			"id" : "StringTests::@e7f33c201c8e66ceb536"
+		},
+		{
+			"id" : "BaseExceptionTests::@e7f33c201c8e66ceb536"
+		},
+		{
+			"id" : "SettingsTests::@5983c42540c7dfe569dc"
+		},
+		{
+			"id" : "I18NTests::@5983c42540c7dfe569dc"
+		},
+		{
+			"id" : "ClipboardChunksTests::@d248aab00b10363d3d98"
+		},
+		{
+			"id" : "IKeyStateTests::@d248aab00b10363d3d98"
+		},
+		{
+			"id" : "KeyStateTests::@d248aab00b10363d3d98"
+		},
+		{
+			"id" : "KeyboardLayoutManagerTests::@d248aab00b10363d3d98"
+		},
+		{
+			"id" : "KeyMapTests::@d248aab00b10363d3d98"
+		},
+		{
+			"id" : "ClipboardTests::@d248aab00b10363d3d98"
+		},
+		{
+			"id" : "LoggerTests::@26dd6677c5c9981c042b"
+		},
+		{
+			"id" : "KeySequenceTests::@26dd6677c5c9981c042b"
+		},
+		{
+			"id" : "ScreenTests::@250c7be6e38f5b43b1a8"
+		},
+		{
+			"id" : "NetworkMonitorTests::@16fe25388284453ae75e"
+		},
+		{
+			"id" : "FingerprintDatabaseTests::@13836b086f8cefc1af1d"
+		},
+		{
+			"id" : "SecureUtilsTests::@13836b086f8cefc1af1d"
+		},
+		{
+			"id" : "FingerprintTests::@13836b086f8cefc1af1d"
+		},
+		{
+			"id" : "MSWindowsClipboardTests::@fdfb58f7b0b74b618fbc"
+		},
+		{
+			"id" : "ServerConfigTests::@20db461309d72d525fcc"
+		},
+		{
+			"id" : "ServerTests::@20db461309d72d525fcc"
+		}
+	],
+	"id" : "run_tests::@920421ea08e7804adbee",
+	"name" : "run_tests",
+	"orderDependencies" : 
+	[
+		{
+			"id" : "deskflow::@4b92613d058b1c97c92b"
+		},
+		{
+			"id" : "UnicodeTests::@e7f33c201c8e66ceb536"
+		},
+		{
+			"id" : "LogTests::@e7f33c201c8e66ceb536"
+		},
+		{
+			"id" : "StringTests::@e7f33c201c8e66ceb536"
+		},
+		{
+			"id" : "BaseExceptionTests::@e7f33c201c8e66ceb536"
+		},
+		{
+			"id" : "SettingsTests::@5983c42540c7dfe569dc"
+		},
+		{
+			"id" : "I18NTests::@5983c42540c7dfe569dc"
+		},
+		{
+			"id" : "ClipboardChunksTests::@d248aab00b10363d3d98"
+		},
+		{
+			"id" : "IKeyStateTests::@d248aab00b10363d3d98"
+		},
+		{
+			"id" : "KeyStateTests::@d248aab00b10363d3d98"
+		},
+		{
+			"id" : "KeyboardLayoutManagerTests::@d248aab00b10363d3d98"
+		},
+		{
+			"id" : "KeyMapTests::@d248aab00b10363d3d98"
+		},
+		{
+			"id" : "ClipboardTests::@d248aab00b10363d3d98"
+		},
+		{
+			"id" : "LoggerTests::@26dd6677c5c9981c042b"
+		},
+		{
+			"id" : "KeySequenceTests::@26dd6677c5c9981c042b"
+		},
+		{
+			"id" : "ScreenTests::@250c7be6e38f5b43b1a8"
+		},
+		{
+			"id" : "NetworkMonitorTests::@16fe25388284453ae75e"
+		},
+		{
+			"id" : "FingerprintDatabaseTests::@13836b086f8cefc1af1d"
+		},
+		{
+			"id" : "SecureUtilsTests::@13836b086f8cefc1af1d"
+		},
+		{
+			"id" : "FingerprintTests::@13836b086f8cefc1af1d"
+		},
+		{
+			"id" : "MSWindowsClipboardTests::@fdfb58f7b0b74b618fbc"
+		},
+		{
+			"id" : "ServerConfigTests::@20db461309d72d525fcc"
+		},
+		{
+			"id" : "ServerTests::@20db461309d72d525fcc"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/unittests",
+		"source" : "src/unittests"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/unittests/CMakeFiles/run_tests",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/unittests/CMakeFiles/run_tests.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

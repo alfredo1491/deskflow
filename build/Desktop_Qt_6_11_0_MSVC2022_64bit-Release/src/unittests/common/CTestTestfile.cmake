@@ -1,0 +1,10 @@
+# CMake generated Testfile for 
+# Source directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/common
+# Build directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/unittests/common
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test([=[SettingsTests]=] "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/unittests/common/SettingsTests.exe")
+set_tests_properties([=[SettingsTests]=] PROPERTIES  DEPENDS "common" WORKING_DIRECTORY "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/lib/common" _BACKTRACE_TRIPLES "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/CMakeLists.txt;41;add_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/common/CMakeLists.txt;4;create_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/common/CMakeLists.txt;0;")
+add_test([=[I18NTests]=] "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/unittests/common/I18NTests.exe")
+set_tests_properties([=[I18NTests]=] PROPERTIES  DEPENDS "common" WORKING_DIRECTORY "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/lib/common" _BACKTRACE_TRIPLES "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/CMakeLists.txt;41;add_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/common/CMakeLists.txt;11;create_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/common/CMakeLists.txt;0;")

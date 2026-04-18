@@ -1,0 +1,600 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "src/unittests/deskflow/ClipboardChunksTests.exe"
+		},
+		{
+			"path" : "src/unittests/deskflow/ClipboardChunksTests.pdb"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_add_executable",
+			"add_executable",
+			"create_test",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"_find_package",
+			"find_package",
+			"configure_libs",
+			"add_custom_command",
+			"add_definitions"
+		],
+		"files" : 
+		[
+			"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"src/unittests/CMakeLists.txt",
+			"src/unittests/deskflow/CMakeLists.txt",
+			"src/lib/deskflow/CMakeLists.txt",
+			"C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake",
+			"C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
+			"build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/.qtcreator/cmake-helper/maintenance_tool_provider.cmake",
+			"cmake/Libraries.cmake",
+			"CMakeLists.txt",
+			"C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
+			"C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 36,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 612,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 1
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 92,
+				"parent" : 5
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 162,
+				"parent" : 7
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 22,
+				"parent" : 8
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 908,
+				"parent" : 9
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 234,
+				"parent" : 10
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 908,
+				"parent" : 11
+			},
+			{
+				"file" : 5,
+				"parent" : 12
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 55,
+				"parent" : 13
+			},
+			{
+				"file" : 4,
+				"parent" : 14
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 61,
+				"parent" : 15
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 234,
+				"parent" : 10
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 908,
+				"parent" : 17
+			},
+			{
+				"file" : 10,
+				"parent" : 18
+			},
+			{
+				"command" : 5,
+				"file" : 10,
+				"line" : 57,
+				"parent" : 19
+			},
+			{
+				"file" : 9,
+				"parent" : 20
+			},
+			{
+				"command" : 4,
+				"file" : 9,
+				"line" : 61,
+				"parent" : 21
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 626,
+				"parent" : 2
+			},
+			{
+				"command" : 10,
+				"file" : 7,
+				"line" : 63,
+				"parent" : 8
+			},
+			{
+				"command" : 10,
+				"file" : 8,
+				"line" : 142,
+				"parent" : 7
+			},
+			{
+				"command" : 10,
+				"file" : 8,
+				"line" : 152,
+				"parent" : 7
+			},
+			{
+				"command" : 10,
+				"file" : 7,
+				"line" : 14,
+				"parent" : 8
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "app::@fcf6253e9fc11c2b4aaf"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "arch::@b43736e049515855b18a"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "base::@502b5caad324c3969999"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "io::@b438e512d69c9539202f"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "Qt6::Test::@920421ea08e7804adbee"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /MP /O2 /Ob2 /DNDEBUG /MD /O2 /Ob2 -std:c++20 -MD"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Zc:__cplusplus"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-permissive-"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-utf-8"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 24,
+					"define" : "HAVE_FORMAT"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "NDEBUG"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "QT_NO_KEYWORDS"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "QT_TESTCASE_BUILDDIR=\"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/unittests/deskflow\""
+				},
+				{
+					"backtrace" : 4,
+					"define" : "QT_TESTCASE_SOURCEDIR=\"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow\""
+				},
+				{
+					"backtrace" : 4,
+					"define" : "QT_TESTLIB_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_WIN64"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "_WINDOWS"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "_XKEYCHECK_H"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/unittests/deskflow/ClipboardChunksTests_autogen/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/lib"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.11.0/msvc2022_64/include/QtCore"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.11.0/msvc2022_64/include"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.11.0/msvc2022_64/include/QtNetwork"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.11.0/msvc2022_64/include/QtTest"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					4,
+					4
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "arch::@b43736e049515855b18a"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "base::@502b5caad324c3969999"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "common::@a72075f8f48ba5338622"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "app::@fcf6253e9fc11c2b4aaf"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "io::@b438e512d69c9539202f"
+		},
+		{
+			"id" : "ClipboardChunksTests_autogen_timestamp_deps::@d248aab00b10363d3d98"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "ClipboardChunksTests_autogen::@d248aab00b10363d3d98"
+		}
+	],
+	"id" : "ClipboardChunksTests::@d248aab00b10363d3d98",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /MP /O2 /Ob2 /DNDEBUG /MD /O2 /Ob2 -MD",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /INCREMENTAL:NO",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "..\\..\\lib\\deskflow\\app.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "..\\..\\lib\\arch\\arch.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "..\\..\\lib\\base\\base.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "..\\..\\lib\\io\\io.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "version.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "C:\\Qt\\6.11.0\\msvc2022_64\\lib\\Qt6Test.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "C:\\Qt\\6.11.0\\msvc2022_64\\lib\\Qt6Network.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "ws2_32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "..\\..\\lib\\common\\common.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "C:\\Qt\\6.11.0\\msvc2022_64\\lib\\Qt6Core.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "mpr.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "userenv.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "app::@fcf6253e9fc11c2b4aaf"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "arch::@b43736e049515855b18a"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "base::@502b5caad324c3969999"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "io::@b438e512d69c9539202f"
+		},
+		{
+			"backtrace" : 4,
+			"fragment" : "version"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "Qt6::Test::@920421ea08e7804adbee"
+		}
+	],
+	"name" : "ClipboardChunksTests",
+	"nameOnDisk" : "ClipboardChunksTests.exe",
+	"orderDependencies" : 
+	[
+		{
+			"id" : "Qt6::moc::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "Qt6::uic::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 23,
+			"id" : "ClipboardChunksTests::@d248aab00b10363d3d98"
+		},
+		{
+			"id" : "ClipboardChunksTests_autogen_timestamp_deps::@d248aab00b10363d3d98"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "ClipboardChunksTests_autogen::@d248aab00b10363d3d98"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/unittests/deskflow",
+		"source" : "src/unittests/deskflow"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/unittests/deskflow/ClipboardChunksTests_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "src/unittests/deskflow/ClipboardChunksTests.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/unittests/deskflow/ClipboardChunksTests_autogen/timestamp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/unittests/deskflow/ClipboardChunksTests_autogen/timestamp.rule",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "EXECUTABLE"
+}

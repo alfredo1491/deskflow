@@ -1,0 +1,2 @@
+1) Hacer commit de estos cambios de deploy/windows + CMake de runtime deps.
+2) Abrir PR con evidencia (logs de package + verificación post-uninstall) para que el fix quede upstream.

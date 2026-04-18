@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/net_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/net_autogen.dir/ParseCache.txt"
+  "net_autogen"
+  "CMakeFiles/net.dir/Fingerprint.cpp.obj"
+  "CMakeFiles/net.dir/Fingerprint.cpp.obj.d"
+  "CMakeFiles/net.dir/FingerprintDatabase.cpp.obj"
+  "CMakeFiles/net.dir/FingerprintDatabase.cpp.obj.d"
+  "CMakeFiles/net.dir/IDataSocket.cpp.obj"
+  "CMakeFiles/net.dir/IDataSocket.cpp.obj.d"
+  "CMakeFiles/net.dir/NetworkAddress.cpp.obj"
+  "CMakeFiles/net.dir/NetworkAddress.cpp.obj.d"
+  "CMakeFiles/net.dir/SecureListenSocket.cpp.obj"
+  "CMakeFiles/net.dir/SecureListenSocket.cpp.obj.d"
+  "CMakeFiles/net.dir/SecureSocket.cpp.obj"
+  "CMakeFiles/net.dir/SecureSocket.cpp.obj.d"
+  "CMakeFiles/net.dir/SecureUtils.cpp.obj"
+  "CMakeFiles/net.dir/SecureUtils.cpp.obj.d"
+  "CMakeFiles/net.dir/SocketException.cpp.obj"
+  "CMakeFiles/net.dir/SocketException.cpp.obj.d"
+  "CMakeFiles/net.dir/SocketMultiplexer.cpp.obj"
+  "CMakeFiles/net.dir/SocketMultiplexer.cpp.obj.d"
+  "CMakeFiles/net.dir/SslLogger.cpp.obj"
+  "CMakeFiles/net.dir/SslLogger.cpp.obj.d"
+  "CMakeFiles/net.dir/TCPListenSocket.cpp.obj"
+  "CMakeFiles/net.dir/TCPListenSocket.cpp.obj.d"
+  "CMakeFiles/net.dir/TCPSocket.cpp.obj"
+  "CMakeFiles/net.dir/TCPSocket.cpp.obj.d"
+  "CMakeFiles/net.dir/TCPSocketFactory.cpp.obj"
+  "CMakeFiles/net.dir/TCPSocketFactory.cpp.obj.d"
+  "CMakeFiles/net.dir/__/__/__/vcpkg_installed/x64-windows/include/openssl/applink.c.obj"
+  "CMakeFiles/net.dir/__/__/__/vcpkg_installed/x64-windows/include/openssl/applink.c.obj.d"
+  "CMakeFiles/net.dir/net_autogen/mocs_compilation.cpp.obj"
+  "CMakeFiles/net.dir/net_autogen/mocs_compilation.cpp.obj.d"
+  "net.lib"
+  "net.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C CXX)
+  include(CMakeFiles/net.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

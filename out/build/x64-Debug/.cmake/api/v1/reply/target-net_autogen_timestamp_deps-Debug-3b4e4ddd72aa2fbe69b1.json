@@ -1,0 +1,86 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"src/lib/net/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "common::@a72075f8f48ba5338622"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "io::@b438e512d69c9539202f"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "mt::@d526ac2a7ecafad16b1f"
+		}
+	],
+	"id" : "net_autogen_timestamp_deps::@1050ce41c93b94613e83",
+	"isGeneratorProvided" : true,
+	"name" : "net_autogen_timestamp_deps",
+	"orderDependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::moc::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::uic::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::Network::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "OpenSSL::Crypto::@1050ce41c93b94613e83"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "OpenSSL::SSL::@1050ce41c93b94613e83"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "OpenSSL::applink::@1050ce41c93b94613e83"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "common::@a72075f8f48ba5338622"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "io::@b438e512d69c9539202f"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "mt::@d526ac2a7ecafad16b1f"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/lib/net",
+		"source" : "src/lib/net"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

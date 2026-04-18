@@ -1,0 +1,54 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"translations/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 33,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "translations",
+			"paths" : 
+			[
+				"out/build/x64-Debug/translations/deskflow_en.qm",
+				"out/build/x64-Debug/translations/deskflow_es.qm",
+				"out/build/x64-Debug/translations/deskflow_it.qm",
+				"out/build/x64-Debug/translations/deskflow_ja.qm",
+				"out/build/x64-Debug/translations/deskflow_zh_CN.qm",
+				"out/build/x64-Debug/translations/deskflow_ru.qm",
+				"out/build/x64-Debug/translations/deskflow_ko.qm"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "translations",
+		"source" : "translations"
+	}
+}

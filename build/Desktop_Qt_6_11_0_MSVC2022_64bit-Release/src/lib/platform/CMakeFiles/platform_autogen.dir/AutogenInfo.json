@@ -1,0 +1,279 @@
+{
+	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
+	"BUILD_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/lib/platform/platform_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/lib/platform",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform",
+	"CMAKE_EXECUTABLE" : "C:/Program Files/CMake/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/CMakeLists.txt"
+	],
+	"CMAKE_SOURCE_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/lib/platform/platform_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "platform_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/IMSWindowsClipboardFacade.h",
+			"MU",
+			"EWIEGA46WW/moc_IMSWindowsClipboardFacade.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboard.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsClipboard.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardAnyTextConverter.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsClipboardAnyTextConverter.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardBitmapConverter.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsClipboardBitmapConverter.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardFacade.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsClipboardFacade.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardHTMLConverter.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsClipboardHTMLConverter.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardUTF16Converter.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsClipboardUTF16Converter.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsDebugOutputter.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsDebugOutputter.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsDesks.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsDesks.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsEventQueueBuffer.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsEventQueueBuffer.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsHook.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsHook.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsKeyState.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsKeyState.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsPowerManager.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsPowerManager.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsProcess.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsProcess.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsScreen.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsScreen.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsScreenSaver.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsScreenSaver.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsSession.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsSession.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsWatchdog.h",
+			"MU",
+			"EWIEGA46WW/moc_MSWindowsWatchdog.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/lib/platform/platform_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/lib/platform/platform_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"HAVE_FORMAT",
+		"NDEBUG",
+		"QT_CORE_LIB",
+		"QT_NO_DEBUG",
+		"QT_NO_KEYWORDS",
+		"UNICODE",
+		"WIN32",
+		"WIN64",
+		"_CRT_SECURE_NO_WARNINGS",
+		"_ENABLE_EXTENDED_ALIGNED_STORAGE",
+		"_UNICODE",
+		"_WIN64",
+		"_WINDOWS",
+		"_XKEYCHECK_H"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib",
+		"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/lib",
+		"C:/Qt/6.11.0/msvc2022_64/include/QtCore",
+		"C:/Qt/6.11.0/msvc2022_64/include",
+		"C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : [],
+	"MOC_PREDEFS_FILE" : "",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 6,
+	"PARSE_CACHE_FILE" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/lib/platform/CMakeFiles/platform_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "C:/Qt/6.11.0/msvc2022_64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "C:/Qt/6.11.0/msvc2022_64/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 11,
+	"SETTINGS_FILE" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/src/lib/platform/CMakeFiles/platform_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboard.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardAnyTextConverter.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardBitmapConverter.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardFacade.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardHTMLConverter.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardUTF16Converter.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsDebugOutputter.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsDesks.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsEventQueueBuffer.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsHook.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsKeyState.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsPowerManager.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsProcess.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsScreen.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsScreenSaver.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsSession.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsWatchdog.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:firewall="http://wixtoolset.org/schemas/v4/wxs/firewall" xmlns:util="http://wixtoolset.org/schemas/v4/wxs/util">
+    <Fragment>
+        <DirectoryRef Id="INSTALL_ROOT">
+            <Component Id="CM_CP_deskflow_core.exe" Guid="*">
+                <firewall:FirewallException Id="ServerFirewallException" Name="Deskflow Server" Program="[INSTALL_ROOT]deskflow-core.exe" Scope="any"/>
+                <firewall:FirewallException Id="ClientFirewallException" Name="Deskflow Client" Program="[INSTALL_ROOT]deskflow-core.exe" Scope="any"/>
+                <File Id="CM_FP_deskflow_core.exe" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/deskflow-core.exe" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="INSTALL_ROOT">
+            <Component Id="CM_CP_deskflow_daemon.exe" Guid="*">
+                <ServiceInstall Description="Runs the Core process on secure desktops (UAC prompts, login screen, etc)." DisplayName="Deskflow" ErrorControl="normal" Id="ServiceInstall" Name="Deskflow" Start="auto" Type="ownProcess">
+                    <util:ServiceConfig FirstFailureActionType="restart" ResetPeriodInDays="1" RestartServiceDelayInSeconds="1" SecondFailureActionType="restart" ThirdFailureActionType="none"/>
+                </ServiceInstall>
+                <ServiceControl Id="ServiceControl" Name="Deskflow" Remove="uninstall" Start="install" Stop="both"/>
+                <RemoveFile Id="RmOldLog" Name="deskflow-daemon.log" On="install"/>
+                <File Id="CM_FP_deskflow_daemon.exe" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/deskflow-daemon.exe" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="INSTALL_ROOT">
+            <Component Id="CM_CP_deskflow.exe" Guid="*">
+                <File Id="CM_FP_deskflow.exe" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/deskflow.exe" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_docs">
+            <Component Id="CM_CP_docs.Readme.md" Guid="*">
+                <File Id="CM_FP_docs.Readme.md" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/docs/Readme.md" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_docs">
+            <Component Id="CM_CP_docs.Security.md" Guid="*">
+                <File Id="CM_FP_docs.Security.md" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/docs/Security.md" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="INSTALL_ROOT">
+            <Component Id="CM_CP_libcrypto_3_x64.dll" Guid="*">
+                <File Id="CM_FP_libcrypto_3_x64.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/libcrypto-3-x64.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="INSTALL_ROOT">
+            <Component Id="CM_CP_libssl_3_x64.dll" Guid="*">
+                <File Id="CM_FP_libssl_3_x64.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/libssl-3-x64.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="INSTALL_ROOT">
+            <Component Id="CM_CP_LICENSE" Guid="*">
+                <File Id="CM_FP_LICENSE" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/LICENSE" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="INSTALL_ROOT">
+            <Component Id="CM_CP_LICENSE_EXCEPTION" Guid="*">
+                <File Id="CM_FP_LICENSE_EXCEPTION" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/LICENSE_EXCEPTION" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_plugins.generic">
+            <Component Id="CM_CP_plugins.generic.qtuiotouchplugin.dll" Guid="*">
+                <File Id="CM_FP_plugins.generic.qtuiotouchplugin.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/plugins/generic/qtuiotouchplugin.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_plugins.iconengines">
+            <Component Id="CM_CP_plugins.iconengines.qsvgicon.dll" Guid="*">
+                <File Id="CM_FP_plugins.iconengines.qsvgicon.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/plugins/iconengines/qsvgicon.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_plugins.imageformats">
+            <Component Id="CM_CP_plugins.imageformats.qgif.dll" Guid="*">
+                <File Id="CM_FP_plugins.imageformats.qgif.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/plugins/imageformats/qgif.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_plugins.imageformats">
+            <Component Id="CM_CP_plugins.imageformats.qico.dll" Guid="*">
+                <File Id="CM_FP_plugins.imageformats.qico.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/plugins/imageformats/qico.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_plugins.imageformats">
+            <Component Id="CM_CP_plugins.imageformats.qjpeg.dll" Guid="*">
+                <File Id="CM_FP_plugins.imageformats.qjpeg.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/plugins/imageformats/qjpeg.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_plugins.imageformats">
+            <Component Id="CM_CP_plugins.imageformats.qsvg.dll" Guid="*">
+                <File Id="CM_FP_plugins.imageformats.qsvg.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/plugins/imageformats/qsvg.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_plugins.networkinformation">
+            <Component Id="CM_CP_plugins.networkinformation.qnetworklistmanager.dll" Guid="*">
+                <File Id="CM_FP_plugins.networkinformation.qnetworklistmanager.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/plugins/networkinformation/qnetworklistmanager.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_plugins.platforms">
+            <Component Id="CM_CP_plugins.platforms.qwindows.dll" Guid="*">
+                <File Id="CM_FP_plugins.platforms.qwindows.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/plugins/platforms/qwindows.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_plugins.styles">
+            <Component Id="CM_CP_plugins.styles.qmodernwindowsstyle.dll" Guid="*">
+                <File Id="CM_FP_plugins.styles.qmodernwindowsstyle.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/plugins/styles/qmodernwindowsstyle.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_plugins.tls">
+            <Component Id="CM_CP_plugins.tls.qcertonlybackend.dll" Guid="*">
+                <File Id="CM_FP_plugins.tls.qcertonlybackend.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/plugins/tls/qcertonlybackend.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_plugins.tls">
+            <Component Id="CM_CP_plugins.tls.qschannelbackend.dll" Guid="*">
+                <File Id="CM_FP_plugins.tls.qschannelbackend.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/plugins/tls/qschannelbackend.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="INSTALL_ROOT">
+            <Component Id="CM_CP_Qt6Core.dll" Guid="*">
+                <File Id="CM_FP_Qt6Core.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/Qt6Core.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="INSTALL_ROOT">
+            <Component Id="CM_CP_Qt6Gui.dll" Guid="*">
+                <File Id="CM_FP_Qt6Gui.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/Qt6Gui.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="INSTALL_ROOT">
+            <Component Id="CM_CP_Qt6Network.dll" Guid="*">
+                <File Id="CM_FP_Qt6Network.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/Qt6Network.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="INSTALL_ROOT">
+            <Component Id="CM_CP_Qt6Svg.dll" Guid="*">
+                <File Id="CM_FP_Qt6Svg.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/Qt6Svg.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="INSTALL_ROOT">
+            <Component Id="CM_CP_Qt6Widgets.dll" Guid="*">
+                <File Id="CM_FP_Qt6Widgets.dll" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/Qt6Widgets.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.deskflow_en.qm" Guid="*">
+                <File Id="CM_FP_translations.deskflow_en.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/deskflow_en.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.deskflow_es.qm" Guid="*">
+                <File Id="CM_FP_translations.deskflow_es.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/deskflow_es.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.deskflow_it.qm" Guid="*">
+                <File Id="CM_FP_translations.deskflow_it.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/deskflow_it.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.deskflow_ja.qm" Guid="*">
+                <File Id="CM_FP_translations.deskflow_ja.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/deskflow_ja.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.deskflow_ko.qm" Guid="*">
+                <File Id="CM_FP_translations.deskflow_ko.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/deskflow_ko.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.deskflow_ru.qm" Guid="*">
+                <File Id="CM_FP_translations.deskflow_ru.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/deskflow_ru.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.deskflow_zh_CN.qm" Guid="*">
+                <File Id="CM_FP_translations.deskflow_zh_CN.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/deskflow_zh_CN.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_ar.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_ar.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_ar.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_bg.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_bg.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_bg.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_ca.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_ca.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_ca.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_cs.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_cs.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_cs.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_da.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_da.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_da.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_de.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_de.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_de.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_en.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_en.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_en.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_es.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_es.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_es.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_fa.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_fa.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_fa.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_fi.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_fi.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_fi.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_fr.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_fr.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_fr.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_gd.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_gd.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_gd.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_he.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_he.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_he.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_hr.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_hr.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_hr.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_hu.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_hu.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_hu.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_it.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_it.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_it.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_ja.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_ja.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_ja.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_ka.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_ka.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_ka.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_ko.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_ko.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_ko.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_lg.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_lg.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_lg.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_lv.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_lv.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_lv.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_nl.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_nl.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_nl.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_nn.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_nn.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_nn.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_pl.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_pl.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_pl.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_pt_BR.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_pt_BR.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_pt_BR.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_ru.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_ru.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_ru.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_sk.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_sk.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_sk.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_sv.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_sv.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_sv.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_tr.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_tr.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_tr.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_uk.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_uk.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_uk.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_zh_CN.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_zh_CN.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_zh_CN.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="CM_DP_translations">
+            <Component Id="CM_CP_translations.qt_zh_TW.qm" Guid="*">
+                <File Id="CM_FP_translations.qt_zh_TW.qm" Source="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/out/build/x64-Release/_CPack_Packages/win64/WIX/deskflow-1.26.0.0-win-x64/translations/qt_zh_TW.qm" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+        <DirectoryRef Id="PROGRAM_MENU_FOLDER">
+            <Component Id="CM_SHORTCUT" Guid="*">
+                <Shortcut Id="CM_SP_deskflow.exe" Name="Deskflow" Target="[#CM_FP_deskflow.exe]" WorkingDirectory="INSTALL_ROOT"/>
+                <RegistryValue Root="HKCU" Key="Software\Deskflow Devs\Deskflow" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+                <RemoveFolder Id="CM_REMOVE_PROGRAM_MENU_FOLDER" On="uninstall"/>
+                <Shortcut Id="UNINSTALL" Name="Uninstall Deskflow" Description="Uninstalls Deskflow" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]"/>
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+</Wix>

@@ -1,0 +1,25 @@
+{
+  "cmake.buildDirectory": "${workspaceFolder}/out/build/x64-Debug",
+  "cmake.generator": "Ninja",
+  "cmake.configureOnOpen": true,
+  "cmake.configureSettings": {
+    "CMAKE_BUILD_TYPE": "Debug",
+    "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+    "BUILD_INSTALLER": "OFF",
+    "BUILD_TESTS": "OFF",
+    "Qt6_DIR": "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6",
+    "OPENSSL_INCLUDE_DIR": "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/include",
+    "OPENSSL_CRYPTO_LIBRARY": "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/debug/lib/libcrypto.lib",
+    "OPENSSL_SSL_LIBRARY": "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/debug/lib/libssl.lib"
+  },
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "C_Cpp.default.compileCommands": "${workspaceFolder}/out/build/x64-Debug/compile_commands.json",
+  "C_Cpp.errorSquiggles": "EnabledIfIncludesResolve",
+  "C_Cpp.files.exclude": {
+    "**/deploy/windows/wix-custom.h.in": true
+  },
+  "files.associations": {
+    "deploy/windows/wix-custom.h.in": "cmake",
+    "*.h.in": "cmake"
+  }
+}

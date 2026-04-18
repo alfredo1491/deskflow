@@ -1,0 +1,4042 @@
+{
+	"globsDependent" : 
+	[
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.c",
+			"paths" : 
+			[
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Debug/CMakeFiles/4.3.1/CompilerIdC/CMakeCCompilerId.c",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Debug/CMakeFiles/ShowIncludes/main.c"
+			],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.c++",
+			"paths" : [],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.cc",
+			"paths" : [],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.ch",
+			"paths" : [],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.cpp",
+			"paths" : 
+			[
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/apps/deskflow-core/CoreArgParser.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/apps/deskflow-core/deskflow-core.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/apps/deskflow-daemon/DaemonApp.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/apps/deskflow-daemon/deskflow-daemon.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/apps/deskflow-gui/deskflow-gui.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/Arch.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/unix/ArchLogUnix.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/unix/ArchMultithreadPosix.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/unix/ArchNetworkBSD.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/unix/XArchUnix.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/win32/ArchDaemonWindows.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/win32/ArchLogWindows.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/win32/ArchMiscWindows.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/win32/ArchMultithreadWindows.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/win32/ArchNetworkWinsock.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/win32/XArchWindows.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/BaseException.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/EventQueue.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/FunctionEventJob.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/FunctionJob.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/Log.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/LogOutputters.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/SimpleEventQueueBuffer.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/Stopwatch.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/String.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/Unicode.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/client/Client.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/client/ServerProxy.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/common/I18N.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/common/QSettingsProxy.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/common/Settings.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/App.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/AppUtil.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/Chunk.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ClientApp.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/Clipboard.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ClipboardChunk.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/DeskflowException.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/IClipboard.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/IKeyState.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/IPlatformScreen.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/IPrimaryScreen.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/KeyMap.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/KeyState.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/KeyTypes.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/KeyboardLayoutManager.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/PacketStreamFilter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/PlatformScreen.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ProtocolTypes.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ProtocolUtil.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/Screen.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ScreenException.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ServerApp.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/StreamChunker.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ipc/CoreIpc.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ipc/CoreIpcServer.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ipc/DaemonIpcServer.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ipc/IpcServer.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/unix/AppUtilUnix.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/unix/DeskflowXkbKeyboard.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/unix/X11LayoutsParser.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/win32/AppUtilWindows.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/Action.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/Diagnostic.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/FileTail.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/Hotkey.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/KeySequence.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/Logger.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/MainWindow.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/Messages.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/ScreenSetupModel.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/TlsUtility.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/VersionChecker.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/config/Screen.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/config/ScreenConfig.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/config/ScreenList.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/config/ServerConfig.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/core/CoreProcess.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/core/NetworkMonitor.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/AboutDialog.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/ActionDialog.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/ClientConfigDialog.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/FingerprintDialog.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/HotkeyDialog.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/ScreenSettingsDialog.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/ServerConfigDialog.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/SettingsDialog.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/ipc/CoreIpcClient.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/ipc/DaemonIpcClient.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/ipc/IpcClient.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/AliasValidator.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/ComputerNameValidator.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/EmptyStringValidator.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/IStringValidator.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/IpAddressValidator.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/LineEditValidator.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/ScreenDuplicationsValidator.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/ScreenNameValidator.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/SpacesValidator.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/ValidationError.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/FingerprintPreview.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/KeySequenceWidget.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/LogDock.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/LogWidget.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/NewScreenWidget.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/ScreenSetupView.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/SearchWidget.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/StatusBar.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/TrashScreenWidget.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/io/IOException.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/io/StreamBuffer.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/io/StreamFilter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/mt/CondVar.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/mt/Lock.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/mt/MTException.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/mt/Mutex.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/mt/Thread.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/Fingerprint.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/FingerprintDatabase.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/IDataSocket.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/NetworkAddress.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/SecureListenSocket.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/SecureSocket.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/SecureUtils.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/SocketException.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/SocketMultiplexer.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/SslLogger.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/TCPListenSocket.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/TCPSocket.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/TCPSocketFactory.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/EiEventQueueBuffer.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/EiKeyState.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/EiScreen.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/IOSXKeyResource.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboard.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardAnyTextConverter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardBitmapConverter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardFacade.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardHTMLConverter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardUTF16Converter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsDebugOutputter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsDesks.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsEventQueueBuffer.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsHook.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsKeyState.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsPowerManager.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsProcess.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsScreen.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsScreenSaver.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsSession.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsWatchdog.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboard.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboardAnyBitmapConverter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboardAnyTextConverter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboardBMPConverter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboardHTMLConverter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboardTextConverter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboardUTF16Converter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboardUTF8Converter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXEventQueueBuffer.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXKeyState.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXPowerManager.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXScreenSaver.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXUchrKeyResource.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/PortalInputCapture.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/PortalRemoteDesktop.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/WlClipboard.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/WlClipboardCollection.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XDGKeyUtil.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XDGPowerManager.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsClipboard.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsClipboardAnyBitmapConverter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsClipboardBMPConverter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsClipboardHTMLConverter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsClipboardTextConverter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsClipboardUCS2Converter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsClipboardUTF8Converter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsEventQueueBuffer.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsKeyState.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsScreen.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsScreenSaver.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsUtil.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Debug/CMakeFiles/4.3.1/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/BaseClientProxy.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientListener.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_0.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_1.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_2.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_3.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_4.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_5.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_6.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_7.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_8.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxyUnknown.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/Config.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/InputFilter.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/PrimaryClient.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/Server.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/base/BaseExceptionTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/base/LogTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/base/StringTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/base/UnicodeTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/common/I18NTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/common/SettingsTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/ClipboardChunksTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/ClipboardTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/IKeyStateTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/KeyMapTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/KeyStateTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/KeyboardLayoutManagerTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/X11LayoutParserTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/gui/KeySequenceTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/gui/LoggerTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/gui/config/ScreenTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/gui/core/NetworkMonitorTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/legacytests/legacytests/arch/unix/ArchNetworkBSDTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/legacytests/legacytests/deskflow/KeyStateTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/legacytests/legacytests/main.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/legacytests/shared/ExitTimeout.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/net/FingerprintDatabaseTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/net/FingerprintTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/net/SecureUtilsTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/platform/MSWindowsClipboardTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/platform/OSXClipboardTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/platform/OSXKeyStateTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/platform/WlClipboardTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/platform/XWindowsClipboardTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/server/ServerConfigTests.cpp",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/server/ServerTests.cpp"
+			],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.cxx",
+			"paths" : [],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.h",
+			"paths" : 
+			[
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/apps/deskflow-core/CoreArgParser.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/apps/deskflow-core/CoreArgs.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/apps/deskflow-daemon/DaemonApp.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/Arch.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/ArchException.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/IArchDaemon.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/IArchLog.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/IArchMultithread.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/IArchNetwork.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/unix/ArchLogUnix.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/unix/ArchMultithreadPosix.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/unix/ArchNetworkBSD.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/unix/XArchUnix.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/win32/ArchDaemonWindows.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/win32/ArchLogWindows.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/win32/ArchMiscWindows.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/win32/ArchMultithreadWindows.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/win32/ArchNetworkWinsock.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/arch/win32/XArchWindows.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/BaseException.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/DirectionTypes.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/Event.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/EventQueue.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/EventQueueTimer.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/EventTypes.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/FinalAction.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/FunctionEventJob.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/FunctionJob.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/IEventQueue.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/IEventQueueBuffer.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/IJob.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/ILogOutputter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/Log.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/LogLevel.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/LogOutputters.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/NetworkProtocol.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/PriorityQueue.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/SimpleEventQueueBuffer.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/Stopwatch.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/String.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/TMethodJob.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/base/Unicode.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/client/Client.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/client/ServerProxy.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/common/Coordinate.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/common/Enums.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/common/ExitCodes.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/common/I18N.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/common/PlatformInfo.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/common/QSettingsProxy.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/common/Settings.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/common/UrlConstants.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/App.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/AppUtil.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/Chunk.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ClientApp.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/Clipboard.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ClipboardChunk.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ClipboardTypes.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/DeskflowException.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/DisplayInvalidException.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/IApp.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/IClient.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/IClipboard.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/IKeyState.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/IPlatformScreen.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/IPrimaryScreen.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/IScreen.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/IScreenSaver.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ISecondaryScreen.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/KeyMap.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/KeyState.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/KeyTypes.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/KeyboardLayoutManager.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/MouseTypes.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/OptionTypes.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/PacketStreamFilter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/PlatformScreen.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ProtocolTypes.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ProtocolUtil.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/Screen.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ScreenException.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ServerApp.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/StreamChunker.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ipc/CoreIpc.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ipc/CoreIpcServer.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ipc/DaemonIpcServer.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/ipc/IpcServer.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/unix/AppUtilUnix.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/unix/DeskflowXkbKeyboard.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/unix/ISO639Table.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/unix/X11LayoutsParser.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/deskflow/win32/AppUtilWindows.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/Action.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/Diagnostic.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/FileTail.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/Hotkey.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/KeySequence.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/Logger.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/MainWindow.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/Messages.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/OSXHelpers.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/ScreenSetupModel.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/StyleUtils.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/TlsUtility.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/VersionChecker.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/config/Screen.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/config/ScreenConfig.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/config/ScreenList.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/config/ServerConfig.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/core/CoreProcess.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/core/NetworkMonitor.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/AboutDialog.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/ActionDialog.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/ClientConfigDialog.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/FingerprintDialog.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/HotkeyDialog.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/ScreenSettingsDialog.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/ServerConfigDialog.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/SettingsDialog.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/ipc/CoreIpcClient.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/ipc/DaemonIpcClient.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/ipc/IpcClient.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/AliasValidator.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/ComputerNameValidator.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/EmptyStringValidator.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/IStringValidator.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/IpAddressValidator.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/LineEditValidator.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/ScreenDuplicationsValidator.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/ScreenNameValidator.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/SpacesValidator.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/validators/ValidationError.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/FingerprintPreview.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/KeySequenceWidget.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/LogDock.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/LogWidget.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/NewScreenWidget.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/ScreenSetupView.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/SearchWidget.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/StatusBar.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/widgets/TrashScreenWidget.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/io/IOException.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/io/IStream.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/io/StreamBuffer.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/io/StreamFilter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/mt/CondVar.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/mt/Lock.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/mt/MTException.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/mt/Mutex.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/mt/Thread.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/mt/ThreadException.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/Fingerprint.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/FingerprintDatabase.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/IDataSocket.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/IListenSocket.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/ISocket.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/ISocketFactory.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/ISocketMultiplexerJob.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/NetworkAddress.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/SecureListenSocket.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/SecureSocket.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/SecureUtils.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/SecurityLevel.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/SocketException.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/SocketMultiplexer.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/SslLogger.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/TCPListenSocket.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/TCPSocket.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/TCPSocketFactory.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/net/TSocketMultiplexerMethodJob.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/EiEventQueueBuffer.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/EiKeyState.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/EiScreen.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/IMSWindowsClipboardFacade.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/IOSXKeyResource.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboard.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardAnyTextConverter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardBitmapConverter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardFacade.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardHTMLConverter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsClipboardUTF16Converter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsDebugOutputter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsDesks.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsEventQueueBuffer.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsHandle.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsHook.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsKeyState.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsPowerManager.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsProcess.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsScreen.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsScreenSaver.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsSession.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/MSWindowsWatchdog.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXAutoTypes.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboard.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboardAnyBitmapConverter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboardAnyTextConverter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboardBMPConverter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboardHTMLConverter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboardTextConverter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboardUTF16Converter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXClipboardUTF8Converter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXCocoaApp.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXEventQueueBuffer.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXKeyState.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXMediaKeySupport.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXPasteboardPeeker.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXPowerManager.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXScreen.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXScreenSaver.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXScreenSaverControl.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXScreenSaverUtil.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/OSXUchrKeyResource.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/PortalInputCapture.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/PortalRemoteDesktop.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/WlClipboard.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/WlClipboardCollection.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XDGKeyUtil.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XDGPortalRegistry.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XDGPowerManager.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsClipboard.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsClipboardAnyBitmapConverter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsClipboardBMPConverter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsClipboardHTMLConverter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsClipboardTextConverter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsClipboardUCS2Converter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsClipboardUTF8Converter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsEventQueueBuffer.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsKeyState.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsScreen.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsScreenSaver.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/XWindowsUtil.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/platform/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Debug/CMakeFiles/ShowIncludes/foo.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/BaseClientProxy.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientListener.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_0.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_1.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_2.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_3.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_4.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_5.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_6.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_7.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxy1_8.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/ClientProxyUnknown.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/Config.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/InputFilter.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/PrimaryClient.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/server/Server.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/base/BaseExceptionTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/base/LogTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/base/StringTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/base/UnicodeTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/common/I18NTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/common/SettingsTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/ClipboardChunksTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/ClipboardTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/IKeyStateTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/KeyMapTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/KeyStateTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/KeyboardLayoutManagerTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/MockEventQueue.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/MockKeyMap.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/MockKeyState.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/ServerAppTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/deskflow/X11LayoutParserTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/gui/KeySequenceTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/gui/LoggerTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/gui/config/ScreenTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/gui/core/NetworkMonitorTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/legacytests/mock/deskflow/MockEventQueue.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/legacytests/mock/deskflow/MockKeyMap.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/legacytests/mock/deskflow/MockKeyState.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/legacytests/shared/ExitTimeout.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/net/FingerprintDatabaseTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/net/FingerprintTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/net/SecureUtilsTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/platform/MSWindowsClipboardTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/platform/OSXClipboardTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/platform/OSXKeyStateTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/platform/WlClipboardTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/platform/XWindowsClipboardTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/server/ServerConfigTests.h",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/unittests/server/ServerTests.h"
+			],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.h++",
+			"paths" : [],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.hh",
+			"paths" : [],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.hpp",
+			"paths" : [],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.hxx",
+			"paths" : [],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.java",
+			"paths" : [],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.js",
+			"paths" : [],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.jui",
+			"paths" : [],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.qml",
+			"paths" : [],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.qrc",
+			"paths" : 
+			[
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/apps/res/deskflow.qrc"
+			],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.qs",
+			"paths" : [],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/*.ui",
+			"paths" : 
+			[
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/MainWindow.ui",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/AboutDialog.ui",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/ActionDialog.ui",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/ClientConfigDialog.ui",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/HotkeyDialog.ui",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/ScreenSettingsDialog.ui",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/ServerConfigDialog.ui",
+				"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/src/lib/gui/dialogs/SettingsDialog.ui"
+			],
+			"recurse" : true
+		}
+	],
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"path" : "cmake/vcpkg.json.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/.qtcreator/cmake-helper/qtcreator-project.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/.qtcreator/cmake-helper/package-manager.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg-dependencies/toolchain.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDependentOption.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeSystem.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/CMakeFiles/4.3.1/CMakeSystem.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg-dependencies/toolchain.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDependentOption.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeJOMFindMake.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/.qtcreator/cmake-helper/maintenance_tool_provider.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-Initialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCompilerIdDetection.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/ADSP-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/ARMClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/AppleClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Clang-DetermineCompilerInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Borland-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Bruce-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Clang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Clang-DetermineCompilerInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Compaq-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Cray-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/CrayClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Diab-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Embarcadero-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Fujitsu-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/GHS-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/GNU-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/HP-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/IAR-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Intel-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/LCC-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/MSVC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/NVHPC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/NVIDIA-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/OrangeC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/PGI-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/PathScale-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Renesas-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/SCO-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/SDCC-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/SunPro-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/TI-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/TIClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Tasking-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Watcom-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/XL-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/XLClang-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompiler.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/CMakeFiles/4.3.1/CMakeCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-Determine-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCompilerIdDetection.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/ADSP-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/ARMClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/AppleClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Clang-DetermineCompilerInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Borland-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Clang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Clang-DetermineCompilerInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Cray-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/CrayClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Diab-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Embarcadero-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Fujitsu-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/GHS-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/HP-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/IAR-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Intel-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/MSVC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/NVHPC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/NVIDIA-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/OrangeC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/PGI-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/PathScale-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Renesas-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/SCO-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/TI-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/TIClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Tasking-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/Watcom-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/XL-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompiler.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/CMakeFiles/4.3.1/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/MSVC-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/MSVC.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeRCCompiler.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/CMakeFiles/4.3.1/CMakeRCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeRCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestRCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCompilerCommon.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeParseImplicitIncludeInfo.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeParseImplicitLinkInfo.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeParseLibraryArchitecture.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCompilerCommon.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerSupport.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/FeatureTesting.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompiler.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/CMakeFiles/4.3.1/CMakeCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeCLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Linker/MSVC-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Linker/MSVC.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Linker/Windows-MSVC-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Linker/Windows-MSVC.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeInspectCLinker.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompiler.cmake.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/MSVC-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/MSVC.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCompilerCommon.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeParseImplicitIncludeInfo.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeParseImplicitLinkInfo.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeParseLibraryArchitecture.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCompilerCommon.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerSupport.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/FeatureTesting.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompiler.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/CMakeFiles/4.3.1/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeCXXLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Linker/MSVC-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Linker/MSVC.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Linker/Windows-MSVC-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Linker/Windows-MSVC.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeInspectCXXLinker.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompiler.cmake.in"
+		},
+		{
+			"path" : "cmake/Libraries.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtInstallPaths.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6TargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6Targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6VersionlessAliasTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtFeature.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckCXXCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CheckCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CheckFlagCommonConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckCXXSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtFeatureCommon.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicGitHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/FindWrapAtomic.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckCXXSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateVersionlessAliasTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindVulkan.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindVulkan.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindVulkan.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindVulkan.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6GuiTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6GuiTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QInsightTrackerPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QInsightTrackerPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QInsightTrackerPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QInsightTrackerPluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QInsightTrackerPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QInsightTrackerPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkPlugins.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtInstallPaths.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6TargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtFeature.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckCXXCompilerFlag.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtFeatureCommon.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicGitHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"path" : "vcpkg.json"
+		},
+		{
+			"path" : "vcpkg.json"
+		},
+		{
+			"path" : "docs/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindDoxygen.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindDoxygen.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "translations/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsVersionlessTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtInstallPaths.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6TargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtFeature.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckCXXCompilerFlag.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtFeatureCommon.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicGitHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake"
+		},
+		{
+			"path" : "src/CMakeLists.txt"
+		},
+		{
+			"path" : "src/lib/CMakeLists.txt"
+		},
+		{
+			"path" : "src/lib/arch/CMakeLists.txt"
+		},
+		{
+			"path" : "src/lib/base/CMakeLists.txt"
+		},
+		{
+			"path" : "src/lib/client/CMakeLists.txt"
+		},
+		{
+			"path" : "src/lib/common/CMakeLists.txt"
+		},
+		{
+			"path" : "src/lib/common/Constants.h.in"
+		},
+		{
+			"path" : "src/lib/common/VersionInfo.h.in"
+		},
+		{
+			"path" : "src/lib/deskflow/CMakeLists.txt"
+		},
+		{
+			"path" : "src/lib/io/CMakeLists.txt"
+		},
+		{
+			"path" : "src/lib/mt/CMakeLists.txt"
+		},
+		{
+			"path" : "src/lib/net/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkPlugins.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtInstallPaths.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6TargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtFeature.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckCXXCompilerFlag.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtFeatureCommon.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicGitHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/share/openssl/vcpkg-cmake-wrapper.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/share/openssl/vcpkg-cmake-wrapper.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenSSL.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/SelectLibraryConfigurations.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "src/lib/platform/CMakeLists.txt"
+		},
+		{
+			"path" : "src/lib/server/CMakeLists.txt"
+		},
+		{
+			"path" : "src/lib/gui/CMakeLists.txt"
+		},
+		{
+			"path" : "src/apps/CMakeLists.txt"
+		},
+		{
+			"path" : "src/apps/deskflow-core/CMakeLists.txt"
+		},
+		{
+			"path" : "src/apps/res/windows.rc.in"
+		},
+		{
+			"path" : "src/apps/deskflow-daemon/CMakeLists.txt"
+		},
+		{
+			"path" : "src/apps/res/windows.rc.in"
+		},
+		{
+			"path" : "src/apps/deskflow-gui/CMakeLists.txt"
+		},
+		{
+			"path" : "src/apps/res/windows.rc.in"
+		},
+		{
+			"path" : "src/apps/res/deskflow.qrc"
+		},
+		{
+			"path" : "src/unittests/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Test/Qt6TestConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Test/Qt6TestConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Test/Qt6TestConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Test/Qt6TestDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Test/Qt6TestTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Test/Qt6TestTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Test/Qt6TestTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Test/Qt6TestTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Test/Qt6TestAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Test/QtTestProperties.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6Test/Qt6TestVersionlessAliasTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtInstallPaths.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6TargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtFeature.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckCXXCompilerFlag.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtFeatureCommon.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicGitHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake"
+		},
+		{
+			"path" : "src/unittests/base/CMakeLists.txt"
+		},
+		{
+			"path" : "src/unittests/common/CMakeLists.txt"
+		},
+		{
+			"path" : "src/unittests/deskflow/CMakeLists.txt"
+		},
+		{
+			"path" : "src/unittests/gui/CMakeLists.txt"
+		},
+		{
+			"path" : "src/unittests/gui/config/CMakeLists.txt"
+		},
+		{
+			"path" : "src/unittests/gui/core/CMakeLists.txt"
+		},
+		{
+			"path" : "src/unittests/legacytests/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/FetchContent.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/ExternalProject/shared_internal_commands.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/share/gtest/GTestConfigVersion.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/share/gtest/GTestConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/share/gtest/GTestTargets.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/share/gtest/GTestTargets-debug.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/share/gtest/GTestTargets-release.cmake"
+		},
+		{
+			"path" : "src/unittests/legacytests/legacytests/CMakeLists.txt"
+		},
+		{
+			"path" : "src/apps/res/deskflow.qrc"
+		},
+		{
+			"path" : "src/unittests/net/CMakeLists.txt"
+		},
+		{
+			"path" : "src/unittests/platform/CMakeLists.txt"
+		},
+		{
+			"path" : "src/unittests/server/CMakeLists.txt"
+		},
+		{
+			"path" : "deploy/CMakeLists.txt"
+		},
+		{
+			"path" : "deploy/windows/deploy.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/InstallRequiredSystemLibraries.cmake"
+		},
+		{
+			"path" : "deploy/windows/pre-cpack.cmake.in"
+		},
+		{
+			"path" : "deploy/windows/cpack-options.cmake.in"
+		},
+		{
+			"path" : "deploy/windows/wix-patch.xml.in"
+		},
+		{
+			"path" : "deploy/windows/wix-custom.h.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CPack.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Modules/CPackComponent.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Templates/CPackConfig.cmake.in"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.3/Templates/CPackConfig.cmake.in"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release",
+		"source" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 1
+	}
+}

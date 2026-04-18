@@ -1,0 +1,62 @@
+{
+	"abstract" : true,
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"find_package"
+		],
+		"files" : 
+		[
+			"C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenSSL.cmake",
+			"src/lib/net/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 846,
+				"parent" : 2
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"id" : "OpenSSL::applink::@1050ce41c93b94613e83",
+	"imported" : true,
+	"interfaceSources" : 
+	[
+		{
+			"path" : "build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/include/openssl/applink.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"local" : true,
+	"name" : "OpenSSL::applink",
+	"paths" : 
+	{
+		"build" : "src/lib/net",
+		"source" : "src/lib/net"
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}
