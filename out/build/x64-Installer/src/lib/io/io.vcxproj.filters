@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\io\io_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\io\IOException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\io\StreamBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\io\StreamFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\io\io_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\io\io_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\io\io_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\io\IOException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\io\IStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\io\StreamBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\io\StreamFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\io\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9F8C69B4-DC99-3BBB-8697-0B373103573B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{93DA991C-5129-354E-B8F8-9ABE7E537F62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

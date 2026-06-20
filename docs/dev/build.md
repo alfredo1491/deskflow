@@ -4,9 +4,11 @@ To build Deskflow you will a minimum of:
     - [cmake] 3.24+
     - [Qt] 6.7.0+
     - [openssl] 3.0+
-    - [libportal] 0.9.1+ (linux, bsd)
-    - [libei] 1.3+ (linux, bsd)
     - [google_test] ^
+
+Optional Linux and BSD dependencies:
+    - [libportal] 0.9.1+ for XDG portal integration and Wayland portal support
+    - [libei] 1.3+ for Wayland emulated input support
 
 > ^ Will be fetched if not found on the host system.
 
@@ -36,6 +38,13 @@ Deskflow supports the following CMake options:
 
 Example cmake configuration:
 `cmake -S. -Bbuild -DCMAKE_INSTALL_PREFIX=<INSTALLPREFIX>`
+
+### Linux notes
+
+- `BUILD_X11_SUPPORT=ON` allows building an X11-capable Deskflow without `libei` or `libportal`.
+- If `libei` is missing, Wayland EI input support is disabled.
+- If `libportal` is missing, XDG portal integration is disabled.
+- Full Wayland support requires both `libei` and `libportal`.
 
 ### Windows Configuration
 

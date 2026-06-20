@@ -1,24 +1,83 @@
 {
-    "configurations": [
-        {
-            "name": "Deskflow-x64-Debug",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "windowsSdkVersion": "10.0.26100.0",
-            "compilerPath": "cl.exe",
-            "cStandard": "c17",
-            "cppStandard": "c++20",
-            "intelliSenseMode": "windows-msvc-x64",
-            "compileCommands": [
-                "${workspaceFolder}/out/build/x64-Debug/compile_commands.json"
-            ]
-        }
-    ],
-    "version": 4
+  "configurations": [
+    {
+      "name": "Linux",
+      "compilerPath": "/usr/bin/c++",
+      "intelliSenseMode": "linux-gcc-x64",
+      "cStandard": "c17",
+      "cppStandard": "c++20",
+      "compileCommands": "${workspaceFolder}/build-linux-release/compile_commands.json",
+      "includePath": [
+        "${workspaceFolder}/src/lib",
+        "${workspaceFolder}/build-linux-release/src/lib",
+        "${workspaceFolder}/build-linux-release/src/lib/**/autogen/include"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/src/lib",
+          "${workspaceFolder}/build-linux-release/src/lib"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    },
+    {
+      "name": "Windows MSVC Release",
+      "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe",
+      "intelliSenseMode": "windows-msvc-x64",
+      "cStandard": "c17",
+      "cppStandard": "c++20",
+      "includePath": [
+        "${workspaceFolder}/src/lib",
+        "${workspaceFolder}/out/build/x64-Installer/src/lib",
+        "${workspaceFolder}/out/build/x64-Installer/src/lib/**/platform_autogen/include_Release",
+        "C:/Qt/6.11.0/msvc2022_64/include",
+        "C:/Qt/6.11.0/msvc2022_64/include/**",
+        "C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc"
+      ],
+      "defines": [
+        "WIN32",
+        "_WINDOWS",
+        "WIN64",
+        "_WIN64",
+        "UNICODE",
+        "_UNICODE",
+        "NDEBUG",
+        "QT_NO_KEYWORDS",
+        "_CRT_SECURE_NO_WARNINGS",
+        "_XKEYCHECK_H",
+        "HAVE_FORMAT",
+        "QT_CORE_LIB",
+        "QT_NO_DEBUG",
+        "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/src/lib",
+          "${workspaceFolder}/out/build/x64-Installer/src/lib",
+          "C:/Qt/6.11.0/msvc2022_64/include"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    },
+    {
+      "name": "macOS",
+      "compilerPath": "/usr/bin/clang++",
+      "intelliSenseMode": "macos-clang-arm64",
+      "cStandard": "c17",
+      "cppStandard": "c++20",
+      "includePath": [
+        "${workspaceFolder}/src/lib",
+        "${workspaceFolder}/build-macos/src/lib",
+        "${workspaceFolder}/build-macos/src/lib/**/autogen/include"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/src/lib",
+          "${workspaceFolder}/build-macos/src/lib"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    }
+  ],
+  "version": 4
 }

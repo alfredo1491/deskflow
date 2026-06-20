@@ -1,0 +1,14 @@
+mt_autogen/timestamp: \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/mt/CMakeLists.txt \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/mt/CondVar.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/mt/CondVar.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/mt/Lock.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/mt/Lock.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/mt/MTException.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/mt/MTException.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/mt/Mutex.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/mt/Mutex.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/mt/Thread.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/mt/Thread.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/mt/ThreadException.h \
+	/usr/bin/cmake

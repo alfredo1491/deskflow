@@ -11,7 +11,12 @@ if(APPLE)
 endif()
 
 find_package(Qt6 ${REQUIRED_QT_VERSION} REQUIRED COMPONENTS Network)
-find_package(OpenSSL ${REQUIRED_OPENSSL_VERSION} REQUIRED COMPONENTS SSL Crypto)
+if(WIN32)
+  find_package(OpenSSL ${REQUIRED_OPENSSL_VERSION} CONFIG QUIET COMPONENTS SSL Crypto)
+endif()
+if(NOT OpenSSL_FOUND)
+  find_package(OpenSSL ${REQUIRED_OPENSSL_VERSION} REQUIRED COMPONENTS SSL Crypto)
+endif()
 
 add_library(net STATIC
   Fingerprint.cpp

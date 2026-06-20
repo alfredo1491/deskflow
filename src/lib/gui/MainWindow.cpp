@@ -30,24 +30,46 @@
 #include "gui/widgets/LogDock.h"
 #include "net/FingerprintDatabase.h"
 #include "widgets/StatusBar.h"
+#include "widgets/TransferWindow.h"
 
+#include <QByteArrayView>
 #include <QCheckBox>
 #include <QCloseEvent>
+#include <QCoreApplication>
+#include <QCryptographicHash>
 #include <QDesktopServices>
+#include <QDir>
+#include <QDirIterator>
+#include <QElapsedTimer>
+#include <QFile>
 #include <QFileDialog>
+#include <QFileInfo>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QInputDialog>
+#include <QHostAddress>
+#include <QLineEdit>
 #include <QLocalServer>
 #include <QLocalSocket>
+#include <QLocale>
 #include <QMenu>
 #include <QMenuBar>
 #include <QMessageBox>
 #include <QNetworkAccessManager>
 #include <QNetworkInterface>
+#include <QProgressDialog>
 #include <QPushButton>
 #include <QRegularExpression>
 #include <QRegularExpressionValidator>
 #include <QScreen>
 #include <QScrollBar>
+#include <QTimer>
+#include <QTcpServer>
+#include <QTcpSocket>
+#include <QUdpSocket>
+#include <QUuid>
 
+#include <algorithm>
 #include <memory>
 
 #if defined(Q_OS_MACOS)
@@ -55,6 +77,195 @@
 #endif
 
 using namespace deskflow::gui;
+
+namespace {
+
+QByteArray toJsonLine(const QJsonObject &object)
+{
+  return QJsonDocument(object).toJson(QJsonDocument::Compact) + '\n';
+}
+
+bool takeJsonLine(QByteArray &buffer, QJsonObject *object)
+{
+  if (!object)
+    return false;
+
+  const auto newlinePos = buffer.indexOf('\n');
+  if (newlinePos < 0)
+    return false;
+
+  const auto line = buffer.left(newlinePos);
+  buffer.remove(0, newlinePos + 1);
+
+  QJsonParseError parseError;
+  const auto document = QJsonDocument::fromJson(line, &parseError);
+  if (parseError.error != QJsonParseError::NoError || !document.isObject())
+    return false;
+
+  *object = document.object();
+  return true;
+}
+
+bool waitForJsonLine(QTcpSocket *socket, QByteArray *buffer, QJsonObject *object, int timeoutMs)
+{
+  if (!socket || !buffer || !object)
+    return false;
+
+  QElapsedTimer timer;
+  timer.start();
+
+  while (true) {
+    if (takeJsonLine(*buffer, object))
+      return true;
+
+    const auto remaining = timeoutMs - static_cast<int>(timer.elapsed());
+    if (remaining <= 0 || !socket->waitForReadyRead(remaining))
+      return false;
+
+    buffer->append(socket->readAll());
+  }
+}
+
+QByteArray fileSha256(QFile &file)
+{
+  if (!file.seek(0))
+    return {};
+
+  QCryptographicHash hasher(QCryptographicHash::Sha256);
+  if (!hasher.addData(&file))
+    return {};
+
+  return hasher.result();
+}
+
+QString normalizePeerHostValue(const QString &peerHost)
+{
+  const auto trimmed = peerHost.trimmed();
+  if (trimmed.isEmpty())
+    return {};
+
+  if (trimmed.startsWith(QStringLiteral("::ffff:"), Qt::CaseInsensitive)) {
+    const QHostAddress mappedV4(trimmed.mid(7));
+    if (mappedV4.protocol() == QAbstractSocket::IPv4Protocol)
+      return mappedV4.toString();
+  }
+
+  QHostAddress address;
+  if (!address.setAddress(trimmed))
+    return trimmed;
+
+  if (address.protocol() == QAbstractSocket::IPv6Protocol && address.toIPv4Address())
+    return QHostAddress(address.toIPv4Address()).toString();
+
+  return address.toString();
+}
+
+bool removeEmptyDirectories(const QList<QPair<QString, QString>> &transferItems)
+{
+  QSet<QString> candidateDirs;
+  for (const auto &item : transferItems) {
+    const auto relativePath = QDir::fromNativeSeparators(item.second);
+    if (!relativePath.contains('/'))
+      continue;
+
+    const auto rootName = relativePath.section('/', 0, 0);
+    const auto relativeToRoot = relativePath.mid(rootName.size() + 1);
+    QDir dir = QFileInfo(item.first).absoluteDir();
+    const int upCount = relativeToRoot.count('/');
+    for (int i = 0; i < upCount; ++i) {
+      if (!dir.cdUp())
+        break;
+    }
+    candidateDirs.insert(dir.absolutePath());
+  }
+
+  QStringList sortedDirs = candidateDirs.values();
+  std::sort(sortedDirs.begin(), sortedDirs.end(), [](const QString &left, const QString &right) {
+    return left.size() > right.size();
+  });
+
+  bool allRemoved = true;
+  for (const auto &path : sortedDirs) {
+    QDir dir(path);
+    while (dir.exists()) {
+      const auto entries = dir.entryList(QDir::NoDotAndDotDot | QDir::AllEntries);
+      if (!entries.isEmpty())
+        break;
+
+      const auto currentPath = dir.absolutePath();
+      if (!dir.cdUp())
+        break;
+
+      if (!QDir().rmdir(currentPath)) {
+        allRemoved = false;
+        break;
+      }
+    }
+  }
+
+  return allRemoved;
+}
+
+} // namespace
+
+void MainWindow::resetIncomingTransferState(IncomingTransfer &state)
+{
+  const QByteArray pendingBuffer = state.buffer;
+  if (state.file) {
+    state.file->deleteLater();
+  }
+  delete state.hasher;
+  state = IncomingTransfer{};
+  state.buffer = pendingBuffer;
+}
+
+void MainWindow::finishIncomingBatch(QTcpSocket *socket)
+{
+  if (!socket)
+    return;
+
+  auto it = m_incomingBatches.find(socket);
+  if (it == m_incomingBatches.end())
+    return;
+
+  const auto batch = it.value();
+  const bool isBatch = batch.expectedCount > 1;
+  const QString batchName = batch.batchLabel.isEmpty() ? tr("transfer batch") : batch.batchLabel;
+  const QString sizeText = QLocale().formattedDataSize(batch.totalBytes > 0 ? batch.totalBytes : batch.receivedBytes);
+
+  if (m_transferWindow) {
+    if (isBatch) {
+      m_transferWindow->appendEvent(
+          tr("Received batch from %1: %2 (%3 files, %4)")
+              .arg(batch.peerHost, batchName, QString::number(batch.completedCount), sizeText)
+      );
+    } else {
+      m_transferWindow->appendEvent(tr("Received: %1").arg(batchName));
+    }
+
+    if (batch.transferRow >= 0) {
+      m_transferWindow->updateTransfer(batch.transferRow, batch.receivedBytes, batch.totalBytes > 0 ? batch.totalBytes : batch.receivedBytes);
+      m_transferWindow->finishTransfer(batch.transferRow, true, tr("Completed"));
+      if (!batch.openLocation.isEmpty())
+        m_transferWindow->setTransferOpenLocation(batch.transferRow, batch.openLocation);
+    }
+  }
+
+    if (m_trayIcon) {
+      if (isBatch) {
+        m_trayIcon->showMessage(
+          kAppName,
+          tr("Folder received from %1: %2 (%3 files, %4)")
+              .arg(batch.peerHost, batchName, QString::number(batch.completedCount), sizeText),
+          QSystemTrayIcon::Information, 4000
+      );
+    } else {
+      m_trayIcon->showMessage(kAppName, tr("File received: %1").arg(batchName), QSystemTrayIcon::Information, 4000);
+    }
+  }
+
+  m_incomingBatches.erase(it);
+}
 
 MainWindow::MainWindow()
     : ui{std::make_unique<Ui::MainWindow>()},
@@ -76,10 +287,13 @@ MainWindow::MainWindow()
       m_actionTrayQuit{new QAction(this)},
       m_actionRestore{new QAction(this)},
       m_actionSettings{new QAction(this)},
+      m_actionShowTransfers{new QAction(this)},
+      m_actionTransferFiles{new QAction(this)},
       m_actionStartCore{new QAction(this)},
       m_actionRestartCore{new QAction(this)},
       m_actionStopCore{new QAction(this)},
-      m_networkMonitor{new NetworkMonitor(this)}
+      m_networkMonitor{new NetworkMonitor(this)},
+      m_transferWindow{new TransferWindow(this)}
 {
   ui->setupUi(this);
 
@@ -111,6 +325,12 @@ MainWindow::MainWindow()
   m_actionSettings->setIcon(QIcon::fromTheme(QStringLiteral("configure")));
   m_actionSettings->setMenuRole(QAction::PreferencesRole);
 
+  m_actionShowTransfers->setIcon(QIcon::fromTheme(QStringLiteral("view-list-details")));
+  m_actionShowTransfers->setMenuRole(QAction::NoRole);
+
+  m_actionTransferFiles->setIcon(QIcon::fromTheme(QStringLiteral("folder-sync")));
+  m_actionTransferFiles->setMenuRole(QAction::NoRole);
+
   m_actionStartCore->setIcon(QIcon::fromTheme(QStringLiteral("system-run")));
   m_actionStartCore->setMenuRole(QAction::NoRole);
 
@@ -135,6 +355,7 @@ MainWindow::MainWindow()
   connectSlots();
   setupTrayIcon();
   updateScreenName();
+  setupP2PFileTransfer();
 
   qDebug().noquote() << "active settings path:" << Settings::settingsPath();
 
@@ -163,6 +384,9 @@ MainWindow::~MainWindow()
   // Stop network monitoring
   if (m_networkMonitor) {
     m_networkMonitor->stopMonitoring();
+  }
+  if (m_fileTransferServer) {
+    m_fileTransferServer->close();
   }
 
   m_guiDupeChecker->close();
@@ -260,6 +484,8 @@ void MainWindow::connectSlots()
   connect(m_actionTrayQuit, &QAction::triggered, this, &MainWindow::close);
   connect(m_actionRestore, &QAction::triggered, this, &MainWindow::showAndActivate);
   connect(m_actionSettings, &QAction::triggered, this, &MainWindow::openSettings);
+  connect(m_actionShowTransfers, &QAction::triggered, this, &MainWindow::openTransferWindow);
+  connect(m_actionTransferFiles, &QAction::triggered, this, &MainWindow::transferFiles);
   connect(m_actionStartCore, &QAction::triggered, this, &MainWindow::startCore);
   connect(m_actionRestartCore, &QAction::triggered, this, &MainWindow::resetCore);
   connect(m_actionStopCore, &QAction::triggered, this, &MainWindow::stopCore);
@@ -481,6 +707,896 @@ void MainWindow::openSettings()
   }
 }
 
+void MainWindow::openTransferWindow()
+{
+  if (!m_transferWindow)
+    return;
+
+  m_transferWindow->show();
+  m_transferWindow->raise();
+  m_transferWindow->activateWindow();
+}
+
+void MainWindow::transferFiles()
+{
+  openTransferWindow();
+
+  QMessageBox modeDialog(this);
+  modeDialog.setWindowTitle(tr("Transfer mode"));
+  modeDialog.setText(tr("Select how files should be transferred."));
+  auto *copyButton = modeDialog.addButton(tr("Copy"), QMessageBox::AcceptRole);
+  auto *moveButton = modeDialog.addButton(tr("Move"), QMessageBox::ActionRole);
+  auto *cancelButton = modeDialog.addButton(QMessageBox::Cancel);
+  const bool defaultMove = Settings::value(Settings::Gui::FileTransferMoveMode).toBool();
+  modeDialog.setDefaultButton(defaultMove ? static_cast<QPushButton *>(moveButton)
+                                          : static_cast<QPushButton *>(copyButton));
+  modeDialog.exec();
+
+  if (modeDialog.clickedButton() == cancelButton)
+    return;
+
+  const bool moveMode = modeDialog.clickedButton() == moveButton;
+  Settings::setValue(Settings::Gui::FileTransferMoveMode, moveMode);
+
+  QMessageBox sourceDialog(this);
+  sourceDialog.setWindowTitle(tr("Source type"));
+  sourceDialog.setText(tr("What do you want to transfer?"));
+  auto *filesButton = sourceDialog.addButton(tr("Files"), QMessageBox::AcceptRole);
+  auto *folderButton = sourceDialog.addButton(tr("Folder"), QMessageBox::ActionRole);
+  auto *sourceCancelButton = sourceDialog.addButton(QMessageBox::Cancel);
+  sourceDialog.setDefaultButton(static_cast<QPushButton *>(filesButton));
+  sourceDialog.exec();
+
+  if (sourceDialog.clickedButton() == sourceCancelButton)
+    return;
+
+  const bool folderMode = sourceDialog.clickedButton() == folderButton;
+  QList<QPair<QString, QString>> transferItems;
+  QString sourceFolder;
+  if (folderMode) {
+    sourceFolder = QFileDialog::getExistingDirectory(this, tr("Select source folder"));
+    if (sourceFolder.isEmpty())
+      return;
+
+    const QString rootFolderName = QFileInfo(sourceFolder).fileName();
+    QDirIterator it(sourceFolder, QDir::Files, QDirIterator::Subdirectories);
+    QDir baseDir(sourceFolder);
+    while (it.hasNext()) {
+      const auto absolutePath = it.next();
+      const auto nestedPath = baseDir.relativeFilePath(absolutePath).replace('\\', '/');
+      const auto relativePath = QStringLiteral("%1/%2").arg(rootFolderName, nestedPath);
+      transferItems.append({absolutePath, relativePath});
+    }
+  } else {
+    const auto filePaths = QFileDialog::getOpenFileNames(this, tr("Select files to transfer"));
+    for (const auto &path : filePaths)
+      transferItems.append({path, QFileInfo(path).fileName()});
+  }
+
+  if (transferItems.isEmpty()) {
+    QMessageBox::information(this, kAppName, tr("No files were selected for transfer."));
+    return;
+  }
+
+  const QString batchId = QUuid::createUuid().toString(QUuid::WithoutBraces);
+  const QString batchLabel =
+      folderMode ? QFileInfo(sourceFolder).fileName()
+                 : (transferItems.size() == 1 ? transferItems.constFirst().second : tr("%1 selected items").arg(transferItems.size()));
+  qint64 batchBytes = 0;
+  for (const auto &item : transferItems)
+    batchBytes += QFileInfo(item.first).size();
+
+  QString peerHost;
+  quint16 peerPort = transferPort();
+  if (!chooseP2PPeer(&peerHost, &peerPort))
+    return;
+
+  Settings::setValue(Settings::Gui::FileTransferLastPeer, peerHost);
+  if (sendFilesP2P(transferItems, peerHost, peerPort, moveMode, batchId, batchLabel, batchBytes, folderMode)) {
+    QMessageBox::information(
+        this, tr("Transfer complete"),
+        tr("%1 completed successfully.\nItems processed: %2")
+            .arg(moveMode ? tr("Move") : tr("Copy"))
+            .arg(transferItems.size())
+    );
+  }
+}
+
+void MainWindow::setupP2PFileTransfer()
+{
+  m_fileTransferServer = new QTcpServer(this);
+  connect(m_fileTransferServer, &QTcpServer::newConnection, this, &MainWindow::onIncomingP2PConnection);
+
+  if (!m_fileTransferServer->listen(QHostAddress::Any, transferPort())) {
+    qWarning().noquote() << "file transfer server unavailable on port" << transferPort() << ":"
+                         << m_fileTransferServer->errorString();
+    if (m_transferWindow) {
+      m_transferWindow->appendEvent(
+          tr("P2P file transfer listener failed on port %1: %2")
+              .arg(transferPort())
+              .arg(m_fileTransferServer->errorString())
+      );
+    }
+  } else {
+    qInfo().noquote() << "p2p file transfer listening on port" << transferPort();
+    if (m_transferWindow) {
+      m_transferWindow->appendEvent(tr("P2P file transfer listening on TCP port %1").arg(transferPort()));
+    }
+  }
+
+  setupP2PDiscovery();
+}
+
+void MainWindow::setupP2PDiscovery()
+{
+  m_fileTransferDiscoverySocket = new QUdpSocket(this);
+  const bool bound = m_fileTransferDiscoverySocket->bind(
+      QHostAddress::AnyIPv4, transferDiscoveryPort(), QUdpSocket::ShareAddress | QUdpSocket::ReuseAddressHint
+  );
+  if (!bound) {
+    qWarning().noquote() << "p2p discovery unavailable on port" << transferDiscoveryPort() << ":"
+                         << m_fileTransferDiscoverySocket->errorString();
+    if (m_transferWindow) {
+      m_transferWindow->appendEvent(
+          tr("Peer discovery failed on UDP port %1: %2")
+              .arg(transferDiscoveryPort())
+              .arg(m_fileTransferDiscoverySocket->errorString())
+      );
+    }
+    return;
+  }
+
+  connect(m_fileTransferDiscoverySocket, &QUdpSocket::readyRead, this, &MainWindow::handleP2PDiscoveryDatagrams);
+
+  m_fileTransferDiscoveryTimer = new QTimer(this);
+  m_fileTransferDiscoveryTimer->setInterval(3000);
+  connect(m_fileTransferDiscoveryTimer, &QTimer::timeout, this, &MainWindow::announceP2PPresence);
+  m_fileTransferDiscoveryTimer->start();
+  announceP2PPresence();
+}
+
+void MainWindow::announceP2PPresence()
+{
+  if (!m_fileTransferDiscoverySocket)
+    return;
+
+  const auto now = QDateTime::currentDateTimeUtc();
+  for (auto it = m_p2pPeers.begin(); it != m_p2pPeers.end();) {
+    if (it->seenAt.secsTo(now) > 12)
+      it = m_p2pPeers.erase(it);
+    else
+      ++it;
+  }
+
+  const QJsonObject payload = {
+      {QStringLiteral("type"), QStringLiteral("deskflow-p2p-hello")},
+      {QStringLiteral("name"), Settings::value(Settings::Core::ComputerName).toString()},
+      {QStringLiteral("port"), static_cast<int>(transferPort())},
+  };
+  m_fileTransferDiscoverySocket->writeDatagram(toJsonLine(payload), QHostAddress::Broadcast, transferDiscoveryPort());
+}
+
+void MainWindow::handleP2PDiscoveryDatagrams()
+{
+  if (!m_fileTransferDiscoverySocket)
+    return;
+
+  const auto localAddresses = QNetworkInterface::allAddresses();
+
+  while (m_fileTransferDiscoverySocket->hasPendingDatagrams()) {
+    QByteArray datagram;
+    datagram.resize(static_cast<int>(m_fileTransferDiscoverySocket->pendingDatagramSize()));
+    QHostAddress sender;
+    quint16 senderPort = 0;
+    m_fileTransferDiscoverySocket->readDatagram(datagram.data(), datagram.size(), &sender, &senderPort);
+
+    QJsonParseError parseError;
+    const auto doc = QJsonDocument::fromJson(datagram, &parseError);
+    if (parseError.error != QJsonParseError::NoError || !doc.isObject())
+      continue;
+
+    const auto obj = doc.object();
+    if (obj.value(QStringLiteral("type")).toString() != QStringLiteral("deskflow-p2p-hello"))
+      continue;
+
+    const QString host = sender.toString();
+    const quint16 port = static_cast<quint16>(obj.value(QStringLiteral("port")).toInt(transferPort()));
+    if (localAddresses.contains(sender) && port == transferPort())
+      continue;
+
+    P2PPeer peer;
+    peer.name = obj.value(QStringLiteral("name")).toString();
+    peer.host = host;
+    peer.port = port;
+    peer.seenAt = QDateTime::currentDateTimeUtc();
+    m_p2pPeers.insert(QStringLiteral("%1:%2").arg(host).arg(port), peer);
+  }
+}
+
+bool MainWindow::chooseP2PPeer(QString *peerHost, quint16 *peerPort)
+{
+  if (!peerHost || !peerPort)
+    return false;
+
+  const auto now = QDateTime::currentDateTimeUtc();
+  QStringList labels;
+  QList<P2PPeer> livePeers;
+  for (const auto &peer : m_p2pPeers) {
+    if (peer.seenAt.secsTo(now) > 12)
+      continue;
+    livePeers.append(peer);
+    labels.append(QStringLiteral("%1 (%2:%3)").arg(peer.name, peer.host).arg(peer.port));
+  }
+  labels.append(tr("Manual entry"));
+
+  bool ok = false;
+  const auto choice = QInputDialog::getItem(
+      this, tr("Select peer"), tr("Choose destination peer:"), labels, 0, false, &ok
+  );
+  if (!ok || choice.isEmpty())
+    return false;
+
+  const int index = labels.indexOf(choice);
+  if (index >= 0 && index < livePeers.size()) {
+    *peerHost = livePeers.at(index).host;
+    *peerPort = livePeers.at(index).port;
+    return true;
+  }
+
+  const auto lastPeer = Settings::value(Settings::Gui::FileTransferLastPeer).toString();
+  const auto manualHost = QInputDialog::getText(
+      this, tr("Destination peer"), tr("Destination IP or hostname:"), QLineEdit::Normal, lastPeer, &ok
+  );
+  if (!ok || manualHost.trimmed().isEmpty())
+    return false;
+
+  const int manualPort = QInputDialog::getInt(
+      this, tr("Destination port"), tr("Peer transfer port:"), transferPort(), 1024, 65535, 1, &ok
+  );
+  if (!ok)
+    return false;
+
+  *peerHost = manualHost.trimmed();
+  *peerPort = static_cast<quint16>(manualPort);
+  return true;
+}
+
+void MainWindow::onIncomingP2PConnection()
+{
+  while (m_fileTransferServer && m_fileTransferServer->hasPendingConnections()) {
+    auto *socket = m_fileTransferServer->nextPendingConnection();
+    m_incomingTransfers.insert(socket, {});
+    m_incomingBatches.insert(socket, {});
+
+    connect(socket, &QTcpSocket::readyRead, this, [this, socket] { onIncomingP2PData(socket); });
+    connect(socket, &QTcpSocket::disconnected, this, [this, socket] { onIncomingP2PDisconnected(socket); });
+  }
+}
+
+void MainWindow::onIncomingP2PData(QTcpSocket *socket)
+{
+  if (!socket || !m_incomingTransfers.contains(socket))
+    return;
+
+  auto &state = m_incomingTransfers[socket];
+  state.buffer.append(socket->readAll());
+
+  if (!state.headerAccepted) {
+    QJsonObject header;
+    if (!takeJsonLine(state.buffer, &header))
+      return;
+
+    if (header.value(QStringLiteral("type")).toString() != QStringLiteral("offer") ||
+        header.value(QStringLiteral("version")).toInt() != 1) {
+      socket->write(toJsonLine({{QStringLiteral("type"), QStringLiteral("ready")},
+                                {QStringLiteral("ok"), false},
+                                {QStringLiteral("error"), tr("Unsupported protocol")}}));
+      socket->disconnectFromHost();
+      return;
+    }
+
+    const auto size = header.value(QStringLiteral("size")).toVariant().toLongLong();
+    QString relativePath = header.value(QStringLiteral("relPath")).toString();
+    const auto fallbackName = header.value(QStringLiteral("name")).toString();
+    const auto expectedSha256 = QByteArray::fromHex(header.value(QStringLiteral("sha256")).toString().toLatin1());
+
+    if (size < 0 || expectedSha256.size() != 32) {
+      socket->write(toJsonLine({{QStringLiteral("type"), QStringLiteral("ready")},
+                                {QStringLiteral("ok"), false},
+                                {QStringLiteral("error"), tr("Invalid offer")}}));
+      socket->disconnectFromHost();
+      return;
+    }
+
+    if (relativePath.isEmpty())
+      relativePath = fallbackName;
+    relativePath = QDir::cleanPath(relativePath);
+    if (relativePath.isEmpty() || QDir::isAbsolutePath(relativePath) || relativePath.startsWith(QStringLiteral(".."))) {
+      socket->write(toJsonLine({{QStringLiteral("type"), QStringLiteral("ready")},
+                                {QStringLiteral("ok"), false},
+                                {QStringLiteral("error"), tr("Invalid path")}}));
+      socket->disconnectFromHost();
+      return;
+    }
+
+    const auto senderHost = normalizedPeerHost(socket->peerAddress().toString());
+    const QString batchId = header.value(QStringLiteral("batchId")).toString();
+    const QString batchLabel = header.value(QStringLiteral("batchLabel")).toString();
+    const int batchCount = header.value(QStringLiteral("batchCount")).toInt(1);
+    const qint64 batchBytes = header.value(QStringLiteral("batchBytes")).toVariant().toLongLong();
+    const bool rootFolderBatch = header.value(QStringLiteral("rootFolderBatch")).toBool(false);
+    const QString rootFolderName = header.value(QStringLiteral("rootFolderName")).toString();
+    if (!confirmIncomingTransfer(senderHost, relativePath, size, batchId, batchLabel, batchCount, batchBytes)) {
+      socket->write(toJsonLine({{QStringLiteral("type"), QStringLiteral("ready")},
+                                {QStringLiteral("ok"), false},
+                                {QStringLiteral("error"), tr("Peer not approved")}}));
+      socket->disconnectFromHost();
+      return;
+    }
+
+    auto &batch = m_incomingBatches[socket];
+    batch.peerHost = senderHost;
+    if (batch.batchId.isEmpty())
+      batch.batchId = batchId;
+    if (batch.batchLabel.isEmpty())
+      batch.batchLabel = batchLabel.isEmpty() ? relativePath : batchLabel;
+    batch.folderBatch = batch.folderBatch || rootFolderBatch;
+    if (batch.rootFolderName.isEmpty())
+      batch.rootFolderName = rootFolderName;
+    batch.expectedCount = std::max(batch.expectedCount, std::max(1, batchCount));
+    batch.totalBytes = std::max(batch.totalBytes, batchBytes);
+
+    const auto finalPath = destinationPathForIncomingItem(relativePath, batch);
+    const auto tempPath = finalPath + QStringLiteral(".part");
+    auto *file = new QFile(tempPath, this);
+    if (!file->open(QIODevice::WriteOnly)) {
+      delete file;
+      socket->write(toJsonLine({{QStringLiteral("type"), QStringLiteral("ready")},
+                                {QStringLiteral("ok"), false},
+                                {QStringLiteral("error"), tr("Cannot open destination")}}));
+      socket->disconnectFromHost();
+      return;
+    }
+
+    state.file = file;
+    state.hasher = new QCryptographicHash(QCryptographicHash::Sha256);
+    state.remainingBytes = size;
+    state.totalBytes = size;
+    state.expectedSha256 = expectedSha256;
+    state.senderHost = senderHost;
+    state.displayName = relativePath;
+    state.tempPath = tempPath;
+    state.finalPath = finalPath;
+    state.batchId = batchId;
+    state.batchLabel = batchLabel;
+    state.batchCount = std::max(1, batchCount);
+    state.batchBytes = batchBytes;
+    state.headerAccepted = true;
+
+    if (batch.openLocation.isEmpty()) {
+      batch.openLocation = (batch.expectedCount > 1)
+                               ? QFileInfo(batch.rootFinalPath).absolutePath()
+                               : QFileInfo(finalPath).absolutePath();
+    }
+
+    if (m_transferWindow) {
+      if (batch.transferRow < 0) {
+        const QString transferName = (batch.expectedCount > 1) ? batch.batchLabel : relativePath;
+        const qint64 transferSize = (batch.totalBytes > 0) ? batch.totalBytes : size;
+        batch.transferRow = m_transferWindow->addTransfer(tr("Incoming"), transferName, transferSize);
+      }
+      state.transferRow = batch.transferRow;
+      if (!batch.acceptedAnnounced) {
+        if (batch.expectedCount > 1) {
+          m_transferWindow->appendEvent(
+              tr("Incoming batch accepted from %1: %2 (%3 files, %4)")
+                  .arg(
+                      senderHost, batch.batchLabel, QString::number(batch.expectedCount),
+                      QLocale().formattedDataSize(batch.totalBytes > 0 ? batch.totalBytes : batchBytes)
+                  )
+          );
+        } else {
+          m_transferWindow->appendEvent(tr("Incoming transfer accepted from %1: %2").arg(senderHost, relativePath));
+        }
+        if (!batch.openLocation.isEmpty())
+          m_transferWindow->setTransferOpenLocation(batch.transferRow, batch.openLocation);
+        batch.acceptedAnnounced = true;
+      }
+      if (!m_transferWindow->isVisible())
+        m_transferWindow->show();
+    }
+
+    if (m_trayIcon && !batch.acceptedAnnounced) {
+      m_trayIcon->showMessage(
+          kAppName, tr("Receiving file from %1: %2").arg(senderHost, relativePath), QSystemTrayIcon::Information, 4000
+      );
+    }
+
+    socket->write(toJsonLine({{QStringLiteral("type"), QStringLiteral("ready")}, {QStringLiteral("ok"), true}}));
+  }
+
+  while (state.headerAccepted && state.remainingBytes > 0 && !state.buffer.isEmpty()) {
+    const qint64 chunkSize = std::min<qint64>(state.remainingBytes, state.buffer.size());
+    const auto written = state.file->write(state.buffer.constData(), chunkSize);
+    if (written <= 0) {
+      socket->write(toJsonLine({{QStringLiteral("type"), QStringLiteral("result")},
+                                {QStringLiteral("ok"), false},
+                                {QStringLiteral("error"), tr("Write error")}}));
+      onIncomingP2PDisconnected(socket);
+      socket->disconnectFromHost();
+      return;
+    }
+
+    if (state.hasher) {
+      state.hasher->addData(QByteArrayView{state.buffer.constData(), written});
+    }
+
+    state.buffer.remove(0, static_cast<int>(written));
+    state.remainingBytes -= written;
+
+    auto batch = m_incomingBatches.find(socket);
+    if (m_transferWindow && batch != m_incomingBatches.end() && batch->transferRow >= 0) {
+      const qint64 fileDone = state.totalBytes - state.remainingBytes;
+      batch->inFlightBytes = batch->receivedBytes + fileDone;
+      m_transferWindow->updateTransfer(
+          batch->transferRow, batch->inFlightBytes, batch->totalBytes > 0 ? batch->totalBytes : batch->inFlightBytes
+      );
+    }
+  }
+
+  if (!state.headerAccepted || state.remainingBytes != 0)
+    return;
+
+  state.file->flush();
+  state.file->close();
+
+  const auto actualSha256 = state.hasher ? state.hasher->result() : QByteArray();
+
+  if (actualSha256.isEmpty() || actualSha256 != state.expectedSha256) {
+    QFile::remove(state.tempPath);
+    socket->write(toJsonLine({{QStringLiteral("type"), QStringLiteral("result")},
+                              {QStringLiteral("ok"), false},
+                              {QStringLiteral("error"), tr("Checksum mismatch")}}));
+    auto batch = m_incomingBatches.find(socket);
+    if (m_transferWindow && batch != m_incomingBatches.end() && batch->transferRow >= 0) {
+      m_transferWindow->finishTransfer(batch->transferRow, false, tr("Checksum mismatch"));
+      m_transferWindow->appendEvent(tr("Incoming transfer failed checksum validation: %1").arg(state.displayName));
+    }
+    resetIncomingTransferState(state);
+    socket->disconnectFromHost();
+    return;
+  }
+
+  if (!QFile::rename(state.tempPath, state.finalPath)) {
+    QFile::remove(state.tempPath);
+    socket->write(toJsonLine({{QStringLiteral("type"), QStringLiteral("result")},
+                              {QStringLiteral("ok"), false},
+                              {QStringLiteral("error"), tr("Cannot finalize destination file")}}));
+    auto batch = m_incomingBatches.find(socket);
+    if (m_transferWindow && batch != m_incomingBatches.end() && batch->transferRow >= 0) {
+      m_transferWindow->finishTransfer(batch->transferRow, false, tr("Finalize failed"));
+      m_transferWindow->appendEvent(tr("Incoming transfer could not be finalized: %1").arg(state.displayName));
+    }
+    resetIncomingTransferState(state);
+    socket->disconnectFromHost();
+    return;
+  }
+
+  socket->write(toJsonLine({{QStringLiteral("type"), QStringLiteral("result")}, {QStringLiteral("ok"), true}}));
+
+  auto batch = m_incomingBatches.find(socket);
+  if (batch != m_incomingBatches.end()) {
+    batch->completedCount += 1;
+    batch->receivedBytes += state.totalBytes;
+    batch->inFlightBytes = batch->receivedBytes;
+    if (batch->transferRow >= 0) {
+      m_transferWindow->updateTransfer(
+          batch->transferRow, batch->receivedBytes, batch->totalBytes > 0 ? batch->totalBytes : batch->receivedBytes
+      );
+    }
+    if (batch->expectedCount <= 1 || batch->completedCount >= batch->expectedCount) {
+      finishIncomingBatch(socket);
+    }
+  }
+
+  resetIncomingTransferState(state);
+  if (!state.buffer.isEmpty()) {
+    onIncomingP2PData(socket);
+  }
+}
+
+void MainWindow::onIncomingP2PDisconnected(QTcpSocket *socket)
+{
+  if (!socket)
+    return;
+
+  auto it = m_incomingTransfers.find(socket);
+  if (it != m_incomingTransfers.end()) {
+    const auto state = it.value();
+    if (state.file) {
+      state.file->close();
+      state.file->deleteLater();
+    }
+    delete state.hasher;
+    if (!state.tempPath.isEmpty())
+      QFile::remove(state.tempPath);
+    auto batch = m_incomingBatches.find(socket);
+    if (m_transferWindow && batch != m_incomingBatches.end() && batch->transferRow >= 0 && state.headerAccepted &&
+        state.remainingBytes > 0) {
+      m_transferWindow->updateTransfer(
+          batch->transferRow, batch->receivedBytes + (state.totalBytes - state.remainingBytes),
+          batch->totalBytes > 0 ? batch->totalBytes : (batch->receivedBytes + (state.totalBytes - state.remainingBytes))
+      );
+      m_transferWindow->finishTransfer(batch->transferRow, false, tr("Failed"));
+      m_transferWindow->appendEvent(tr("Incoming transfer failed: %1").arg(state.displayName));
+    }
+    m_incomingTransfers.erase(it);
+  }
+
+  m_incomingBatches.remove(socket);
+
+  socket->deleteLater();
+}
+
+bool MainWindow::sendFilesP2P(
+    const QList<QPair<QString, QString>> &transferItems, const QString &peerHost, quint16 peerPort, bool moveMode,
+    const QString &batchId, const QString &batchLabel, qint64 batchBytes, bool folderMode
+)
+{
+  QProgressDialog progress(tr("Sending files..."), tr("Cancel"), 0, transferItems.size(), this);
+  progress.setWindowModality(Qt::WindowModal);
+  progress.setMinimumDuration(0);
+
+  QStringList failures;
+  int sentCount = 0;
+  QByteArray responseBuffer;
+  QTcpSocket socket;
+  socket.setSocketOption(QAbstractSocket::LowDelayOption, 1);
+  const bool isBatch = transferItems.size() > 1;
+  const QString transferName =
+      isBatch ? batchLabel : (transferItems.isEmpty() ? QString() : transferItems.first().second);
+  const qint64 transferSize =
+      isBatch ? batchBytes : (transferItems.isEmpty() ? 0 : QFileInfo(transferItems.first().first).size());
+  qint64 batchSentBytes = 0;
+  constexpr qint64 kSendChunkSize = 4 * 1024 * 1024;
+  constexpr qint64 kMaxBufferedBytes = 8 * 1024 * 1024;
+  const int batchRow = m_transferWindow ? m_transferWindow->addTransfer(tr("Outgoing"), transferName, transferSize) : -1;
+
+  socket.connectToHost(peerHost, peerPort);
+  if (!socket.waitForConnected(8000)) {
+    if (m_transferWindow && batchRow >= 0)
+      m_transferWindow->finishTransfer(batchRow, false, tr("Connect failed"));
+    QMessageBox::warning(this, tr("P2P transfer failed"), tr("Cannot connect to %1:%2").arg(peerHost).arg(peerPort));
+    return false;
+  }
+
+  if (m_transferWindow && !m_transferWindow->isVisible())
+    m_transferWindow->show();
+
+  for (int i = 0; i < transferItems.size(); ++i) {
+    if (progress.wasCanceled()) {
+      failures << tr("Transfer canceled by user.");
+      break;
+    }
+
+    const auto &item = transferItems.at(i);
+    QFile file(item.first);
+    if (!file.open(QIODevice::ReadOnly)) {
+      failures << tr("Cannot open source file: %1").arg(item.first);
+      continue;
+    }
+
+    const auto sha256 = fileSha256(file);
+    if (sha256.isEmpty()) {
+      failures << tr("Cannot hash source file: %1").arg(item.first);
+      if (m_transferWindow && batchRow >= 0)
+        m_transferWindow->finishTransfer(batchRow, false, tr("Hash failed"));
+      continue;
+    }
+    file.seek(0);
+
+    progress.setLabelText(tr("Sending %1").arg(item.second));
+    progress.setValue(i);
+    QCoreApplication::processEvents();
+
+    const QJsonObject offer = {
+        {QStringLiteral("type"), QStringLiteral("offer")},
+        {QStringLiteral("version"), 1},
+        {QStringLiteral("name"), QFileInfo(item.first).fileName()},
+        {QStringLiteral("relPath"), item.second},
+        {QStringLiteral("size"), static_cast<qint64>(file.size())},
+        {QStringLiteral("sha256"), QString::fromLatin1(sha256.toHex())},
+        {QStringLiteral("senderName"), Settings::value(Settings::Core::ComputerName).toString()},
+        {QStringLiteral("moveRequested"), moveMode},
+        {QStringLiteral("batchId"), batchId},
+        {QStringLiteral("batchLabel"), batchLabel},
+        {QStringLiteral("batchCount"), transferItems.size()},
+        {QStringLiteral("batchBytes"), batchBytes},
+        {QStringLiteral("rootFolderBatch"), folderMode},
+        {QStringLiteral("rootFolderName"), folderMode ? batchLabel : QString()},
+    };
+    const auto offerData = toJsonLine(offer);
+    if (socket.write(offerData) != offerData.size() || !socket.waitForBytesWritten(5000)) {
+      failures << tr("Failed sending offer for: %1").arg(item.second);
+      if (m_transferWindow && batchRow >= 0)
+        m_transferWindow->finishTransfer(batchRow, false, tr("Offer failed"));
+      continue;
+    }
+
+    QJsonObject readyReply;
+    if (!waitForJsonLine(&socket, &responseBuffer, &readyReply, 10000) ||
+        readyReply.value(QStringLiteral("type")).toString() != QStringLiteral("ready") ||
+        !readyReply.value(QStringLiteral("ok")).toBool()) {
+      const auto errorText = readyReply.value(QStringLiteral("error")).toString();
+      failures << tr("Peer rejected transfer for %1: %2").arg(item.second, errorText.isEmpty() ? tr("No reason") : errorText);
+      if (m_transferWindow && batchRow >= 0)
+        m_transferWindow->finishTransfer(batchRow, false, tr("Peer rejected"));
+      socket.disconnectFromHost();
+      break;
+    }
+
+    bool fileFailed = false;
+    while (!file.atEnd()) {
+      if (progress.wasCanceled()) {
+        failures << tr("Transfer canceled by user.");
+        fileFailed = true;
+        break;
+      }
+
+      const auto chunk = file.read(kSendChunkSize);
+      if (chunk.isEmpty() && file.error() != QFile::NoError) {
+        failures << tr("Read error for: %1").arg(item.second);
+        fileFailed = true;
+        break;
+      }
+      if (socket.write(chunk) != chunk.size()) {
+        failures << tr("Network error while sending: %1").arg(item.second);
+        fileFailed = true;
+        break;
+      }
+      if (socket.bytesToWrite() >= kMaxBufferedBytes && !socket.waitForBytesWritten(10000)) {
+        failures << tr("Network error while sending: %1").arg(item.second);
+        fileFailed = true;
+        break;
+      }
+
+      batchSentBytes += chunk.size();
+      if (m_transferWindow && batchRow >= 0)
+        m_transferWindow->updateTransfer(batchRow, batchSentBytes, transferSize > 0 ? transferSize : batchSentBytes);
+    }
+
+    if (fileFailed) {
+      if (m_transferWindow && batchRow >= 0)
+        m_transferWindow->finishTransfer(batchRow, false, tr("Transfer failed"));
+      break;
+    }
+
+    if (socket.bytesToWrite() > 0 && !socket.waitForBytesWritten(15000)) {
+      failures << tr("Network error while sending: %1").arg(item.second);
+      if (m_transferWindow && batchRow >= 0)
+        m_transferWindow->finishTransfer(batchRow, false, tr("Transfer failed"));
+      break;
+    }
+
+    QJsonObject resultReply;
+    if (!waitForJsonLine(&socket, &responseBuffer, &resultReply, 10000) ||
+        resultReply.value(QStringLiteral("type")).toString() != QStringLiteral("result") ||
+        !resultReply.value(QStringLiteral("ok")).toBool()) {
+      const auto errorText = resultReply.value(QStringLiteral("error")).toString();
+      failures << tr("Peer failed to finalize %1: %2").arg(item.second, errorText.isEmpty() ? tr("No reason") : errorText);
+      if (m_transferWindow && batchRow >= 0)
+        m_transferWindow->finishTransfer(batchRow, false, tr("Finalize rejected"));
+      break;
+    }
+
+    if (moveMode && !QFile::remove(item.first)) {
+      failures << tr("Transferred but could not remove source file: %1").arg(item.first);
+    }
+
+    ++sentCount;
+  }
+
+  progress.setValue(transferItems.size());
+  socket.disconnectFromHost();
+  socket.waitForDisconnected(2000);
+
+  if (failures.isEmpty()) {
+    if (moveMode && !removeEmptyDirectories(transferItems)) {
+      failures << tr("Transferred but could not remove some empty source folders.");
+    }
+  }
+
+  if (failures.isEmpty()) {
+    if (m_transferWindow && batchRow >= 0) {
+      m_transferWindow->updateTransfer(batchRow, batchSentBytes, transferSize > 0 ? transferSize : batchSentBytes);
+      m_transferWindow->finishTransfer(batchRow, true, tr("Completed"));
+      if (isBatch) {
+        m_transferWindow->appendEvent(
+            tr("Sent batch to %1:%2: %3 (%4 files, %5)")
+                .arg(peerHost)
+                .arg(peerPort)
+                .arg(transferName, QString::number(transferItems.size()), QLocale().formattedDataSize(transferSize))
+        );
+      } else {
+        m_transferWindow->appendEvent(tr("Sent to %1:%2: %3").arg(peerHost).arg(peerPort).arg(transferName));
+      }
+    }
+    return true;
+  }
+
+  QMessageBox::warning(
+      this, tr("P2P transfer finished with errors"),
+      tr("Sent: %1 of %2\n\n%3").arg(sentCount).arg(transferItems.size()).arg(failures.join('\n'))
+  );
+  return false;
+}
+
+QString MainWindow::transferReceiveDirectory() const
+{
+  auto path = Settings::value(Settings::Gui::FileTransferReceiveDir).toString().trimmed();
+  if (path.isEmpty())
+    path = Settings::defaultValue(Settings::Gui::FileTransferReceiveDir).toString();
+  return path;
+}
+
+quint16 MainWindow::transferPort() const
+{
+  const auto port = Settings::value(Settings::Gui::FileTransferP2PPort).toInt();
+  if (port < 1024 || port > 65535)
+    return 24801;
+  return static_cast<quint16>(port);
+}
+
+quint16 MainWindow::transferDiscoveryPort() const
+{
+  return 24802;
+}
+
+bool MainWindow::isApprovedTransferPeer(const QString &peerHost) const
+{
+  const auto normalizedHost = normalizedPeerHost(peerHost);
+  const auto peers = Settings::value(Settings::Gui::FileTransferApprovedPeers).toStringList();
+  for (const auto &peer : peers) {
+    if (normalizedPeerHost(peer) == normalizedHost)
+      return true;
+  }
+  return false;
+}
+
+void MainWindow::approveTransferPeer(const QString &peerHost)
+{
+  const auto normalizedHost = normalizedPeerHost(peerHost);
+  auto peers = Settings::value(Settings::Gui::FileTransferApprovedPeers).toStringList();
+  for (const auto &peer : peers) {
+    if (normalizedPeerHost(peer) == normalizedHost)
+      return;
+  }
+
+  peers.append(normalizedHost);
+  Settings::setValue(Settings::Gui::FileTransferApprovedPeers, peers);
+}
+
+bool MainWindow::confirmIncomingTransfer(
+    const QString &peerHost, const QString &displayName, qint64 totalBytes, const QString &batchId,
+    const QString &batchLabel, int batchCount, qint64 batchBytes
+)
+{
+  const auto normalizedHost = normalizedPeerHost(peerHost);
+  if (isApprovedTransferPeer(normalizedHost))
+    return true;
+
+  const QString normalizedBatchId = batchId.trimmed();
+  const QString batchKey =
+      normalizedBatchId.isEmpty() ? QString() : QStringLiteral("%1|%2").arg(normalizedHost, normalizedBatchId);
+  if (!batchKey.isEmpty() && m_batchApprovalCache.contains(batchKey))
+    return m_batchApprovalCache.value(batchKey);
+
+  QMessageBox prompt(nullptr);
+  prompt.setIcon(QMessageBox::Question);
+  prompt.setWindowTitle(tr("Approve incoming transfer"));
+  prompt.setWindowFlag(Qt::WindowStaysOnTopHint, true);
+  const bool isBatch = (batchCount > 1);
+  if (isBatch) {
+    prompt.setText(
+        tr("Allow %1 to send \"%2\" (%3 files, %4)?")
+            .arg(
+                normalizedHost, batchLabel.isEmpty() ? displayName : batchLabel, QString::number(batchCount),
+                QLocale().formattedDataSize(batchBytes > 0 ? batchBytes : totalBytes)
+            )
+    );
+  } else {
+    prompt.setText(
+        tr("Allow %1 to send \"%2\" (%3)?")
+            .arg(normalizedHost, displayName, QLocale().formattedDataSize(totalBytes))
+    );
+  }
+  auto *acceptButton = prompt.addButton(tr("Accept transfer"), QMessageBox::AcceptRole);
+  auto *rejectButton = prompt.addButton(tr("Reject"), QMessageBox::RejectRole);
+  auto *cancelButton = prompt.addButton(tr("Cancel"), QMessageBox::DestructiveRole);
+  prompt.setDefaultButton(static_cast<QPushButton *>(acceptButton));
+
+  QCheckBox remember(tr("Remember this peer for future transfers"), &prompt);
+  prompt.setCheckBox(&remember);
+
+  prompt.exec();
+  const bool accepted = (prompt.clickedButton() == acceptButton);
+  if (!batchKey.isEmpty())
+    m_batchApprovalCache.insert(batchKey, accepted);
+
+  if (!accepted || prompt.clickedButton() == cancelButton)
+    return false;
+
+  if (remember.isChecked())
+    approveTransferPeer(normalizedHost);
+
+  return true;
+}
+
+QString MainWindow::normalizedPeerHost(const QString &peerHost) const
+{
+  return normalizePeerHostValue(peerHost);
+}
+
+QString MainWindow::uniqueDestinationPath(const QString &relativePath, bool directoryHint) const
+{
+  QDir rootDir(transferReceiveDirectory());
+  rootDir.mkpath(QStringLiteral("."));
+
+  QString destinationPath = rootDir.filePath(relativePath);
+  QFileInfo destinationInfo(destinationPath);
+  QDir().mkpath(destinationInfo.absolutePath());
+
+  if (!destinationInfo.exists())
+    return destinationPath;
+
+  const auto entryName = destinationInfo.fileName();
+  const auto baseName = directoryHint ? entryName : destinationInfo.completeBaseName();
+  const auto suffix = directoryHint ? QString() : destinationInfo.completeSuffix();
+  int counter = 1;
+  do {
+    const auto candidateName = suffix.isEmpty() ? QStringLiteral("%1 (%2)").arg(baseName).arg(counter)
+                                                : QStringLiteral("%1 (%2).%3").arg(baseName).arg(counter).arg(suffix);
+    destinationPath = QDir(destinationInfo.absolutePath()).filePath(candidateName);
+    destinationInfo.setFile(destinationPath);
+    ++counter;
+  } while (destinationInfo.exists());
+
+  return destinationPath;
+}
+
+QString MainWindow::destinationPathForIncomingItem(const QString &relativePath, IncomingBatch &batch) const
+{
+  const auto normalizedPath = QDir::fromNativeSeparators(relativePath);
+  const int slashIndex = normalizedPath.indexOf('/');
+  const bool isFolderTransfer = batch.folderBatch || slashIndex > 0;
+  if (!isFolderTransfer)
+    return uniqueDestinationPath(relativePath);
+
+  QString rootName = batch.rootFolderName;
+  if (rootName.isEmpty())
+    rootName = (slashIndex > 0) ? normalizedPath.left(slashIndex) : batch.batchLabel;
+
+  QString remainder = normalizedPath;
+  if (!rootName.isEmpty()) {
+    const QString prefix = rootName + '/';
+    if (normalizedPath.startsWith(prefix))
+      remainder = normalizedPath.mid(prefix.size());
+  } else if (slashIndex > 0) {
+    rootName = normalizedPath.left(slashIndex);
+    remainder = normalizedPath.mid(slashIndex + 1);
+  }
+
+  if (rootName.isEmpty() || remainder.isEmpty())
+    return uniqueDestinationPath(relativePath, false);
+
+  if (batch.rootFinalPath.isEmpty())
+    batch.rootFinalPath = uniqueDestinationPath(rootName, true);
+
+  const auto absolutePath = QDir(batch.rootFinalPath).filePath(remainder);
+  QDir().mkpath(QFileInfo(absolutePath).absolutePath());
+  return absolutePath;
+}
+
 void MainWindow::resetCore()
 {
   m_coreProcess.restart();
@@ -604,9 +1720,9 @@ void MainWindow::serverConnectionConfigureClient(const QString &clientName)
 // End slots
 //////////////////////////////////////////////////////////////////////////////
 
-void MainWindow::open()
+void MainWindow::open(bool startHidden)
 {
-  if (!Settings::value(Settings::Gui::Autohide).toBool())
+  if (!startHidden && !Settings::value(Settings::Gui::Autohide).toBool())
     showAndActivate();
   else if (deskflow::platform::isMac())
     // macOS to call hide after this function ends
@@ -643,6 +1759,11 @@ void MainWindow::open()
 
 void MainWindow::createMenuBar()
 {
+  if (m_actionTransferFiles->isVisible()) {
+    m_menuFile->addAction(m_actionShowTransfers);
+    m_menuFile->addAction(m_actionTransferFiles);
+    m_menuFile->addSeparator();
+  }
   m_menuFile->addAction(m_actionStartCore);
   m_menuFile->addAction(m_actionRestartCore);
   m_menuFile->addAction(m_actionStopCore);
@@ -670,6 +1791,10 @@ void MainWindow::createMenuBar()
 void MainWindow::setupTrayIcon()
 {
   auto trayMenu = new QMenu(this);
+  if (m_actionTransferFiles->isVisible()) {
+    trayMenu->addAction(m_actionShowTransfers);
+    trayMenu->addAction(m_actionTransferFiles);
+  }
   trayMenu->addActions(
       {m_actionStartCore, m_actionRestartCore, m_actionStopCore, m_actionMinimize, m_actionRestore, m_actionTrayQuit}
   );
@@ -1039,6 +2164,8 @@ void MainWindow::updateText()
   //: %1 will be the replaced with the appname
   m_actionRestore->setText(tr("&Open %1").arg(kAppName));
   m_actionSettings->setText(tr("&Preferences"));
+  m_actionShowTransfers->setText(tr("Open &Transfers"));
+  m_actionTransferFiles->setText(tr("Transfer &Files..."));
   m_actionStartCore->setText(tr("&Start"));
   m_actionRestartCore->setText(tr("Rest&art"));
   m_actionStopCore->setText(tr("S&top"));

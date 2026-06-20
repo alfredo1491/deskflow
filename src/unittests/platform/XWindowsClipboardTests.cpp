@@ -29,7 +29,7 @@ void XWindowsClipboardTests::defaultCtor()
 }
 
 // Only work on XWindows
-#if !WINAPI_LIBEI && !WINAPI_PORTAL
+#if !WINAPI_LIBEI && !WINAPI_LIBPORTAL
 void XWindowsClipboardTests::initTestCase()
 {
   m_display = XOpenDisplay(nullptr);

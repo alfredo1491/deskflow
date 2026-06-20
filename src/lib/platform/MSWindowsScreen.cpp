@@ -655,6 +655,7 @@ void MSWindowsScreen::fakeInputEnd()
   assert(m_isPrimary);
 
   m_desks->fakeInputEnd();
+  m_keyState->clearStaleModifiers();
   if (!m_isOnScreen) {
     m_keyState->useSavedModifiers(false);
   }
@@ -742,6 +743,7 @@ bool MSWindowsScreen::fakeKeyUp(KeyButton button)
 void MSWindowsScreen::fakeAllKeysUp()
 {
   PlatformScreen::fakeAllKeysUp();
+  m_keyState->clearStaleModifiers();
   updateMouseKeys();
 }
 

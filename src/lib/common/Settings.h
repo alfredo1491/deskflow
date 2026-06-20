@@ -86,6 +86,12 @@ public:
     inline static const auto ShownServerFirstStartMessage = QStringLiteral("gui/shownServerFirstStartMessage");
     inline static const auto ShowVersionInTitle = QStringLiteral("gui/showVersionInTitle");
     inline static const auto IgnoreMissingKeyboardLayouts = QStringLiteral("gui/ignoreMissingKeyboardLayouts");
+    inline static const auto FileTransferDestination = QStringLiteral("gui/fileTransferDestination");
+    inline static const auto FileTransferMoveMode = QStringLiteral("gui/fileTransferMoveMode");
+    inline static const auto FileTransferP2PPort = QStringLiteral("gui/fileTransferP2PPort");
+    inline static const auto FileTransferReceiveDir = QStringLiteral("gui/fileTransferReceiveDir");
+    inline static const auto FileTransferLastPeer = QStringLiteral("gui/fileTransferLastPeer");
+    inline static const auto FileTransferApprovedPeers = QStringLiteral("gui/fileTransferApprovedPeers");
   };
   struct Log
   {
@@ -245,6 +251,12 @@ private:
     , Settings::Gui::ShownServerFirstStartMessage
     , Settings::Gui::ShowVersionInTitle
     , Settings::Gui::IgnoreMissingKeyboardLayouts
+    , Settings::Gui::FileTransferDestination
+    , Settings::Gui::FileTransferMoveMode
+    , Settings::Gui::FileTransferP2PPort
+    , Settings::Gui::FileTransferReceiveDir
+    , Settings::Gui::FileTransferLastPeer
+    , Settings::Gui::FileTransferApprovedPeers
     , Settings::Security::Certificate
     , Settings::Security::CheckPeers
     , Settings::Security::KeySize
@@ -261,6 +273,7 @@ private:
     , Settings::Gui::ShownServerFirstStartMessage
     , Settings::Gui::ShowVersionInTitle
     , Settings::Gui::IgnoreMissingKeyboardLayouts
+    , Settings::Gui::FileTransferMoveMode
     , Settings::Core::PreventSleep
     , Settings::Core::UseWlClipboard
     , Settings::Core::EnableEnterCommand

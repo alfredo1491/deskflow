@@ -14,6 +14,8 @@
 #include "platform/MSWindowsDesks.h"
 #include "platform/MSWindowsHandle.h"
 
+#include <algorithm>
+
 // extended mouse buttons
 #if !defined(VK_XBUTTON1)
 #define VK_XBUTTON1 0x05
@@ -611,6 +613,7 @@ void MSWindowsKeyState::disable()
     m_fixTimer = nullptr;
   }
   m_lastDown = 0;
+  m_unicodeServerKeys.clear();
 }
 
 KeyButton MSWindowsKeyState::virtualKeyToButton(UINT virtualKey) const
@@ -739,6 +742,18 @@ void MSWindowsKeyState::sendKeyEvent(
 
 void MSWindowsKeyState::fakeKeyDown(KeyID id, KeyModifierMask mask, KeyButton button, const std::string &lang)
 {
+  const auto serverButton = static_cast<KeyButton>(button & (IKeyState::s_numButtons - 1));
+  if (m_unicodeServerKeys.contains(serverButton)) {
+    sendUnicodeInput(id, 1);
+    return;
+  }
+
+  if (shouldUseUnicodeInput(id, mask)) {
+    sendUnicodeInput(id, 1);
+    m_unicodeServerKeys.insert(serverButton);
+    return;
+  }
+
   KeyState::fakeKeyDown(id, mask, button, lang);
 }
 
@@ -746,7 +761,66 @@ bool MSWindowsKeyState::fakeKeyRepeat(
     KeyID id, KeyModifierMask mask, int32_t count, KeyButton button, const std::string &lang
 )
 {
+  const auto serverButton = static_cast<KeyButton>(button & (IKeyState::s_numButtons - 1));
+  if (m_unicodeServerKeys.contains(serverButton)) {
+    sendUnicodeInput(id, static_cast<uint32_t>(std::max(count, 0)));
+    return true;
+  }
+
   return KeyState::fakeKeyRepeat(id, mask, count, button, lang);
+}
+
+bool MSWindowsKeyState::fakeKeyUp(KeyButton button)
+{
+  const auto serverButton = static_cast<KeyButton>(button & (IKeyState::s_numButtons - 1));
+  if (m_unicodeServerKeys.erase(serverButton) != 0) {
+    return true;
+  }
+
+  return KeyState::fakeKeyUp(button);
+}
+
+void MSWindowsKeyState::fakeAllKeysUp()
+{
+  m_unicodeServerKeys.clear();
+  KeyState::fakeAllKeysUp();
+}
+
+bool MSWindowsKeyState::shouldUseUnicodeInput(KeyID id, KeyModifierMask mask) const
+{
+  constexpr KeyModifierMask commandModifiers =
+      KeyModifierControl | KeyModifierAlt | KeyModifierMeta | KeyModifierSuper | KeyModifierAltGr;
+
+  if ((mask & commandModifiers) != 0) {
+    return false;
+  }
+
+  // Non-ASCII text may otherwise be synthesized as a dead-key sequence.
+  // Injecting the final UTF-16 character avoids leaving composition state in
+  // Chromium/Electron editors while physical keys remain available for shortcuts.
+  return id >= 0x80 && id <= 0x10ffff && !(id >= 0xd800 && id <= 0xdfff) && !(id >= 0xe000 && id <= 0xefff);
+}
+
+void MSWindowsKeyState::sendUnicodeInput(KeyID id, uint32_t count) const
+{
+  WCHAR utf16[2] = {};
+  size_t length = 1;
+
+  if (id <= 0xffff) {
+    utf16[0] = static_cast<WCHAR>(id);
+  } else {
+    const auto value = id - 0x10000;
+    utf16[0] = static_cast<WCHAR>(0xd800 + (value >> 10));
+    utf16[1] = static_cast<WCHAR>(0xdc00 + (value & 0x3ff));
+    length = 2;
+  }
+
+  for (uint32_t repeat = 0; repeat < count; ++repeat) {
+    for (size_t index = 0; index < length; ++index) {
+      m_desks->fakeKeyEvent(0, utf16[index], KEYEVENTF_UNICODE, false);
+      m_desks->fakeKeyEvent(0, utf16[index], KEYEVENTF_UNICODE | KEYEVENTF_KEYUP, false);
+    }
+  }
 }
 
 // We must use SendSAS (Secure Attention Sequence) to simulate Ctrl+Alt+Del (since Windows Vista).
@@ -856,6 +930,22 @@ void MSWindowsKeyState::pollPressedKeys(KeyButtonSet &pressedKeys) const
         pressedKeys.insert(keyButton);
       }
     }
+  }
+}
+
+void MSWindowsKeyState::clearStaleModifiers()
+{
+  if (m_ToUnicodeEx == nullptr || m_keyLayout == nullptr)
+    return;
+
+  BYTE emptyState[256] = {};
+  WCHAR buffer[4] = {};
+  const UINT scanCode = MapVirtualKeyEx(VK_SPACE, MAPVK_VK_TO_VSC, m_keyLayout);
+  for (int attempt = 0; attempt < 4; ++attempt) {
+    if (m_ToUnicodeEx(
+            VK_SPACE, scanCode, emptyState, buffer, static_cast<int>(sizeof(buffer) / sizeof(buffer[0])), 0, m_keyLayout
+        ) >= 0)
+      break;
   }
 }
 

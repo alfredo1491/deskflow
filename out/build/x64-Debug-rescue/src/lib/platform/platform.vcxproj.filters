@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\platform\platform_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsClipboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsClipboardAnyTextConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsClipboardBitmapConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsClipboardFacade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsClipboardHTMLConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsClipboardUTF16Converter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsDebugOutputter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsDesks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsEventQueueBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsHook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsKeyState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsPowerManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsScreenSaver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsWatchdog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\platform\platform_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\platform\platform_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\platform\platform_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\IMSWindowsClipboardFacade.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsClipboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsClipboardAnyTextConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsClipboardBitmapConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsClipboardFacade.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsClipboardHTMLConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsClipboardUTF16Converter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsDebugOutputter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsDesks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsEventQueueBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsHook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsKeyState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsPowerManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsScreenSaver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\MSWindowsWatchdog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\platform\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{C715E4F5-38E1-3D1D-81BF-1FF76FF9A61F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7250E866-B9B2-3E40-ADDB-916849B8D404}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,556 @@
+{
+	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
+	"BUILD_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/app_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow",
+	"CMAKE_EXECUTABLE" : "C:/Program Files/CMake/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/CMakeLists.txt"
+	],
+	"CMAKE_SOURCE_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/App.h",
+			"MU",
+			"EWIEGA46WW/moc_App.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/AppUtil.h",
+			"MU",
+			"EWIEGA46WW/moc_AppUtil.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/Chunk.h",
+			"MU",
+			"EWIEGA46WW/moc_Chunk.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ClientApp.h",
+			"MU",
+			"EWIEGA46WW/moc_ClientApp.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/Clipboard.h",
+			"MU",
+			"EWIEGA46WW/moc_Clipboard.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ClipboardChunk.h",
+			"MU",
+			"EWIEGA46WW/moc_ClipboardChunk.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ClipboardTypes.h",
+			"MU",
+			"EWIEGA46WW/moc_ClipboardTypes.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/DeskflowException.h",
+			"MU",
+			"EWIEGA46WW/moc_DeskflowException.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/DisplayInvalidException.h",
+			"MU",
+			"EWIEGA46WW/moc_DisplayInvalidException.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/IApp.h",
+			"MU",
+			"EWIEGA46WW/moc_IApp.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/IClient.h",
+			"MU",
+			"EWIEGA46WW/moc_IClient.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/IClipboard.h",
+			"MU",
+			"EWIEGA46WW/moc_IClipboard.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/IKeyState.h",
+			"MU",
+			"EWIEGA46WW/moc_IKeyState.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/IPlatformScreen.h",
+			"MU",
+			"EWIEGA46WW/moc_IPlatformScreen.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/IPrimaryScreen.h",
+			"MU",
+			"EWIEGA46WW/moc_IPrimaryScreen.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/IScreen.h",
+			"MU",
+			"EWIEGA46WW/moc_IScreen.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/IScreenSaver.h",
+			"MU",
+			"EWIEGA46WW/moc_IScreenSaver.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ISecondaryScreen.h",
+			"MU",
+			"EWIEGA46WW/moc_ISecondaryScreen.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/KeyMap.h",
+			"MU",
+			"EWIEGA46WW/moc_KeyMap.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/KeyState.h",
+			"MU",
+			"EWIEGA46WW/moc_KeyState.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/KeyTypes.h",
+			"MU",
+			"EWIEGA46WW/moc_KeyTypes.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/KeyboardLayoutManager.h",
+			"MU",
+			"EWIEGA46WW/moc_KeyboardLayoutManager.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/MouseTypes.h",
+			"MU",
+			"EWIEGA46WW/moc_MouseTypes.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/OptionTypes.h",
+			"MU",
+			"EWIEGA46WW/moc_OptionTypes.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/PacketStreamFilter.h",
+			"MU",
+			"EWIEGA46WW/moc_PacketStreamFilter.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/PlatformScreen.h",
+			"MU",
+			"EWIEGA46WW/moc_PlatformScreen.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ProtocolTypes.h",
+			"MU",
+			"EWIEGA46WW/moc_ProtocolTypes.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ProtocolUtil.h",
+			"MU",
+			"EWIEGA46WW/moc_ProtocolUtil.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/Screen.h",
+			"MU",
+			"EWIEGA46WW/moc_Screen.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ScreenException.h",
+			"MU",
+			"EWIEGA46WW/moc_ScreenException.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ServerApp.h",
+			"MU",
+			"EWIEGA46WW/moc_ServerApp.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/StreamChunker.h",
+			"MU",
+			"EWIEGA46WW/moc_StreamChunker.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ipc/CoreIpc.h",
+			"MU",
+			"NX6PWWVH4D/moc_CoreIpc.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ipc/CoreIpcServer.h",
+			"MU",
+			"NX6PWWVH4D/moc_CoreIpcServer.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ipc/DaemonIpcServer.h",
+			"MU",
+			"NX6PWWVH4D/moc_DaemonIpcServer.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ipc/IpcServer.h",
+			"MU",
+			"NX6PWWVH4D/moc_IpcServer.cpp",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/win32/AppUtilWindows.h",
+			"MU",
+			"7JI6EQCTBI/moc_AppUtilWindows.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/app_autogen/include",
+	"INCLUDE_DIR_Debug" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/app_autogen/include_Debug",
+	"INCLUDE_DIR_MinSizeRel" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/app_autogen/include_MinSizeRel",
+	"INCLUDE_DIR_RelWithDebInfo" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/app_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/app_autogen/include_Release",
+	"MOC_COMPILATION_FILE" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/app_autogen/mocs_compilation.cpp",
+	"MOC_COMPILATION_FILE_Debug" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/app_autogen/mocs_compilation_Debug.cpp",
+	"MOC_COMPILATION_FILE_MinSizeRel" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/app_autogen/mocs_compilation_MinSizeRel.cpp",
+	"MOC_COMPILATION_FILE_RelWithDebInfo" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/app_autogen/mocs_compilation_RelWithDebInfo.cpp",
+	"MOC_COMPILATION_FILE_Release" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/app_autogen/mocs_compilation_Release.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEFINITIONS_Debug" : 
+	[
+		"HAVE_FORMAT",
+		"NDEBUG",
+		"QT_CORE_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_KEYWORDS",
+		"UNICODE",
+		"WIN32",
+		"WIN64",
+		"_CRT_SECURE_NO_WARNINGS",
+		"_ENABLE_EXTENDED_ALIGNED_STORAGE",
+		"_UNICODE",
+		"_WIN64",
+		"_WINDOWS",
+		"_XKEYCHECK_H"
+	],
+	"MOC_DEFINITIONS_MinSizeRel" : 
+	[
+		"HAVE_FORMAT",
+		"NDEBUG",
+		"QT_CORE_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
+		"QT_NO_KEYWORDS",
+		"UNICODE",
+		"WIN32",
+		"WIN64",
+		"_CRT_SECURE_NO_WARNINGS",
+		"_ENABLE_EXTENDED_ALIGNED_STORAGE",
+		"_UNICODE",
+		"_WIN64",
+		"_WINDOWS",
+		"_XKEYCHECK_H"
+	],
+	"MOC_DEFINITIONS_RelWithDebInfo" : 
+	[
+		"HAVE_FORMAT",
+		"NDEBUG",
+		"QT_CORE_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
+		"QT_NO_KEYWORDS",
+		"UNICODE",
+		"WIN32",
+		"WIN64",
+		"_CRT_SECURE_NO_WARNINGS",
+		"_ENABLE_EXTENDED_ALIGNED_STORAGE",
+		"_UNICODE",
+		"_WIN64",
+		"_WINDOWS",
+		"_XKEYCHECK_H"
+	],
+	"MOC_DEFINITIONS_Release" : 
+	[
+		"HAVE_FORMAT",
+		"NDEBUG",
+		"QT_CORE_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
+		"QT_NO_KEYWORDS",
+		"UNICODE",
+		"WIN32",
+		"WIN64",
+		"_CRT_SECURE_NO_WARNINGS",
+		"_ENABLE_EXTENDED_ALIGNED_STORAGE",
+		"_UNICODE",
+		"_WIN64",
+		"_WINDOWS",
+		"_XKEYCHECK_H"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : [],
+	"MOC_INCLUDES_Debug" : 
+	[
+		"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib",
+		"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib",
+		"C:/Qt/6.11.0/msvc2022_64/include/QtCore",
+		"C:/Qt/6.11.0/msvc2022_64/include",
+		"C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc",
+		"C:/Qt/6.11.0/msvc2022_64/include/QtNetwork"
+	],
+	"MOC_INCLUDES_MinSizeRel" : 
+	[
+		"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib",
+		"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib",
+		"C:/Qt/6.11.0/msvc2022_64/include/QtCore",
+		"C:/Qt/6.11.0/msvc2022_64/include",
+		"C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc",
+		"C:/Qt/6.11.0/msvc2022_64/include/QtNetwork"
+	],
+	"MOC_INCLUDES_RelWithDebInfo" : 
+	[
+		"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib",
+		"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib",
+		"C:/Qt/6.11.0/msvc2022_64/include/QtCore",
+		"C:/Qt/6.11.0/msvc2022_64/include",
+		"C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc",
+		"C:/Qt/6.11.0/msvc2022_64/include/QtNetwork"
+	],
+	"MOC_INCLUDES_Release" : 
+	[
+		"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib",
+		"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib",
+		"C:/Qt/6.11.0/msvc2022_64/include/QtCore",
+		"C:/Qt/6.11.0/msvc2022_64/include",
+		"C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc",
+		"C:/Qt/6.11.0/msvc2022_64/include/QtNetwork"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : [],
+	"MOC_PREDEFS_FILE" : "",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : true,
+	"PARALLEL" : 6,
+	"PARSE_CACHE_FILE" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/CMakeFiles/app_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE_Debug" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/CMakeFiles/app_autogen.dir/ParseCache_Debug.txt",
+	"PARSE_CACHE_FILE_MinSizeRel" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/CMakeFiles/app_autogen.dir/ParseCache_MinSizeRel.txt",
+	"PARSE_CACHE_FILE_RelWithDebInfo" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/CMakeFiles/app_autogen.dir/ParseCache_RelWithDebInfo.txt",
+	"PARSE_CACHE_FILE_Release" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/CMakeFiles/app_autogen.dir/ParseCache_Release.txt",
+	"QT_MOC_EXECUTABLE" : "",
+	"QT_MOC_EXECUTABLE_Debug" : "C:/Qt/6.11.0/msvc2022_64/bin/moc.exe",
+	"QT_MOC_EXECUTABLE_MinSizeRel" : "C:/Qt/6.11.0/msvc2022_64/bin/moc.exe",
+	"QT_MOC_EXECUTABLE_RelWithDebInfo" : "C:/Qt/6.11.0/msvc2022_64/bin/moc.exe",
+	"QT_MOC_EXECUTABLE_Release" : "C:/Qt/6.11.0/msvc2022_64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_UIC_EXECUTABLE_Debug" : "C:/Qt/6.11.0/msvc2022_64/bin/uic.exe",
+	"QT_UIC_EXECUTABLE_MinSizeRel" : "C:/Qt/6.11.0/msvc2022_64/bin/uic.exe",
+	"QT_UIC_EXECUTABLE_RelWithDebInfo" : "C:/Qt/6.11.0/msvc2022_64/bin/uic.exe",
+	"QT_UIC_EXECUTABLE_Release" : "C:/Qt/6.11.0/msvc2022_64/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 11,
+	"SETTINGS_FILE" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/CMakeFiles/app_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE_Debug" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/CMakeFiles/app_autogen.dir/AutogenUsed_Debug.txt",
+	"SETTINGS_FILE_MinSizeRel" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/CMakeFiles/app_autogen.dir/AutogenUsed_MinSizeRel.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/CMakeFiles/app_autogen.dir/AutogenUsed_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/deskflow/CMakeFiles/app_autogen.dir/AutogenUsed_Release.txt",
+	"SOURCES" : 
+	[
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/App.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/AppUtil.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/Chunk.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ClientApp.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/Clipboard.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ClipboardChunk.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/DeskflowException.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/IClipboard.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/IKeyState.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/IPlatformScreen.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/IPrimaryScreen.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/KeyMap.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/KeyState.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/KeyTypes.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/KeyboardLayoutManager.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/PacketStreamFilter.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/PlatformScreen.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ProtocolTypes.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ProtocolUtil.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/Screen.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ScreenException.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ServerApp.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/StreamChunker.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ipc/CoreIpc.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ipc/CoreIpcServer.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ipc/DaemonIpcServer.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/ipc/IpcServer.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/deskflow/win32/AppUtilWindows.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

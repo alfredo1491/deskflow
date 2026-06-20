@@ -6,7 +6,7 @@
 
 #include "base/Log.h"
 
-#if !WINAPI_LIBEI && !WINAPI_PORTAL
+#if !WINAPI_LIBEI && !WINAPI_LIBPORTAL
 #include "platform/XWindowsClipboard.h"
 #endif
 
@@ -19,7 +19,7 @@ private Q_SLOTS:
   // Test are run in order top to bottom
   void defaultCtor();
   // Tests only work on X Windows
-#if !WINAPI_LIBEI && !WINAPI_PORTAL
+#if !WINAPI_LIBEI && !WINAPI_LIBPORTAL
   void initTestCase();
   void cleanupTestCase();
   void open();
@@ -27,7 +27,7 @@ private Q_SLOTS:
 #endif
 private:
   Log m_log;
-#if !WINAPI_LIBEI && !WINAPI_PORTAL
+#if !WINAPI_LIBEI && !WINAPI_LIBPORTAL
   const std::string m_testString = "deskflow test string";
   const std::string m_testString2 = "Another String";
   Display *m_display;

@@ -10,7 +10,7 @@
 #include "base/Log.h"
 #include "deskflow/ClipboardTypes.h"
 
-#if WINAPI_LIBEI || WINAPI_PORTAL
+#if WINAPI_LIBEI || WINAPI_LIBPORTAL
 #include "platform/WlClipboard.h"
 #endif
 
@@ -36,7 +36,7 @@ private Q_SLOTS:
   void isAvailable();
 
   // Core clipboard functionality tests
-#if WINAPI_LIBEI || WINAPI_PORTAL
+#if WINAPI_LIBEI || WINAPI_LIBPORTAL
   void initTestCase();
   void cleanupTestCase();
   void open();
@@ -56,7 +56,7 @@ private:
   Arch m_arch;
   Log m_log;
 
-#if WINAPI_LIBEI || WINAPI_PORTAL
+#if WINAPI_LIBEI || WINAPI_LIBPORTAL
   const std::string m_testString = "deskflow test string";
   const std::string m_testString2 = "Another test string";
   const std::string m_testHtml = "<html><body>Test HTML</body></html>";

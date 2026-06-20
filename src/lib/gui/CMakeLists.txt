@@ -116,6 +116,8 @@ add_library(${target} STATIC
   widgets/SearchWidget.cpp
   widgets/StatusBar.cpp
   widgets/StatusBar.h
+  widgets/TransferWindow.cpp
+  widgets/TransferWindow.h
   widgets/TrashScreenWidget.cpp
   widgets/TrashScreenWidget.h
 )

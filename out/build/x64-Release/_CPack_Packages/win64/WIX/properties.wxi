@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<Include xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:firewall="http://wixtoolset.org/schemas/v4/wxs/firewall" xmlns:util="http://wixtoolset.org/schemas/v4/wxs/util">
-    <Property Id="ARPCONTACT" Value="Deskflow &lt;maintainers@deskflow.org&gt;"/>
-    <Property Id="INSTALL_ROOT" Secure="yes">
-        <RegistrySearch Id="FindInstallLocation" Root="HKLM" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[WIX_UPGRADE_DETECTED]" Name="InstallLocation" Type="raw"/>
-    </Property>
-    <SetProperty Id="ARPINSTALLLOCATION" Value="[INSTALL_ROOT]" After="CostFinalize"/>
-</Include>

@@ -1,0 +1,7 @@
+client_autogen/timestamp: \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/client/CMakeLists.txt \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/client/Client.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/client/Client.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/client/ServerProxy.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/client/ServerProxy.h \
+	/usr/bin/cmake

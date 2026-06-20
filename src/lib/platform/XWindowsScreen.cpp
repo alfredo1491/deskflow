@@ -227,6 +227,8 @@ void XWindowsScreen::enter()
 
   // release input context focus
   if (m_ic != nullptr) {
+    if (char *pendingInput = XmbResetIC(m_ic); pendingInput != nullptr)
+      XFree(pendingInput);
     XUnsetICFocus(m_ic);
   }
 
@@ -330,7 +332,8 @@ void XWindowsScreen::leave()
 
   // set input context focus to our window
   if (m_ic != nullptr) {
-    XmbResetIC(m_ic);
+    if (char *pendingInput = XmbResetIC(m_ic); pendingInput != nullptr)
+      XFree(pendingInput);
     XSetICFocus(m_ic);
     m_filtered.clear();
   }

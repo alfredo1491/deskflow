@@ -1,0 +1,373 @@
+Start testing: Jun 07 19:24 Hora estándar, América Central
+----------------------------------------------------------
+1/22 Testing: StringTests
+1/22 Test: StringTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/base/Release/StringTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/base
+"StringTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"StringTests" end time: Jun 07 19:24 Hora estándar, América Central
+"StringTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/22 Testing: UnicodeTests
+2/22 Test: UnicodeTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/base/Release/UnicodeTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/base
+"UnicodeTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"UnicodeTests" end time: Jun 07 19:24 Hora estándar, América Central
+"UnicodeTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/22 Testing: LogTests
+3/22 Test: LogTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/base/Release/LogTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/base
+"LogTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"LogTests" end time: Jun 07 19:24 Hora estándar, América Central
+"LogTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/22 Testing: BaseExceptionTests
+4/22 Test: BaseExceptionTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/base/Release/BaseExceptionTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/base
+"BaseExceptionTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"BaseExceptionTests" end time: Jun 07 19:24 Hora estándar, América Central
+"BaseExceptionTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/22 Testing: SettingsTests
+5/22 Test: SettingsTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/common/Release/SettingsTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/common
+"SettingsTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   1.66 sec
+----------------------------------------------------------
+Test Passed.
+"SettingsTests" end time: Jun 07 19:24 Hora estándar, América Central
+"SettingsTests" time elapsed: 00:00:01
+----------------------------------------------------------
+
+6/22 Testing: I18NTests
+6/22 Test: I18NTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/common/Release/I18NTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/common
+"I18NTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Failed.
+"I18NTests" end time: Jun 07 19:24 Hora estándar, América Central
+"I18NTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/22 Testing: ClipboardTests
+7/22 Test: ClipboardTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/deskflow/Release/ClipboardTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/deskflow
+"ClipboardTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+[2026-06-07T19:24:44.687] DEBUG: skipping clipboard open, already open
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"ClipboardTests" end time: Jun 07 19:24 Hora estándar, América Central
+"ClipboardTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/22 Testing: ClipboardChunksTests
+8/22 Test: ClipboardChunksTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/deskflow/Release/ClipboardChunksTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/deskflow
+"ClipboardChunksTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"ClipboardChunksTests" end time: Jun 07 19:24 Hora estándar, América Central
+"ClipboardChunksTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/22 Testing: IKeyStateTests
+9/22 Test: IKeyStateTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/deskflow/Release/IKeyStateTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/deskflow
+"IKeyStateTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"IKeyStateTests" end time: Jun 07 19:24 Hora estándar, América Central
+"IKeyStateTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/22 Testing: KeyMapTests
+10/22 Test: KeyMapTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/deskflow/Release/KeyMapTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/deskflow
+"KeyMapTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"KeyMapTests" end time: Jun 07 19:24 Hora estándar, América Central
+"KeyMapTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/22 Testing: KeyStateTests
+11/22 Test: KeyStateTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/deskflow/Release/KeyStateTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/deskflow
+"KeyStateTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"KeyStateTests" end time: Jun 07 19:24 Hora estándar, América Central
+"KeyStateTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/22 Testing: KeyboardLayoutManagerTests
+12/22 Test: KeyboardLayoutManagerTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/deskflow/Release/KeyboardLayoutManagerTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/deskflow
+"KeyboardLayoutManagerTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+[2026-06-07T19:24:45.381] INFO: local layouts: ru, en, uk
+[2026-06-07T19:24:45.381] INFO: remote layouts: ru, en, uk
+[2026-06-07T19:24:45.381] INFO: remote layouts: 
+[2026-06-07T19:24:45.381] INFO: local layouts: ru, en, uk
+[2026-06-07T19:24:45.381] INFO: local layouts: en
+[2026-06-07T19:24:45.381] INFO: remote layouts: ru, en, uk
+[2026-06-07T19:24:45.381] INFO: local layouts: ru, en, uk
+[2026-06-07T19:24:45.381] INFO: local layouts: ru, en, uk
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"KeyboardLayoutManagerTests" end time: Jun 07 19:24 Hora estándar, América Central
+"KeyboardLayoutManagerTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/22 Testing: LoggerTests
+13/22 Test: LoggerTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/Release/LoggerTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/gui
+"LoggerTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.32 sec
+----------------------------------------------------------
+Test Passed.
+"LoggerTests" end time: Jun 07 19:24 Hora estándar, América Central
+"LoggerTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/22 Testing: KeySequenceTests
+14/22 Test: KeySequenceTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/Release/KeySequenceTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/gui
+"KeySequenceTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"KeySequenceTests" end time: Jun 07 19:24 Hora estándar, América Central
+"KeySequenceTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/22 Testing: ScreenTests
+15/22 Test: ScreenTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/config/Release/ScreenTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/gui
+"ScreenTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.30 sec
+----------------------------------------------------------
+Test Passed.
+"ScreenTests" end time: Jun 07 19:24 Hora estándar, América Central
+"ScreenTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/22 Testing: NetworkMonitorTests
+16/22 Test: NetworkMonitorTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/Release/NetworkMonitorTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/gui
+"NetworkMonitorTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"NetworkMonitorTests" end time: Jun 07 19:24 Hora estándar, América Central
+"NetworkMonitorTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/22 Testing: SecureUtilsTests
+17/22 Test: SecureUtilsTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/net/Release/SecureUtilsTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/net
+"SecureUtilsTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"SecureUtilsTests" end time: Jun 07 19:24 Hora estándar, América Central
+"SecureUtilsTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/22 Testing: FingerprintTests
+18/22 Test: FingerprintTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/net/Release/FingerprintTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/net
+"FingerprintTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"FingerprintTests" end time: Jun 07 19:24 Hora estándar, América Central
+"FingerprintTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/22 Testing: FingerprintDatabaseTests
+19/22 Test: FingerprintDatabaseTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/net/Release/FingerprintDatabaseTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/net
+"FingerprintDatabaseTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"FingerprintDatabaseTests" end time: Jun 07 19:24 Hora estándar, América Central
+"FingerprintDatabaseTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/22 Testing: MSWindowsClipboardTests
+20/22 Test: MSWindowsClipboardTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/platform/Release/MSWindowsClipboardTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/platform
+"MSWindowsClipboardTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+[2026-06-07T19:24:46.952] DEBUG: open clipboard
+[2026-06-07T19:24:46.953] DEBUG: empty clipboard
+[2026-06-07T19:24:46.953] DEBUG: open clipboard
+[2026-06-07T19:24:46.953] DEBUG: empty clipboard
+[2026-06-07T19:24:46.953] DEBUG: open clipboard
+[2026-06-07T19:24:46.953] DEBUG: empty clipboard
+[2026-06-07T19:24:46.953] DEBUG: open clipboard
+[2026-06-07T19:24:46.953] DEBUG: add 20 bytes to clipboard format: 0
+[2026-06-07T19:24:46.953] DEBUG: empty clipboard
+[2026-06-07T19:24:46.953] DEBUG: open clipboard
+[2026-06-07T19:24:46.953] DEBUG: add 20 bytes to clipboard format: 0
+[2026-06-07T19:24:46.956] DEBUG: open clipboard
+[2026-06-07T19:24:46.956] DEBUG: add 20 bytes to clipboard format: 0
+[2026-06-07T19:24:46.956] DEBUG: add 14 bytes to clipboard format: 0
+[2026-06-07T19:24:46.956] DEBUG: open clipboard
+[2026-06-07T19:24:46.956] DEBUG: open clipboard
+[2026-06-07T19:24:46.956] DEBUG: close clipboard
+[2026-06-07T19:24:46.956] DEBUG: open clipboard
+[2026-06-07T19:24:46.956] DEBUG: open clipboard
+[2026-06-07T19:24:46.956] DEBUG: empty clipboard
+[2026-06-07T19:24:46.956] DEBUG: open clipboard
+[2026-06-07T19:24:46.956] DEBUG: empty clipboard
+[2026-06-07T19:24:46.956] DEBUG: add 20 bytes to clipboard format: 0
+[2026-06-07T19:24:46.956] DEBUG: open clipboard
+[2026-06-07T19:24:46.956] DEBUG: empty clipboard
+[2026-06-07T19:24:46.956] DEBUG: open clipboard
+[2026-06-07T19:24:46.956] DEBUG: empty clipboard
+[2026-06-07T19:24:46.956] DEBUG: add 20 bytes to clipboard format: 0
+[2026-06-07T19:24:46.956] DEBUG: open clipboard
+[2026-06-07T19:24:46.956] DEBUG: open clipboard
+[2026-06-07T19:24:46.956] DEBUG: empty clipboard
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"MSWindowsClipboardTests" end time: Jun 07 19:24 Hora estándar, América Central
+"MSWindowsClipboardTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/22 Testing: ServerConfigTests
+21/22 Test: ServerConfigTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/server/Release/ServerConfigTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/server
+"ServerConfigTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.19 sec
+----------------------------------------------------------
+Test Passed.
+"ServerConfigTests" end time: Jun 07 19:24 Hora estándar, América Central
+"ServerConfigTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/22 Testing: ServerTests
+22/22 Test: ServerTests
+Command: "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/server/Release/ServerTests.exe"
+Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/server
+"ServerTests" start time: Jun 07 19:24 Hora estándar, América Central
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"ServerTests" end time: Jun 07 19:24 Hora estándar, América Central
+"ServerTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 07 19:24 Hora estándar, América Central

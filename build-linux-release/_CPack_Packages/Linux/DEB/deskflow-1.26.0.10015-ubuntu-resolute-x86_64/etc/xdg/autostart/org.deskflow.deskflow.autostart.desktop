@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2026 Deskflow Developers
+# SPDX-License-Identifier: MIT
+
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Deskflow
+Comment=Run Deskflow in the background for device discovery and file transfers
+Exec=deskflow --background
+Icon=org.deskflow.deskflow
+Terminal=false
+X-GNOME-Autostart-enabled=true
+X-KDE-autostart-after=panel

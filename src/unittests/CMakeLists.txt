@@ -82,10 +82,15 @@ endif()
 option(SKIP_BUILD_TESTS "Skip build time test" OFF)
 
 if(NOT SKIP_BUILD_TESTS)
+  set(CTEST_CONFIG_ARGS)
+  if(CMAKE_CONFIGURATION_TYPES)
+    list(APPEND CTEST_CONFIG_ARGS -C $<CONFIG>)
+  endif()
+
   add_custom_target(run_tests ALL DEPENDS ${PROJECT_TESTS} ${guiApp})
   add_custom_command (
     TARGET run_tests
     POST_BUILD
-    COMMAND ${qPA_Platform} ${CMAKE_CTEST_COMMAND} --test-dir  "${CMAKE_BINARY_DIR}/src/unittests" --output-on-failure
+    COMMAND ${qPA_Platform} ${CMAKE_CTEST_COMMAND} --test-dir "${CMAKE_BINARY_DIR}/src/unittests" --output-on-failure ${CTEST_CONFIG_ARGS}
   )
 endif()

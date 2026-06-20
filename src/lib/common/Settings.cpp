@@ -193,6 +193,12 @@ QVariant Settings::defaultValue(const QString &key)
   if (key == Core::Port)
     return 24800;
 
+  if (key == Gui::FileTransferP2PPort)
+    return 24801;
+
+  if (key == Gui::FileTransferReceiveDir)
+    return QStringLiteral("%1/%2").arg(QStandardPaths::writableLocation(QStandardPaths::DownloadLocation), "Deskflow");
+
   if (key == Core::ProcessMode) {
 #ifdef Q_OS_WIN
     if (!Settings::isPortableMode())

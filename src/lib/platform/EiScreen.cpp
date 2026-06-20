@@ -354,6 +354,10 @@ void EiScreen::disable()
 
 void EiScreen::enter()
 {
+  if (m_keyState) {
+    m_keyState->clearStaleModifiers();
+  }
+
   m_isOnScreen = true;
   if (!m_isPrimary) {
     ++m_sequenceNumber;
@@ -380,6 +384,10 @@ bool EiScreen::canLeave()
 
 void EiScreen::leave()
 {
+  if (m_keyState) {
+    m_keyState->clearStaleModifiers();
+  }
+
   if (!m_isPrimary) {
     if (m_eiPointer) {
       ei_device_stop_emulating(m_eiPointer);

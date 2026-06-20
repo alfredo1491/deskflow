@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+if command -v ufw >/dev/null 2>&1; then
+  ufw allow 24801/tcp comment 'Deskflow P2P file transfer' >/dev/null 2>&1 || true
+  ufw allow 24802/udp comment 'Deskflow P2P discovery' >/dev/null 2>&1 || true
+fi
+
+exit 0

@@ -1,0 +1,10 @@
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\CA03A6E57C96EFAF2409BBED6ED22C2A\PACKAGE_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

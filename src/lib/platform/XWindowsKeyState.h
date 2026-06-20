@@ -92,6 +92,7 @@ public:
   KeyModifierMask pollActiveModifiers() const override;
   int32_t pollActiveGroup() const final;
   void pollPressedKeys(KeyButtonSet &pressedKeys) const override;
+  void clearStaleModifiers() override;
 
 protected:
   // KeyState overrides

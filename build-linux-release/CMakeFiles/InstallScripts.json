@@ -1,0 +1,27 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/docs/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/translations/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/arch/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/base/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/client/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/common/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/deskflow/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/io/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/mt/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/net/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/platform/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/server/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/gui/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/apps/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/apps/deskflow-core/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/apps/deskflow-daemon/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/apps/deskflow-gui/cmake_install.cmake",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/deploy/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

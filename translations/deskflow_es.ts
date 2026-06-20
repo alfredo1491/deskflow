@@ -399,6 +399,18 @@ Do you want to connect to the server?
         <translation>&lt;p&gt;Error al conectar con el servidor &apos;%1&apos;.&lt;/p&gt;&lt;p&gt;A Client with your name is already connected to the server.&lt;/p&gt;Please ensure that you&apos;re using a unique name and that only a single instance of the client process is running.&lt;/p&gt;</translation>
     </message>
     <message>
+        <source>transfer batch</source>
+        <translation>Lote recibido de %1: %2 (%3 archivos, %4)</translation>
+    </message>
+    <message>
+        <source>Received batch from %1: %2 (%3 files, %4)</source>
+        <translation>Carpeta recibida de %1: %2 (%3 archivos, %4)</translation>
+    </message>
+    <message>
+        <source>Folder received from %1: %2 (%3 files, %4)</source>
+        <translation>Carpeta recibida de %1: %2 (%3 archivos, %4)</translation>
+    </message>
+    <message>
         <source>Your current TLS key is smaller than the minimum allowed size, A new key 2048-bit key will be generated.</source>
         <translation type="unfinished">Su clave TLS actual es más pequeña que el tamaño mínimo permitido. Se generará una nueva clave de 2048 bits.</translation>
     </message>
@@ -421,6 +433,334 @@ Do you want to connect to the server?
     <message>
         <source>Could not save server configuration to file.</source>
         <translation type="unfinished">No se pudo guardar la configuración del servidor en el archivo.</translation>
+    </message>
+    <message>
+        <source>Transfer mode</source>
+        <translation>Modo de transferencia</translation>
+    </message>
+    <message>
+        <source>Select how files should be transferred.</source>
+        <translation>Selecciona cómo se deben transferir los archivos.</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Copiar</translation>
+    </message>
+    <message>
+        <source>Move</source>
+        <translation>Mover</translation>
+    </message>
+    <message>
+        <source>Source type</source>
+        <translation>Tipo de origen</translation>
+    </message>
+    <message>
+        <source>What do you want to transfer?</source>
+        <translation>¿Qué quieres transferir?</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Archivos</translation>
+    </message>
+    <message>
+        <source>Folder</source>
+        <translation>Carpeta</translation>
+    </message>
+    <message>
+        <source>Select source folder</source>
+        <translation>Seleccionar carpeta de origen</translation>
+    </message>
+    <message>
+        <source>Select files to transfer</source>
+        <translation>Seleccionar archivos para transferir</translation>
+    </message>
+    <message>
+        <source>No files were selected for transfer.</source>
+        <translation>No se seleccionaron archivos para transferir.</translation>
+    </message>
+    <message>
+        <source>%1 selected items</source>
+        <translation>%1 elementos seleccionados</translation>
+    </message>
+    <message>
+        <source>Transfer complete</source>
+        <translation>Transferencia completada</translation>
+    </message>
+    <message>
+        <source>%1 completed successfully.
+Items processed: %2</source>
+        <translation>%1 se completó correctamente.
+Elementos procesados: %2</translation>
+    </message>
+    <message>
+        <source>P2P file transfer listener failed on port %1: %2</source>
+        <translation>El receptor de transferencia P2P falló en el puerto %1: %2</translation>
+    </message>
+    <message>
+        <source>P2P file transfer listening on TCP port %1</source>
+        <translation>Transferencia P2P escuchando en el puerto TCP %1</translation>
+    </message>
+    <message>
+        <source>Peer discovery failed on UDP port %1: %2</source>
+        <translation>El descubrimiento de pares falló en el puerto UDP %1: %2</translation>
+    </message>
+    <message>
+        <source>Manual entry</source>
+        <translation>Entrada manual</translation>
+    </message>
+    <message>
+        <source>Select peer</source>
+        <translation>Seleccionar equipo</translation>
+    </message>
+    <message>
+        <source>Choose destination peer:</source>
+        <translation>Elige el equipo de destino:</translation>
+    </message>
+    <message>
+        <source>Destination peer</source>
+        <translation>Equipo de destino</translation>
+    </message>
+    <message>
+        <source>Destination IP or hostname:</source>
+        <translation>IP o nombre de host de destino:</translation>
+    </message>
+    <message>
+        <source>Destination port</source>
+        <translation>Puerto de destino</translation>
+    </message>
+    <message>
+        <source>Peer transfer port:</source>
+        <translation>Puerto de transferencia del equipo:</translation>
+    </message>
+    <message>
+        <source>Transferred but could not remove some empty source folders.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open &amp;Transfers</source>
+        <translation>Abrir &amp;Transferencias</translation>
+    </message>
+    <message>
+        <source>Transfer &amp;Files...</source>
+        <translation>Transferir &amp;Archivos...</translation>
+    </message>
+    <message>
+        <source>Unsupported protocol</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid offer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Peer not approved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot open destination</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Incoming</source>
+        <translation>Entrante</translation>
+    </message>
+    <message>
+        <source>Incoming batch accepted from %1: %2 (%3 files, %4)</source>
+        <translation>Lote entrante aceptado de %1: %2 (%3 archivos, %4)</translation>
+    </message>
+    <message>
+        <source>Incoming transfer accepted from %1: %2</source>
+        <translation>Transferencia entrante aceptada de %1: %2</translation>
+    </message>
+    <message>
+        <source>Receiving file from %1: %2</source>
+        <translation>Recibiendo archivo de %1: %2</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Checksum mismatch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Incoming transfer failed checksum validation: %1</source>
+        <translation>La transferencia entrante falló en la validación de checksum: %1</translation>
+    </message>
+    <message>
+        <source>Cannot finalize destination file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Finalize failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Incoming transfer could not be finalized: %1</source>
+        <translation>No se pudo finalizar la transferencia entrante: %1</translation>
+    </message>
+    <message>
+        <source>Completed</source>
+        <translation>Completado</translation>
+    </message>
+    <message>
+        <source>Received: %1</source>
+        <translation>Recibido: %1</translation>
+    </message>
+    <message>
+        <source>File received: %1</source>
+        <translation>Archivo recibido: %1</translation>
+    </message>
+    <message>
+        <source>Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Incoming transfer failed: %1</source>
+        <translation>La transferencia entrante falló: %1</translation>
+    </message>
+    <message>
+        <source>Sending files...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="unfinished">Cancelar</translation>
+    </message>
+    <message>
+        <source>P2P transfer failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transfer canceled by user.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot open source file: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot hash source file: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Outgoing</source>
+        <translation>Saliente</translation>
+    </message>
+    <message>
+        <source>Sending %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot connect to %1:%2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Connect failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hash failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed sending offer for: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Offer failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Peer rejected transfer for %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No reason</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Peer rejected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Read error for: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Network error while sending: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transfer failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Peer failed to finalize %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Finalize rejected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transferred but could not remove source file: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sent batch to %1:%2: %3 (%4 files, %5)</source>
+        <translation>Lote enviado a %1:%2: %3 (%4 archivos, %5)</translation>
+    </message>
+    <message>
+        <source>Sent to %1:%2: %3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>P2P transfer finished with errors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sent: %1 of %2
+
+%3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Approve incoming transfer</source>
+        <translation>Aprobar transferencia entrante</translation>
+    </message>
+    <message>
+        <source>Allow %1 to send &quot;%2&quot; (%3 files, %4)?</source>
+        <translation>Permitir que %1 envíe &quot;%2&quot; (%3 archivos, %4)?</translation>
+    </message>
+    <message>
+        <source>Allow %1 to send &quot;%2&quot; (%3)?</source>
+        <translation>Permitir que %1 envíe &quot;%2&quot; (%3)?</translation>
+    </message>
+    <message>
+        <source>Remember this peer for future transfers</source>
+        <translation>Recordar este equipo para futuras transferencias</translation>
+    </message>
+    <message>
+        <source>Accept transfer</source>
+        <translation>Aceptar transferencia</translation>
+    </message>
+    <message>
+        <source>Reject</source>
+        <translation>Rechazar</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation type="vanished">Sí</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="vanished">No</translation>
     </message>
     <message>
         <source>Start</source>
@@ -1202,6 +1542,10 @@ Al habilitar esta opción, se deshabilitará la interfaz gráfica de usuario (GU
         <translation type="unfinished">Ejecutar siempre como sistema (funcionar en la pantalla de inicio de sesión y UAC)</translation>
     </message>
     <message>
+        <source>Select receive folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Required messages</source>
         <translation type="unfinished">Mensajes obligatorios</translation>
     </message>
@@ -1337,6 +1681,26 @@ Al habilitar esta opción, se deshabilitará la interfaz gráfica de usuario (GU
         <source>Run command on exit</source>
         <translation type="unfinished">Ejecutar comando al salir</translation>
     </message>
+    <message>
+        <source>File Transfer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>P2P port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Receive folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Approved peers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>One host/IP per entry, separated by commas</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>StatusBar</name>
@@ -1409,6 +1773,53 @@ Al habilitar esta opción, se deshabilitará la interfaz gráfica de usuario (GU
     <message>
         <source>Encryption Disabled</source>
         <translation type="unfinished">Cifrado deshabilitado</translation>
+    </message>
+</context>
+<context>
+    <name>deskflow::gui::TransferWindow</name>
+    <message>
+        <source>File Transfers</source>
+        <translation>Transferencias de archivos</translation>
+    </message>
+    <message>
+        <source>Transfer queue</source>
+        <translation>Cola de transferencias</translation>
+    </message>
+    <message>
+        <source>Direction</source>
+        <translation>Dirección</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation type="unfinished">Nombre</translation>
+    </message>
+    <message>
+        <source>Progress</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transfer events</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Running</source>
+        <translation>En curso</translation>
+    </message>
+    <message>
+        <source>Incoming</source>
+        <translation>Entrante</translation>
+    </message>
+    <message>
+        <source>Open save location</source>
+        <translation>Abrir ubicación de guardado</translation>
     </message>
 </context>
 <context>

@@ -32,7 +32,7 @@
 #include <QLoggingCategory>
 #endif
 
-#if !defined(Q_OS_MAC) && !defined(Q_OS_WIN)
+#if !defined(Q_OS_MAC) && !defined(Q_OS_WIN) && QT_VERSION < QT_VERSION_CHECK(6, 10, 0)
 #include "platform/XDGPortalRegistry.h"
 #endif
 
@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
   QLoggingCategory::setFilterRules(QStringLiteral("*.debug=true\nqt.*=false"));
 #endif
 
-#if !defined(Q_OS_MAC) && !defined(Q_OS_WIN)
+#if !defined(Q_OS_MAC) && !defined(Q_OS_WIN) && QT_VERSION < QT_VERSION_CHECK(6, 10, 0)
   deskflow::platform::setAppId();
 #endif
 
@@ -70,12 +70,14 @@ int main(int argc, char *argv[])
   auto helpOption = QCommandLineOption({"h", "help"}, "Display Help on the command line");
   auto versionOption = QCommandLineOption({"v", "version"}, "Display version information");
   auto resetOption = QCommandLineOption("reset", "Reset all settings");
+  auto backgroundOption = QCommandLineOption("background", "Start hidden in the system tray");
 
   QCommandLineParser parser;
   parser.setSingleDashWordOptionMode(QCommandLineParser::ParseAsLongOptions);
   parser.addOption(helpOption);
   parser.addOption(versionOption);
   parser.addOption(resetOption);
+  parser.addOption(backgroundOption);
   parser.parse(QCoreApplication::arguments());
 
   if (!parser.errorText().isEmpty()) {
@@ -150,7 +152,7 @@ int main(int argc, char *argv[])
   }
 
   MainWindow mainWindow;
-  mainWindow.open();
+  mainWindow.open(parser.isSet(backgroundOption));
 
   return QApplication::exec();
 }

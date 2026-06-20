@@ -4,11 +4,23 @@
 # SPDX-License-Identifier: MIT
 
 if(UNIX AND NOT APPLE)
-  pkg_check_modules(LIBEI REQUIRED QUIET "libei-1.0 >= ${REQUIRED_LIBEI_VERSION}")
-  message(STATUS "libei version: ${LIBEI_VERSION}")
+  pkg_check_modules(LIBEI QUIET "libei-1.0 >= ${REQUIRED_LIBEI_VERSION}")
+  if(LIBEI_FOUND)
+    message(STATUS "libei version: ${LIBEI_VERSION}")
+  else()
+    message(STATUS "libei not found; Wayland EI support will be disabled")
+  endif()
 
-  pkg_check_modules(LIBPORTAL REQUIRED QUIET "libportal >= ${REQUIRED_LIBPORTAL_VERSION}")
-  message(STATUS "libportal version: ${LIBPORTAL_VERSION}")
+  pkg_check_modules(LIBPORTAL QUIET "libportal >= ${REQUIRED_LIBPORTAL_VERSION}")
+  if(LIBPORTAL_FOUND)
+    message(STATUS "libportal version: ${LIBPORTAL_VERSION}")
+  else()
+    message(STATUS "libportal not found; XDG portal integration will be disabled")
+  endif()
+
+  if(NOT BUILD_X11_SUPPORT AND NOT LIBEI_FOUND)
+    message(FATAL_ERROR "Linux build requires at least one input backend: enable BUILD_X11_SUPPORT or install libei")
+  endif()
 endif()
 
 if(WIN32)
@@ -177,7 +189,12 @@ if(UNIX)
     if(${LIBXKBCOMMON_VERSION} VERSION_GREATER_EQUAL "1.10")
       target_compile_definitions(platform PRIVATE HAVE_XKB_KEYMAP_MOD_GET_MASK=1)
     endif()
-    target_compile_definitions(platform PUBLIC WINAPI_LIBEI WINAPI_LIBPORTAL)
+    if(LIBEI_FOUND)
+      target_compile_definitions(platform PUBLIC WINAPI_LIBEI=1)
+    endif()
+    if(LIBPORTAL_FOUND)
+      target_compile_definitions(platform PUBLIC WINAPI_LIBPORTAL=1)
+    endif()
     target_include_directories(platform PUBLIC ${LIBEI_INCLUDE_DIRS} ${LIBPORTAL_INCLUDE_DIRS})
     target_link_libraries(
       platform

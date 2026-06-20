@@ -1,0 +1,172 @@
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\D0705C4EA51CEC8A972A6A4D699C151A\DESKFLOW_EN.TS.STAMP.RULE
+setlocal
+C:\Qt\6.11.0\msvc2022_64\bin\lupdate.exe -pluralonly -no-ui-lines -locations none -silent "@C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/CMakeFiles/deskflow_en.ts_lst_file" -ts "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/translations/deskflow_en.ts"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/.lupdate/deskflow_en.ts.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\5C7B88823D1B0C8E52A3F623CC223757\DESKFLOW_EN.QM.RULE
+setlocal
+C:\Qt\6.11.0\msvc2022_64\bin\lrelease.exe "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/translations/deskflow_en.ts" -qm "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/deskflow_en.qm"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\D0705C4EA51CEC8A972A6A4D699C151A\DESKFLOW_ES.TS.STAMP.RULE
+setlocal
+C:\Qt\6.11.0\msvc2022_64\bin\lupdate.exe -no-ui-lines -locations none -silent "@C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/CMakeFiles/deskflow_es.ts_lst_file" -ts "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/translations/deskflow_es.ts"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/.lupdate/deskflow_es.ts.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\5C7B88823D1B0C8E52A3F623CC223757\DESKFLOW_ES.QM.RULE
+setlocal
+C:\Qt\6.11.0\msvc2022_64\bin\lrelease.exe "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/translations/deskflow_es.ts" -qm "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/deskflow_es.qm"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\D0705C4EA51CEC8A972A6A4D699C151A\DESKFLOW_IT.TS.STAMP.RULE
+setlocal
+C:\Qt\6.11.0\msvc2022_64\bin\lupdate.exe -no-ui-lines -locations none -silent "@C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/CMakeFiles/deskflow_it.ts_lst_file" -ts "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/translations/deskflow_it.ts"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/.lupdate/deskflow_it.ts.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\5C7B88823D1B0C8E52A3F623CC223757\DESKFLOW_IT.QM.RULE
+setlocal
+C:\Qt\6.11.0\msvc2022_64\bin\lrelease.exe "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/translations/deskflow_it.ts" -qm "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/deskflow_it.qm"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\D0705C4EA51CEC8A972A6A4D699C151A\DESKFLOW_JA.TS.STAMP.RULE
+setlocal
+C:\Qt\6.11.0\msvc2022_64\bin\lupdate.exe -no-ui-lines -locations none -silent "@C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/CMakeFiles/deskflow_ja.ts_lst_file" -ts "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/translations/deskflow_ja.ts"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/.lupdate/deskflow_ja.ts.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\5C7B88823D1B0C8E52A3F623CC223757\DESKFLOW_JA.QM.RULE
+setlocal
+C:\Qt\6.11.0\msvc2022_64\bin\lrelease.exe "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/translations/deskflow_ja.ts" -qm "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/deskflow_ja.qm"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\D0705C4EA51CEC8A972A6A4D699C151A\DESKFLOW_KO.TS.STAMP.RULE
+setlocal
+C:\Qt\6.11.0\msvc2022_64\bin\lupdate.exe -no-ui-lines -locations none -silent "@C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/CMakeFiles/deskflow_ko.ts_lst_file" -ts "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/translations/deskflow_ko.ts"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/.lupdate/deskflow_ko.ts.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\5C7B88823D1B0C8E52A3F623CC223757\DESKFLOW_KO.QM.RULE
+setlocal
+C:\Qt\6.11.0\msvc2022_64\bin\lrelease.exe "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/translations/deskflow_ko.ts" -qm "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/deskflow_ko.qm"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\D0705C4EA51CEC8A972A6A4D699C151A\DESKFLOW_RU.TS.STAMP.RULE
+setlocal
+C:\Qt\6.11.0\msvc2022_64\bin\lupdate.exe -no-ui-lines -locations none -silent "@C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/CMakeFiles/deskflow_ru.ts_lst_file" -ts "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/translations/deskflow_ru.ts"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/.lupdate/deskflow_ru.ts.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\5C7B88823D1B0C8E52A3F623CC223757\DESKFLOW_RU.QM.RULE
+setlocal
+C:\Qt\6.11.0\msvc2022_64\bin\lrelease.exe "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/translations/deskflow_ru.ts" -qm "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/deskflow_ru.qm"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\D0705C4EA51CEC8A972A6A4D699C151A\DESKFLOW_ZH_CN.TS.STAMP.RULE
+setlocal
+C:\Qt\6.11.0\msvc2022_64\bin\lupdate.exe -no-ui-lines -locations none -silent "@C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/CMakeFiles/deskflow_zh_CN.ts_lst_file" -ts "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/translations/deskflow_zh_CN.ts"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/.lupdate/deskflow_zh_CN.ts.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\5C7B88823D1B0C8E52A3F623CC223757\DESKFLOW_ZH_CN.QM.RULE
+setlocal
+C:\Qt\6.11.0\msvc2022_64\bin\lrelease.exe "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/translations/deskflow_zh_CN.ts" -qm "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/deskflow_zh_CN.qm"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\606C7B93C57C14FBB13276300EA41481\APP_TRANSLATIONS.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\TRANSLATIONS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow" "-BC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer" --check-stamp-file "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/translations/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

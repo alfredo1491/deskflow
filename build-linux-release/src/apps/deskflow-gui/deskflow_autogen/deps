@@ -1,0 +1,5 @@
+deskflow_autogen/timestamp: \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/apps/deskflow-gui/CMakeLists.txt \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/apps/deskflow-gui/deskflow-gui.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/apps/res/deskflow.qrc \
+	/usr/bin/cmake

@@ -9,6 +9,7 @@
 
 #include "deskflow/KeyState.h"
 
+#include <set>
 #include <string>
 #include <vector>
 
@@ -133,10 +134,13 @@ public:
   // IKeyState overrides
   void fakeKeyDown(KeyID id, KeyModifierMask mask, KeyButton button, const std::string &lang) override;
   bool fakeKeyRepeat(KeyID id, KeyModifierMask mask, int32_t count, KeyButton button, const std::string &lang) override;
+  bool fakeKeyUp(KeyButton button) override;
+  void fakeAllKeysUp() override;
   bool fakeCtrlAltDel() override;
   KeyModifierMask pollActiveModifiers() const override;
   int32_t pollActiveGroup() const override;
   void pollPressedKeys(KeyButtonSet &pressedKeys) const override;
+  void clearStaleModifiers() override;
 
   // KeyState overrides
   void onKey(KeyButton button, bool down, KeyModifierMask newState) override;
@@ -173,6 +177,8 @@ private:
 
   bool getGroups(GroupList &) const;
   void setWindowGroup(int32_t group);
+  bool shouldUseUnicodeInput(KeyID id, KeyModifierMask mask) const;
+  void sendUnicodeInput(KeyID id, uint32_t count) const;
 
   KeyID getIDForKey(deskflow::KeyMap::KeyItem &item, KeyButton button, UINT virtualKey, PBYTE keyState, HKL hkl) const;
 
@@ -215,6 +221,7 @@ private:
   bool m_useSavedModifiers;
   KeyModifierMask m_savedModifiers;
   KeyModifierMask m_originalSavedModifiers;
+  std::set<KeyButton> m_unicodeServerKeys;
 
   // pointer to ToUnicodeEx.  on win95 family this will be nullptr.
   typedef int(WINAPI *ToUnicodeEx_t)(

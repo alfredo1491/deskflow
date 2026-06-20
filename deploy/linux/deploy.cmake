@@ -11,6 +11,12 @@ install(
   DESTINATION ${CMAKE_INSTALL_DATADIR}/applications
 )
 
+# Start the GUI in tray mode for P2P discovery and background transfers.
+install(
+  FILES ${MY_DIR}/${CMAKE_PROJECT_REV_FQDN}.autostart.desktop
+  DESTINATION /etc/xdg/autostart
+)
+
 # Install our icon
 install(FILES ${MY_DIR}/org.deskflow.deskflow.png DESTINATION ${CMAKE_INSTALL_DATADIR}/icons/hicolor/512x512/apps/)
 
@@ -36,6 +42,7 @@ configure_file(
 set(CPACK_DEBIAN_PACKAGE_SECTION "utils")
 set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
 set(CPACK_DEBIAN_PACKAGE_RECOMMENDS "qt6-svg-plugins")
+set(CPACK_DEBIAN_PACKAGE_CONTROL_EXTRA "${MY_DIR}/postinst")
 set(CPACK_RPM_PACKAGE_LICENSE "GPLv2")
 set(CPACK_RPM_PACKAGE_GROUP "Applications/System")
 

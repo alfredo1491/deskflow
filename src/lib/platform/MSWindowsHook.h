@@ -65,6 +65,7 @@ public:
   static EHookResult install();
 
   static int uninstall();
+  static void clearDeadKeyState();
 
   static int installScreenSaver();
 

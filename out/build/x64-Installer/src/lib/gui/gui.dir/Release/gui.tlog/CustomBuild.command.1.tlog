@@ -1,0 +1,22 @@
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\OUT\BUILD\X64-INSTALLER\CMAKEFILES\D2C4841E71A4B41D2838CE1A57E56FCD\AUTOUIC_(CONFIG).STAMP.RULE
+setlocal
+cd "C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\gui"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GERSAN.MUNOZ\DOWNLOADS\PROGRAMAS CREADOS\DESKFLOW-MASTER\DESKFLOW\SRC\LIB\GUI\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow" "-BC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer" --check-stamp-file "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/lib/gui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

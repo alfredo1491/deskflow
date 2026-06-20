@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Include xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:firewall="http://wixtoolset.org/schemas/v4/wxs/firewall" xmlns:util="http://wixtoolset.org/schemas/v4/wxs/util">
+    <Property Id="VC_REDIST_INSTALLED">
+        <RegistrySearch Id="FindVCRedist" Key="SOFTWARE\Microsoft\VisualStudio\14.0\VC\Runtimes\x64" Name="Installed" Root="HKLM" Type="raw"/>
+    </Property>
+    <Binary Id="CustomDLL" SourceFile="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/deploy/wix-custom.dll"/>
+    <UI>
+        <Publish Condition="WIXUI_EXITDIALOGOPTIONALCHECKBOX = 1 and NOT Installed" Control="Finish" Dialog="ExitDialog" Event="DoAction" Value="RunDeskflow"/>
+        <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOX" Value="1"/>
+        <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT" Value="Run Deskflow when finished"/>
+    </UI>
+    <CustomAction BinaryRef="CustomDLL" DllEntry="CheckVCRedist" Execute="immediate" Id="CheckVCRedist"/>
+    <CustomAction Execute="immediate" Id="SetStopAndRemoveServiceData" Property="StopAndRemoveService" Value="SERVICE_NAME=Deskflow"/>
+    <CustomAction BinaryRef="CustomDLL" DllEntry="StopAndRemoveService" Execute="deferred" Id="StopAndRemoveService" Impersonate="no" Return="check"/>
+    <CustomAction Execute="immediate" Id="SetCleanupInstalledArtifactsData" Property="CleanupInstalledArtifacts" Value="INSTALL_ROOT=[INSTALL_ROOT];COMMON_APPDATA=[CommonAppDataFolder];LOCAL_APPDATA=[LocalAppDataFolder];APPDATA=[AppDataFolder]"/>
+    <CustomAction BinaryRef="CustomDLL" DllEntry="CleanupInstalledArtifacts" Execute="deferred" Id="CleanupInstalledArtifacts" Impersonate="no" Return="check"/>
+    <CustomAction Error="Microsoft Visual C++ Redistributable v14.50 or later is required. Please download and install the latest version and then restart the installation. See our documentation for instructions." Id="ShowVCRedistError"/>
+    <CustomAction Directory="INSTALL_ROOT" ExeCommand="[INSTALL_ROOT]deskflow.exe" Execute="immediate" Id="RunDeskflow" Impersonate="yes" Return="asyncNoWait"/>
+    <InstallExecuteSequence>
+        <Custom Action="SetStopAndRemoveServiceData" Before="StopAndRemoveService" Condition="REMOVE=&quot;ALL&quot;"/>
+        <Custom Action="StopAndRemoveService" Before="StopServices" Condition="REMOVE=&quot;ALL&quot;"/>
+        <Custom Action="SetCleanupInstalledArtifactsData" Before="CleanupInstalledArtifacts" Condition="REMOVE=&quot;ALL&quot;"/>
+        <Custom Action="CleanupInstalledArtifacts" After="RemoveFiles" Condition="REMOVE=&quot;ALL&quot;"/>
+        <Custom Action="CheckVCRedist" Before="InstallInitialize" Condition="NOT Installed AND VC_REDIST_INSTALLED"/>
+        <Custom Action="ShowVCRedistError" Before="InstallInitialize" Condition="NOT Installed AND (NOT VC_REDIST_INSTALLED OR NOT VC_REDIST_VERSION_OK)"/>
+    </InstallExecuteSequence>
+</Include>

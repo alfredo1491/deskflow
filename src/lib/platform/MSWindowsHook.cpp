@@ -139,7 +139,25 @@ void MSWindowsHook::setMode(EHookMode mode)
     // no change
     return;
   }
+  clearDeadKeyState();
   g_mode = mode;
+}
+
+void MSWindowsHook::clearDeadKeyState()
+{
+  // Consume any dead key retained by ToUnicode before forgetting our mirror state.
+  BYTE emptyState[256] = {};
+  WCHAR buffer[4] = {};
+  const UINT scanCode = MapVirtualKey(VK_SPACE, MAPVK_VK_TO_VSC);
+  for (int attempt = 0; attempt < 4; ++attempt) {
+    if (ToUnicode(VK_SPACE, scanCode, emptyState, buffer, static_cast<int>(sizeof(buffer) / sizeof(buffer[0])), 0) >= 0)
+      break;
+  }
+
+  g_deadVirtKey = 0;
+  g_deadLParam = 0;
+  g_deadRelease = 0;
+  memset(g_deadKeyState, 0, sizeof(g_deadKeyState));
 }
 
 static void keyboardGetState(BYTE keys[256], DWORD vkCode, bool kf_up)
@@ -240,6 +258,18 @@ static bool keyboardHookHandler(WPARAM wParam, LPARAM lParam)
   // tell server about event
   PostThreadMessage(g_threadID, DESKFLOW_MSG_DEBUG, wParam, lParam);
 
+  // While the cursor is on the primary screen, Windows delivers the physical
+  // key directly to the foreground application. Calling ToUnicode here is
+  // unnecessary and can alter dead-key composition before Chromium processes
+  // the same event. Keep Deskflow's key and hotkey state updated using only the
+  // virtual key, without translating or composing text.
+  if (g_mode != kHOOK_RELAY_EVENTS) {
+    if (g_mode == kHOOK_WATCH_JUMP_ZONE) {
+      PostThreadMessage(g_threadID, DESKFLOW_MSG_KEY, makeKeyMsg(static_cast<UINT>(wParam), 0, false), lParam);
+    }
+    return false;
+  }
+
   // ignore dead key release
   if ((g_deadVirtKey == wParam || g_deadRelease == wParam) && (lParam & 0x80000000u) != 0) {
     g_deadRelease = 0;
@@ -278,21 +308,6 @@ static bool keyboardHookHandler(WPARAM wParam, LPARAM lParam)
   UINT flags = 0;
   if ((menu & 0x80) != 0)
     flags |= 1;
-
-  // if we're on the server screen then just pass numpad keys with alt
-  // key down as-is.  we won't pick up the resulting character but the
-  // local app will.  if on a client screen then grab keys as usual;
-  // if the client is a windows system it'll synthesize the expected
-  // character.  if not then it'll probably just do nothing.
-  if (g_mode != kHOOK_RELAY_EVENTS) {
-    // we don't use virtual keys because we don't know what the
-    // state of the numlock key is.  we'll hard code the scan codes
-    // instead.  hopefully this works across all keyboards.
-    UINT sc = (lParam & 0x01ff0000u) >> 16;
-    if (menu && (sc >= 0x47u && sc <= 0x52u && sc != 0x4au && sc != 0x4eu)) {
-      return false;
-    }
-  }
 
   // map the key event to a character.  we have to put the dead
   // key back first and this has the side effect of removing it.
@@ -610,8 +625,7 @@ EHookResult MSWindowsHook::install()
   }
 
   // discard old dead keys
-  g_deadVirtKey = 0;
-  g_deadLParam = 0;
+  clearDeadKeyState();
 
   // reset fake input flag
   g_fakeServerInput = false;
@@ -654,8 +668,7 @@ EHookResult MSWindowsHook::install()
 int MSWindowsHook::uninstall()
 {
   // discard old dead keys
-  g_deadVirtKey = 0;
-  g_deadLParam = 0;
+  clearDeadKeyState();
 
   // uninstall hooks
   if (g_keyboardLL != nullptr) {

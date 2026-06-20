@@ -415,7 +415,8 @@ void Screen::enterPrimary() const
 
 void Screen::enterSecondary(KeyModifierMask) const
 {
-  // do nothing
+  // Clear platform-specific stale modifier/compose state before replaying keys on the remote screen.
+  m_screen->clearStaleModifiers();
 }
 
 void Screen::leavePrimary()
@@ -430,6 +431,7 @@ void Screen::leaveSecondary()
 {
   // release any keys we think are still down
   m_screen->fakeAllKeysUp();
+  m_screen->clearStaleModifiers();
 }
 
 std::string Screen::getSecureInputApp() const

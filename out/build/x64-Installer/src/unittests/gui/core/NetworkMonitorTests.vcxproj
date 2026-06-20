@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1ACA73F9-00E3-3329-BCD2-DEFE09264CFF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>NetworkMonitorTests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NetworkMonitorTests.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NetworkMonitorTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NetworkMonitorTests.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NetworkMonitorTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">NetworkMonitorTests.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">NetworkMonitorTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">NetworkMonitorTests.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">NetworkMonitorTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\include_Debug;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtCore" /external:I "C:/Qt/6.11.0/msvc2022_64/include" /external:I "C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtWidgets" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtGui" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtNetwork" /external:I "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/include" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtTest" -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_TESTLIB_LIB;QT_TESTCASE_BUILDDIR="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core";QT_TESTCASE_SOURCEDIR="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/gui/core";CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_TESTLIB_LIB;QT_TESTCASE_BUILDDIR=\"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core\";QT_TESTCASE_SOURCEDIR=\"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/gui/core\";CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\include_Debug;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;C:\Qt\6.11.0\msvc2022_64\include\QtTest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\include_Debug;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;C:\Qt\6.11.0\msvc2022_64\include\QtTest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target NetworkMonitorTests</Message>
+      <Command>setlocal
+cd "C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/CMakeFiles/NetworkMonitorTests_autogen.dir/AutogenInfo.json" Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\lib\gui\Debug\gui.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Testd.lib;..\..\..\lib\platform\Debug\platform.lib;..\..\..\lib\client\Debug\client.lib;Wtsapi32.lib;Userenv.lib;Wininet.lib;comsuppw.lib;Shlwapi.lib;version.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Widgetsd.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Guid.lib;d3d11.lib;dxgi.lib;dxguid.lib;d3d12.lib;..\..\..\lib\net\Debug\net.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Networkd.lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\lib\libssl.lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\lib\libcrypto.lib;..\..\..\lib\mt\Debug\mt.lib;..\..\..\lib\base\Debug\base.lib;..\..\..\lib\arch\Debug\arch.lib;..\..\..\lib\io\Debug\io.lib;..\..\..\lib\common\Debug\common.lib;Crypt32.lib;ws2_32.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Cored.lib;mpr.lib;userenv.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/Debug/NetworkMonitorTests.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/Debug/NetworkMonitorTests.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\include_Release;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtCore" /external:I "C:/Qt/6.11.0/msvc2022_64/include" /external:I "C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtWidgets" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtGui" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtNetwork" /external:I "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/include" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtTest" -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_TESTLIB_LIB;QT_TESTCASE_BUILDDIR="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core";QT_TESTCASE_SOURCEDIR="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/gui/core";CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_TESTLIB_LIB;QT_TESTCASE_BUILDDIR=\"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core\";QT_TESTCASE_SOURCEDIR=\"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/gui/core\";CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\include_Release;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;C:\Qt\6.11.0\msvc2022_64\include\QtTest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\include_Release;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;C:\Qt\6.11.0\msvc2022_64\include\QtTest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target NetworkMonitorTests</Message>
+      <Command>setlocal
+cd "C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/CMakeFiles/NetworkMonitorTests_autogen.dir/AutogenInfo.json" Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\lib\gui\Release\gui.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Test.lib;..\..\..\lib\platform\Release\platform.lib;..\..\..\lib\client\Release\client.lib;Wtsapi32.lib;Userenv.lib;Wininet.lib;comsuppw.lib;Shlwapi.lib;version.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Widgets.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Gui.lib;d3d11.lib;dxgi.lib;dxguid.lib;d3d12.lib;..\..\..\lib\net\Release\net.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Network.lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\lib\libssl.lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\lib\libcrypto.lib;..\..\..\lib\mt\Release\mt.lib;..\..\..\lib\base\Release\base.lib;..\..\..\lib\arch\Release\arch.lib;..\..\..\lib\io\Release\io.lib;..\..\..\lib\common\Release\common.lib;Crypt32.lib;ws2_32.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Core.lib;mpr.lib;userenv.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/Release/NetworkMonitorTests.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/Release/NetworkMonitorTests.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\include_MinSizeRel;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtCore" /external:I "C:/Qt/6.11.0/msvc2022_64/include" /external:I "C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtWidgets" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtGui" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtNetwork" /external:I "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/include" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtTest" -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_TESTLIB_LIB;QT_TESTCASE_BUILDDIR="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core";QT_TESTCASE_SOURCEDIR="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/gui/core";CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_TESTLIB_LIB;QT_TESTCASE_BUILDDIR=\"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core\";QT_TESTCASE_SOURCEDIR=\"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/gui/core\";CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\include_MinSizeRel;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;C:\Qt\6.11.0\msvc2022_64\include\QtTest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\include_MinSizeRel;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;C:\Qt\6.11.0\msvc2022_64\include\QtTest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target NetworkMonitorTests</Message>
+      <Command>setlocal
+cd "C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/CMakeFiles/NetworkMonitorTests_autogen.dir/AutogenInfo.json" MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\lib\gui\MinSizeRel\gui.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Test.lib;..\..\..\lib\platform\MinSizeRel\platform.lib;..\..\..\lib\client\MinSizeRel\client.lib;Wtsapi32.lib;Userenv.lib;Wininet.lib;comsuppw.lib;Shlwapi.lib;version.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Widgets.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Gui.lib;d3d11.lib;dxgi.lib;dxguid.lib;d3d12.lib;..\..\..\lib\net\MinSizeRel\net.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Network.lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\lib\libssl.lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\lib\libcrypto.lib;..\..\..\lib\mt\MinSizeRel\mt.lib;..\..\..\lib\base\MinSizeRel\base.lib;..\..\..\lib\arch\MinSizeRel\arch.lib;..\..\..\lib\io\MinSizeRel\io.lib;..\..\..\lib\common\MinSizeRel\common.lib;Crypt32.lib;ws2_32.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Core.lib;mpr.lib;userenv.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/MinSizeRel/NetworkMonitorTests.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/MinSizeRel/NetworkMonitorTests.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\include_RelWithDebInfo;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtCore" /external:I "C:/Qt/6.11.0/msvc2022_64/include" /external:I "C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtWidgets" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtGui" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtNetwork" /external:I "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/include" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtTest" -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_TESTLIB_LIB;QT_TESTCASE_BUILDDIR="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core";QT_TESTCASE_SOURCEDIR="C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/gui/core";CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_TESTLIB_LIB;QT_TESTCASE_BUILDDIR=\"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core\";QT_TESTCASE_SOURCEDIR=\"C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/gui/core\";CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\include_RelWithDebInfo;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;C:\Qt\6.11.0\msvc2022_64\include\QtTest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\include_RelWithDebInfo;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;C:\Qt\6.11.0\msvc2022_64\include\QtTest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target NetworkMonitorTests</Message>
+      <Command>setlocal
+cd "C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/CMakeFiles/NetworkMonitorTests_autogen.dir/AutogenInfo.json" RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\lib\gui\RelWithDebInfo\gui.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Test.lib;..\..\..\lib\platform\RelWithDebInfo\platform.lib;..\..\..\lib\client\RelWithDebInfo\client.lib;Wtsapi32.lib;Userenv.lib;Wininet.lib;comsuppw.lib;Shlwapi.lib;version.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Widgets.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Gui.lib;d3d11.lib;dxgi.lib;dxguid.lib;d3d12.lib;..\..\..\lib\net\RelWithDebInfo\net.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Network.lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\lib\libssl.lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\lib\libcrypto.lib;..\..\..\lib\mt\RelWithDebInfo\mt.lib;..\..\..\lib\base\RelWithDebInfo\base.lib;..\..\..\lib\arch\RelWithDebInfo\arch.lib;..\..\..\lib\io\RelWithDebInfo\io.lib;..\..\..\lib\common\RelWithDebInfo\common.lib;Crypt32.lib;ws2_32.lib;C:\Qt\6.11.0\msvc2022_64\lib\Qt6Core.lib;mpr.lib;userenv.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/RelWithDebInfo/NetworkMonitorTests.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/RelWithDebInfo/NetworkMonitorTests.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\unittests\gui\core\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/gui/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow" "-BC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer" --check-stamp-file "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/gui/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow" "-BC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer" --check-stamp-file "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/gui/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow" "-BC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer" --check-stamp-file "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/gui/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow" "-BC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer" --check-stamp-file "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/gui/core/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\unittests\gui\core\NetworkMonitorTests.cpp" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include\openssl\applink.c" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\ZERO_CHECK.vcxproj">
+      <Project>{50707376-9C04-317A-95B3-6240C9FEBFD3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\arch\arch.vcxproj">
+      <Project>{D001787D-9B5A-398A-82AA-360DCD2B85B5}</Project>
+      <Name>arch</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\base\base.vcxproj">
+      <Project>{D5ADB22C-E90F-37D6-91AB-B70BAB39F8C2}</Project>
+      <Name>base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\client\client.vcxproj">
+      <Project>{B189A6E2-3F43-33F1-9F40-7C8FC0EAFC63}</Project>
+      <Name>client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\common\common.vcxproj">
+      <Project>{CEA62318-F114-364D-AC71-51673B34FF9C}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\gui\gui.vcxproj">
+      <Project>{962379F8-42AE-3044-B55F-53976FCE74E6}</Project>
+      <Name>gui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\io\io.vcxproj">
+      <Project>{2F860671-0D7D-3783-A1E4-1FF3CDD0CFDC}</Project>
+      <Name>io</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\mt\mt.vcxproj">
+      <Project>{895790BE-44A5-398F-A7F3-0EB766B220DA}</Project>
+      <Name>mt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\net\net.vcxproj">
+      <Project>{3714B826-3906-3945-9BB4-962A7381D742}</Project>
+      <Name>net</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\platform\platform.vcxproj">
+      <Project>{701207AB-6598-38CE-83E7-476F9155C48A}</Project>
+      <Name>platform</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -19,6 +19,7 @@
 #include <QComboBox>
 #include <QDir>
 #include <QFileDialog>
+#include <QLineEdit>
 #include <QMessageBox>
 
 using namespace deskflow::gui;
@@ -108,6 +109,7 @@ void SettingsDialog::initConnections() const
   connect(ui->comboTlsKeyLength, &QComboBox::currentIndexChanged, this, &SettingsDialog::updateRequestedKeySize);
   connect(ui->btnTlsCertPath, &QPushButton::clicked, this, &SettingsDialog::browseCertificatePath);
   connect(ui->btnBrowseLog, &QPushButton::clicked, this, &SettingsDialog::browseLogPath);
+  connect(ui->btnBrowseReceiveDirectory, &QPushButton::clicked, this, &SettingsDialog::browseReceiveDirectory);
   connect(ui->groupLogToFile, &QGroupBox::toggled, this, &SettingsDialog::setLogToFile);
   connect(ui->comboLogLevel, &QComboBox::currentIndexChanged, this, &SettingsDialog::logLevelChanged);
   connect(ui->comboLanguage, &QComboBox::currentTextChanged, this, [](const QString &lang) {
@@ -140,6 +142,9 @@ void SettingsDialog::initConnections() const
   connect(ui->cbRunExitCommand, &QCheckBox::toggled, this, &SettingsDialog::setButtonBoxEnabledButtons);
   connect(ui->lineCommandEnter, &QLineEdit::textChanged, this, &SettingsDialog::setButtonBoxEnabledButtons);
   connect(ui->lineCommandExit, &QLineEdit::textChanged, this, &SettingsDialog::setButtonBoxEnabledButtons);
+  connect(ui->sbTransferPort, &QSpinBox::valueChanged, this, &SettingsDialog::setButtonBoxEnabledButtons);
+  connect(ui->lineReceiveDirectory, &QLineEdit::textChanged, this, &SettingsDialog::setButtonBoxEnabledButtons);
+  connect(ui->lineApprovedPeers, &QLineEdit::textChanged, this, &SettingsDialog::setButtonBoxEnabledButtons);
 }
 
 void SettingsDialog::regenCertificates()
@@ -177,6 +182,16 @@ void SettingsDialog::browseLogPath()
   if (!fileName.isEmpty()) {
     ui->lineLogFilename->setText(fileName);
   }
+}
+
+void SettingsDialog::browseReceiveDirectory()
+{
+  const auto directory = QFileDialog::getExistingDirectory(
+      this, tr("Select receive folder"), ui->lineReceiveDirectory->text()
+  );
+
+  if (!directory.isEmpty())
+    ui->lineReceiveDirectory->setText(QDir::toNativeSeparators(directory));
 }
 
 void SettingsDialog::setLogToFile(bool logToFile)
@@ -239,6 +254,15 @@ void SettingsDialog::accept()
   Settings::setValue(Settings::Core::EnableExitCommand, ui->cbRunExitCommand->isChecked());
   Settings::setValue(Settings::Core::ScreenEnterCommand, ui->lineCommandEnter->text());
   Settings::setValue(Settings::Core::ScreenExitCommand, ui->lineCommandExit->text());
+  Settings::setValue(Settings::Gui::FileTransferP2PPort, ui->sbTransferPort->value());
+  Settings::setValue(Settings::Gui::FileTransferReceiveDir, ui->lineReceiveDirectory->text());
+  QStringList approvedPeers;
+  for (const auto &peer : ui->lineApprovedPeers->text().split(',', Qt::SkipEmptyParts)) {
+    const auto trimmed = peer.trimmed();
+    if (!trimmed.isEmpty())
+      approvedPeers << trimmed;
+  }
+  Settings::setValue(Settings::Gui::FileTransferApprovedPeers, approvedPeers);
 
   Settings::ProcessMode mode;
   if (ui->groupService->isChecked())
@@ -266,6 +290,9 @@ void SettingsDialog::loadFromConfig()
   ui->cbRunExitCommand->setChecked(Settings::value(Settings::Core::EnableExitCommand).toBool());
   ui->lineCommandEnter->setText(Settings::value(Settings::Core::ScreenEnterCommand).toString());
   ui->lineCommandExit->setText(Settings::value(Settings::Core::ScreenExitCommand).toString());
+  ui->sbTransferPort->setValue(Settings::value(Settings::Gui::FileTransferP2PPort).toInt());
+  ui->lineReceiveDirectory->setText(QDir::toNativeSeparators(Settings::value(Settings::Gui::FileTransferReceiveDir).toString()));
+  ui->lineApprovedPeers->setText(Settings::value(Settings::Gui::FileTransferApprovedPeers).toStringList().join(QStringLiteral(", ")));
 
   const auto processMode = Settings::value(Settings::Core::ProcessMode).value<Settings::ProcessMode>();
   ui->groupService->setChecked(processMode == Settings::ProcessMode::Service);
@@ -375,6 +402,7 @@ void SettingsDialog::updateControls()
   ui->comboTlsKeyLength->setEnabled(writable);
   ui->rbCloseToTray->setEnabled(writable);
   ui->rbExitOnClose->setEnabled(writable);
+  ui->groupFileTransfer->setEnabled(writable);
   ui->cbRunEnterCommand->setEnabled(writable);
   ui->cbRunExitCommand->setEnabled(writable);
   ui->lineCommandEnter->setEnabled(writable && ui->cbRunEnterCommand->isChecked());
@@ -438,6 +466,9 @@ bool SettingsDialog::isModified() const
       (ui->comboTlsKeyLength->currentText() != Settings::value(Settings::Security::KeySize).toString()) ||
       (ui->groupSecurity->isChecked() != Settings::value(Settings::Security::TlsEnabled).toBool()) ||
       (ui->cbRequireClientCert->isChecked() != Settings::value(Settings::Security::CheckPeers).toBool()) ||
+      (ui->sbTransferPort->value() != Settings::value(Settings::Gui::FileTransferP2PPort).toInt()) ||
+      (ui->lineReceiveDirectory->text() != QDir::toNativeSeparators(Settings::value(Settings::Gui::FileTransferReceiveDir).toString())) ||
+      (ui->lineApprovedPeers->text() != Settings::value(Settings::Gui::FileTransferApprovedPeers).toStringList().join(QStringLiteral(", "))) ||
       (ui->cbRunEnterCommand->isChecked() != Settings::value(Settings::Core::EnableEnterCommand).toBool()) ||
       (ui->cbRunExitCommand->isChecked() != Settings::value(Settings::Core::EnableExitCommand).toBool()) ||
       (ui->lineCommandEnter->text() != Settings::value(Settings::Core::ScreenEnterCommand).toString()) ||
@@ -473,6 +504,9 @@ bool SettingsDialog::isDefault() const
       (ui->comboTlsKeyLength->currentText() == Settings::defaultValue(Settings::Security::KeySize).toString()) &&
       (ui->groupSecurity->isChecked() == Settings::defaultValue(Settings::Security::TlsEnabled).toBool()) &&
       (ui->cbRequireClientCert->isChecked() == Settings::defaultValue(Settings::Security::CheckPeers).toBool()) &&
+      (ui->sbTransferPort->value() == Settings::defaultValue(Settings::Gui::FileTransferP2PPort).toInt()) &&
+      (ui->lineReceiveDirectory->text() == QDir::toNativeSeparators(Settings::defaultValue(Settings::Gui::FileTransferReceiveDir).toString())) &&
+      (ui->lineApprovedPeers->text().isEmpty()) &&
       (ui->lineCommandEnter->text() == Settings::defaultValue(Settings::Core::ScreenEnterCommand).toString()) &&
       (ui->lineCommandExit->text() == Settings::defaultValue(Settings::Core::ScreenExitCommand).toString()) &&
       (ui->cbRunEnterCommand->isChecked() == Settings::defaultValue(Settings::Core::EnableEnterCommand).toBool()) &&
@@ -497,6 +531,9 @@ void SettingsDialog::resetToDefault()
   ui->cbRunExitCommand->setChecked(Settings::defaultValue(Settings::Core::EnableExitCommand).toBool());
   ui->lineCommandEnter->setText(Settings::defaultValue(Settings::Core::ScreenEnterCommand).toString());
   ui->lineCommandExit->setText(Settings::defaultValue(Settings::Core::ScreenExitCommand).toString());
+  ui->sbTransferPort->setValue(Settings::defaultValue(Settings::Gui::FileTransferP2PPort).toInt());
+  ui->lineReceiveDirectory->setText(QDir::toNativeSeparators(Settings::defaultValue(Settings::Gui::FileTransferReceiveDir).toString()));
+  ui->lineApprovedPeers->clear();
 
   const auto autoHide = Settings::defaultValue(Settings::Gui::Autohide).toBool();
   ui->rbCloseToTray->setChecked(autoHide);

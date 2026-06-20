@@ -1,0 +1,67 @@
+Detecting compiler hash for triplet x64-windows...
+Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+The following packages are already installed:
+  * vcpkg-cmake:x64-windows@2024-04-23 -- git+https://github.com/microsoft/vcpkg@e74aa1e8f93278a8e71372f1fa08c3df420eb840
+  * vcpkg-cmake-config:x64-windows@2024-05-23 -- git+https://github.com/microsoft/vcpkg@97a63e4bc1a17422ffe4eff71da53b4b561a7841
+The following packages will be built and installed:
+    openssl:x64-windows@3.4.1 -- git+https://github.com/microsoft/vcpkg@d740be74dc7940c2b88e69db0b2d181024e1028c
+  * vcpkg-cmake-get-vars:x64-windows@2024-09-22 -- git+https://github.com/microsoft/vcpkg@f23148add155147f3d95ae622d3b0031beb25acf
+Additional packages (*) will be modified to complete this operation.
+Restored 0 package(s) from C:\Users\gersan.munoz\AppData\Local\vcpkg\archives in 84.2 us. Use --debug to see more details.
+Installing 1/2 vcpkg-cmake-get-vars:x64-windows@2024-09-22...
+Building vcpkg-cmake-get-vars:x64-windows@2024-09-22...
+C:\Users\gersan.munoz\AppData\Local\vcpkg\registries\git-trees\f23148add155147f3d95ae622d3b0031beb25acf: info: installing from git registry git+https://github.com/microsoft/vcpkg@f23148add155147f3d95ae622d3b0031beb25acf
+-- Installing: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/vcpkg_cmake_get_vars.cmake
+-- Installing: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/cmake_get_vars
+-- Installing: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/cmake_get_vars/CMakeLists.txt
+-- Installing: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/vcpkg-port-config.cmake
+-- Installing: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/copyright
+-- Performing post-build validation
+Starting submission of vcpkg-cmake-get-vars:x64-windows@2024-09-22 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-cmake-get-vars:x64-windows: 112 ms
+vcpkg-cmake-get-vars:x64-windows package ABI: c4a75be4cdba68ac88b3fa7a971b2011e00554a360aab263242d8c223b313948
+Installing 2/2 openssl:x64-windows@3.4.1...
+Building openssl:x64-windows@3.4.1...
+C:\Users\gersan.munoz\AppData\Local\vcpkg\registries\git-trees\d740be74dc7940c2b88e69db0b2d181024e1028c: info: installing from git registry git+https://github.com/microsoft/vcpkg@d740be74dc7940c2b88e69db0b2d181024e1028c
+-- Using cached openssl-openssl-openssl-3.4.1.tar.gz
+-- Extracting source C:/Users/gersan.munoz/AppData/Local/vcpkg/downloads/openssl-openssl-openssl-3.4.1.tar.gz
+-- Applying patch cmake-config.patch
+-- Applying patch command-line-length.patch
+-- Applying patch script-prefix.patch
+-- Applying patch windows/install-layout.patch
+-- Applying patch windows/install-pdbs.patch
+-- Applying patch unix/android-cc.patch
+-- Applying patch unix/move-openssldir.patch
+-- Applying patch unix/no-empty-dirs.patch
+-- Applying patch unix/no-static-libs-for-shared.patch
+-- Using source at C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/vcpkg/blds/openssl/src/nssl-3.4.1-9e512b8cf5.clean
+-- Getting CMake variables for x64-windows
+CMake Error at scripts/cmake/vcpkg_execute_required_process.cmake:127 (message):
+    Command failed: C:/Users/gersan.munoz/AppData/Local/vcpkg/downloads/tools/ninja/1.13.1-windows/ninja.exe -v
+    Working Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/vcpkg/blds/openssl/x64-windows-rel/vcpkg-parallel-configure
+    Error code: 1
+    See logs for more information:
+      C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\openssl\cmake-get-vars-x64-windows-dbg-CMakeCache.txt.log
+      C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\openssl\cmake-get-vars-x64-windows-rel-CMakeCache.txt.log
+      C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\openssl\cmake-get-vars-x64-windows-dbg-CMakeConfigureLog.yaml.log
+      C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\openssl\cmake-get-vars-x64-windows-rel-CMakeConfigureLog.yaml.log
+      C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\openssl\cmake-get-vars-x64-windows-out.log
+
+Call Stack (most recent call first):
+  C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/share/vcpkg-cmake/vcpkg_cmake_configure.cmake:269 (vcpkg_execute_required_process)
+  C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/share/vcpkg-cmake-get-vars/vcpkg_cmake_get_vars.cmake:15 (vcpkg_cmake_configure)
+  C:/Users/gersan.munoz/AppData/Local/vcpkg/registries/git-trees/d740be74dc7940c2b88e69db0b2d181024e1028c/windows/portfile.cmake:10 (vcpkg_cmake_get_vars)
+  C:/Users/gersan.munoz/AppData/Local/vcpkg/registries/git-trees/d740be74dc7940c2b88e69db0b2d181024e1028c/portfile.cmake:68 (include)
+  scripts/ports.cmake:206 (include)
+
+
+error: building openssl:x64-windows failed with: BUILD_FAILED
+See https://learn.microsoft.com/vcpkg/troubleshoot/build-failures?WT.mc_id=vcpkg_inproduct_cli for more information.
+Elapsed time to handle openssl:x64-windows: 19 s
+Please ensure you're using the latest port files with `git pull` and `vcpkg update`.
+Then check for known issues at:
+  https://github.com/microsoft/vcpkg/issues?q=is%3Aissue+is%3Aopen+in%3Atitle+openssl
+You can submit a new issue at:
+  https://github.com/microsoft/vcpkg/issues/new?title=%5Bopenssl%5D%20build%20error%20on%20x64-windows&body=Copy%20issue%20body%20from%20C%3A%2FUsers%2Fgersan.munoz%2FDownloads%2FProgramas%20Creados%2Fdeskflow-master%2FDeskflow%2Fbuild%2FDesktop_Qt_6_11_0_MSVC2022_64bit-Release%2Fvcpkg_installed%2Fvcpkg%2Fissue_body.md
+
+Completed submission of vcpkg-cmake-get-vars:x64-windows@2024-09-22 to 1 binary cache(s) in 43.7 ms

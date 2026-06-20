@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\server\server_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\BaseClientProxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxyUnknown.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\InputFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\PrimaryClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\Server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\server\server_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\server\server_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\lib\server\server_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\BaseClientProxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_0.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxy1_8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\ClientProxyUnknown.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\InputFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\PrimaryClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\Server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\server\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9F8C69B4-DC99-3BBB-8697-0B373103573B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{93DA991C-5129-354E-B8F8-9ABE7E537F62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

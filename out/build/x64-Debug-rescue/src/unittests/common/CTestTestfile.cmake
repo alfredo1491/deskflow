@@ -1,0 +1,36 @@
+# CMake generated Testfile for 
+# Source directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common
+# Build directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/unittests/common
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+if(CTEST_CONFIGURATION_TYPE MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test([=[SettingsTests]=] "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/unittests/common/Debug/SettingsTests.exe")
+  set_tests_properties([=[SettingsTests]=] PROPERTIES  DEPENDS "common" WORKING_DIRECTORY "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/common" _BACKTRACE_TRIPLES "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/CMakeLists.txt;41;add_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;4;create_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test([=[SettingsTests]=] "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/unittests/common/Release/SettingsTests.exe")
+  set_tests_properties([=[SettingsTests]=] PROPERTIES  DEPENDS "common" WORKING_DIRECTORY "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/common" _BACKTRACE_TRIPLES "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/CMakeLists.txt;41;add_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;4;create_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test([=[SettingsTests]=] "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/unittests/common/MinSizeRel/SettingsTests.exe")
+  set_tests_properties([=[SettingsTests]=] PROPERTIES  DEPENDS "common" WORKING_DIRECTORY "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/common" _BACKTRACE_TRIPLES "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/CMakeLists.txt;41;add_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;4;create_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test([=[SettingsTests]=] "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/unittests/common/RelWithDebInfo/SettingsTests.exe")
+  set_tests_properties([=[SettingsTests]=] PROPERTIES  DEPENDS "common" WORKING_DIRECTORY "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/common" _BACKTRACE_TRIPLES "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/CMakeLists.txt;41;add_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;4;create_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;0;")
+else()
+  add_test([=[SettingsTests]=] NOT_AVAILABLE)
+endif()
+if(CTEST_CONFIGURATION_TYPE MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test([=[I18NTests]=] "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/unittests/common/Debug/I18NTests.exe")
+  set_tests_properties([=[I18NTests]=] PROPERTIES  DEPENDS "common" WORKING_DIRECTORY "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/common" _BACKTRACE_TRIPLES "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/CMakeLists.txt;41;add_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;11;create_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test([=[I18NTests]=] "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/unittests/common/Release/I18NTests.exe")
+  set_tests_properties([=[I18NTests]=] PROPERTIES  DEPENDS "common" WORKING_DIRECTORY "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/common" _BACKTRACE_TRIPLES "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/CMakeLists.txt;41;add_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;11;create_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test([=[I18NTests]=] "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/unittests/common/MinSizeRel/I18NTests.exe")
+  set_tests_properties([=[I18NTests]=] PROPERTIES  DEPENDS "common" WORKING_DIRECTORY "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/common" _BACKTRACE_TRIPLES "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/CMakeLists.txt;41;add_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;11;create_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test([=[I18NTests]=] "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/unittests/common/RelWithDebInfo/I18NTests.exe")
+  set_tests_properties([=[I18NTests]=] PROPERTIES  DEPENDS "common" WORKING_DIRECTORY "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/common" _BACKTRACE_TRIPLES "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/CMakeLists.txt;41;add_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;11;create_test;C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/common/CMakeLists.txt;0;")
+else()
+  add_test([=[I18NTests]=] NOT_AVAILABLE)
+endif()

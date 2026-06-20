@@ -1,0 +1,7 @@
+deskflow-core_autogen/timestamp: \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/apps/deskflow-core/CMakeLists.txt \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/apps/deskflow-core/CoreArgParser.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/apps/deskflow-core/CoreArgParser.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/apps/deskflow-core/CoreArgs.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/apps/deskflow-core/deskflow-core.cpp \
+	/usr/bin/cmake

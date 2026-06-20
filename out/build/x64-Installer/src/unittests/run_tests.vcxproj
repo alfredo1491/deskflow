@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DFE70134-94D3-3F02-A964-7ADD9E402977}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>run_tests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\ctest.exe" --test-dir "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests" --output-on-failure -C Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\ctest.exe" --test-dir "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests" --output-on-failure -C Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\ctest.exe" --test-dir "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests" --output-on-failure -C MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\ctest.exe" --test-dir "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests" --output-on-failure -C RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\CMakeFiles\f42892804c4f54e3302b87cb27b30d59\run_tests.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\Debug\StringTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\Debug\UnicodeTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\Debug\LogTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\Debug\BaseExceptionTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\common\Debug\SettingsTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\common\Debug\I18NTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\Debug\ClipboardTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\Debug\ClipboardChunksTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\Debug\IKeyStateTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\Debug\KeyMapTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\Debug\KeyStateTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\Debug\KeyboardLayoutManagerTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\config\Debug\ScreenTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\Debug\NetworkMonitorTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\Debug\LoggerTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\Debug\KeySequenceTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\net\Debug\SecureUtilsTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\net\Debug\FingerprintTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\net\Debug\FingerprintDatabaseTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\platform\Debug\MSWindowsClipboardTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\server\Debug\ServerConfigTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\server\Debug\ServerTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\bin\Debug\deskflow.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\CMakeFiles\run_tests</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\Release\StringTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\Release\UnicodeTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\Release\LogTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\Release\BaseExceptionTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\common\Release\SettingsTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\common\Release\I18NTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\Release\ClipboardTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\Release\ClipboardChunksTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\Release\IKeyStateTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\Release\KeyMapTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\Release\KeyStateTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\Release\KeyboardLayoutManagerTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\config\Release\ScreenTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\Release\NetworkMonitorTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\Release\LoggerTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\Release\KeySequenceTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\net\Release\SecureUtilsTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\net\Release\FingerprintTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\net\Release\FingerprintDatabaseTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\platform\Release\MSWindowsClipboardTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\server\Release\ServerConfigTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\server\Release\ServerTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\bin\Release\deskflow.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\CMakeFiles\run_tests</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\MinSizeRel\StringTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\MinSizeRel\UnicodeTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\MinSizeRel\LogTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\MinSizeRel\BaseExceptionTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\common\MinSizeRel\SettingsTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\common\MinSizeRel\I18NTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\MinSizeRel\ClipboardTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\MinSizeRel\ClipboardChunksTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\MinSizeRel\IKeyStateTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\MinSizeRel\KeyMapTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\MinSizeRel\KeyStateTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\MinSizeRel\KeyboardLayoutManagerTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\config\MinSizeRel\ScreenTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\MinSizeRel\NetworkMonitorTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\MinSizeRel\LoggerTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\MinSizeRel\KeySequenceTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\net\MinSizeRel\SecureUtilsTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\net\MinSizeRel\FingerprintTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\net\MinSizeRel\FingerprintDatabaseTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\platform\MinSizeRel\MSWindowsClipboardTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\server\MinSizeRel\ServerConfigTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\server\MinSizeRel\ServerTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\bin\MinSizeRel\deskflow.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\CMakeFiles\run_tests</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\RelWithDebInfo\StringTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\RelWithDebInfo\UnicodeTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\RelWithDebInfo\LogTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\RelWithDebInfo\BaseExceptionTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\common\RelWithDebInfo\SettingsTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\common\RelWithDebInfo\I18NTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\RelWithDebInfo\ClipboardTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\RelWithDebInfo\ClipboardChunksTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\RelWithDebInfo\IKeyStateTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\RelWithDebInfo\KeyMapTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\RelWithDebInfo\KeyStateTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\RelWithDebInfo\KeyboardLayoutManagerTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\config\RelWithDebInfo\ScreenTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\RelWithDebInfo\NetworkMonitorTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\RelWithDebInfo\LoggerTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\RelWithDebInfo\KeySequenceTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\net\RelWithDebInfo\SecureUtilsTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\net\RelWithDebInfo\FingerprintTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\net\RelWithDebInfo\FingerprintDatabaseTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\platform\RelWithDebInfo\MSWindowsClipboardTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\server\RelWithDebInfo\ServerConfigTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\server\RelWithDebInfo\ServerTests.exe;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\bin\RelWithDebInfo\deskflow.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\CMakeFiles\run_tests</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\unittests\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow" "-BC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer" --check-stamp-file "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CheckCXXCompilerFlag.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6Config.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6ConfigExtras.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6ConfigVersion.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6ConfigVersionImpl.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6Dependencies.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6TargetsPrecheck.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtFeature.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtFeatureCommon.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtInstallPaths.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicAndroidHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicAppleHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicCMakeEarlyPolicyHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicCMakeHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicCMakeVersionHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicDependencyHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicExternalProjectHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicFinalizerHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicFindPackageHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicGitHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicPluginHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicPluginHelpers_v2.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomAttributionHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomCommonGenerationHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomCpeHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomCycloneDXHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomDepHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomDocumentNamespaceHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomFileHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomGenerationCycloneDXHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomGenerationHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomLicenseHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomOpsHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomPurlHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomPythonHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomQtEntityHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomSystemDepHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicTargetHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicTestHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicToolHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicWalkLibsHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicWindowsHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestAdditionalTargetInfo.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestConfig.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestConfigVersion.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestConfigVersionImpl.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestDependencies.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargets-debug.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargets-relwithdebinfo.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargets.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargetsPrecheck.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestVersionlessAliasTargets.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\QtTestProperties.cmake;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow" "-BC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer" --check-stamp-file "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CheckCXXCompilerFlag.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6Config.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6ConfigExtras.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6ConfigVersion.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6ConfigVersionImpl.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6Dependencies.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6TargetsPrecheck.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtFeature.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtFeatureCommon.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtInstallPaths.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicAndroidHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicAppleHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicCMakeEarlyPolicyHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicCMakeHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicCMakeVersionHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicDependencyHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicExternalProjectHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicFinalizerHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicFindPackageHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicGitHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicPluginHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicPluginHelpers_v2.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomAttributionHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomCommonGenerationHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomCpeHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomCycloneDXHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomDepHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomDocumentNamespaceHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomFileHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomGenerationCycloneDXHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomGenerationHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomLicenseHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomOpsHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomPurlHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomPythonHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomQtEntityHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomSystemDepHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicTargetHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicTestHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicToolHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicWalkLibsHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicWindowsHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestAdditionalTargetInfo.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestConfig.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestConfigVersion.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestConfigVersionImpl.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestDependencies.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargets-debug.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargets-relwithdebinfo.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargets.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargetsPrecheck.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestVersionlessAliasTargets.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\QtTestProperties.cmake;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow" "-BC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer" --check-stamp-file "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CheckCXXCompilerFlag.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6Config.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6ConfigExtras.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6ConfigVersion.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6ConfigVersionImpl.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6Dependencies.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6TargetsPrecheck.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtFeature.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtFeatureCommon.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtInstallPaths.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicAndroidHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicAppleHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicCMakeEarlyPolicyHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicCMakeHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicCMakeVersionHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicDependencyHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicExternalProjectHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicFinalizerHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicFindPackageHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicGitHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicPluginHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicPluginHelpers_v2.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomAttributionHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomCommonGenerationHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomCpeHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomCycloneDXHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomDepHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomDocumentNamespaceHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomFileHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomGenerationCycloneDXHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomGenerationHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomLicenseHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomOpsHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomPurlHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomPythonHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomQtEntityHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomSystemDepHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicTargetHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicTestHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicToolHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicWalkLibsHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicWindowsHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestAdditionalTargetInfo.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestConfig.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestConfigVersion.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestConfigVersionImpl.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestDependencies.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargets-debug.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargets-relwithdebinfo.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargets.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargetsPrecheck.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestVersionlessAliasTargets.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\QtTestProperties.cmake;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/unittests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow" "-BC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer" --check-stamp-file "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Installer/src/unittests/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CheckCXXCompilerFlag.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6Config.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6ConfigExtras.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6ConfigVersion.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6ConfigVersionImpl.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6Dependencies.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\Qt6TargetsPrecheck.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtFeature.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtFeatureCommon.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtInstallPaths.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicAndroidHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicAppleHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicCMakeEarlyPolicyHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicCMakeHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicCMakeVersionHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicDependencyHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicExternalProjectHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicFinalizerHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicFindPackageHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicGitHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicPluginHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicPluginHelpers_v2.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomAttributionHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomCommonGenerationHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomCpeHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomCycloneDXHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomDepHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomDocumentNamespaceHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomFileHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomGenerationCycloneDXHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomGenerationHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomLicenseHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomOpsHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomPurlHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomPythonHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomQtEntityHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicSbomSystemDepHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicTargetHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicTestHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicToolHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicWalkLibsHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6\QtPublicWindowsHelpers.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestAdditionalTargetInfo.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestConfig.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestConfigVersion.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestConfigVersionImpl.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestDependencies.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargets-debug.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargets-relwithdebinfo.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargets.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestTargetsPrecheck.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\Qt6TestVersionlessAliasTargets.cmake;C:\Qt\6.11.0\msvc2022_64\lib\cmake\Qt6Test\QtTestProperties.cmake;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\CMakeFiles\run_tests">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\ZERO_CHECK.vcxproj">
+      <Project>{50707376-9C04-317A-95B3-6240C9FEBFD3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\BaseExceptionTests.vcxproj">
+      <Project>{DBAEC9CC-0740-329F-A74C-1963206D6746}</Project>
+      <Name>BaseExceptionTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\ClipboardChunksTests.vcxproj">
+      <Project>{E1D006F4-5DB6-3EAF-A381-5AF452A01FB2}</Project>
+      <Name>ClipboardChunksTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\ClipboardTests.vcxproj">
+      <Project>{580637B4-F0CB-31DB-8945-A027D3A9B63E}</Project>
+      <Name>ClipboardTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\net\FingerprintDatabaseTests.vcxproj">
+      <Project>{F5B8B587-35ED-3204-B833-FC60EE97AB2E}</Project>
+      <Name>FingerprintDatabaseTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\net\FingerprintTests.vcxproj">
+      <Project>{C037EBB2-9C30-3246-9857-7701458C4EF7}</Project>
+      <Name>FingerprintTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\common\I18NTests.vcxproj">
+      <Project>{D1AD8498-1121-30D3-8F42-A9A67ACC175F}</Project>
+      <Name>I18NTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\IKeyStateTests.vcxproj">
+      <Project>{6D7EE49E-0079-3845-B992-BFE90FEB187D}</Project>
+      <Name>IKeyStateTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\KeyMapTests.vcxproj">
+      <Project>{2567144B-8FB5-3A60-8FBD-084EE4C223B6}</Project>
+      <Name>KeyMapTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\KeySequenceTests.vcxproj">
+      <Project>{015FAD3D-FD41-39A8-8770-3FBDFDA1F2B8}</Project>
+      <Name>KeySequenceTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\KeyStateTests.vcxproj">
+      <Project>{5B982470-96DF-3AC3-B937-B154AE9E30A3}</Project>
+      <Name>KeyStateTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\deskflow\KeyboardLayoutManagerTests.vcxproj">
+      <Project>{A98614C3-6788-363E-BE03-E5BBF5EDC79F}</Project>
+      <Name>KeyboardLayoutManagerTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\LogTests.vcxproj">
+      <Project>{0B4C57EC-BA9C-3B4E-ACF0-D5C150105F02}</Project>
+      <Name>LogTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\LoggerTests.vcxproj">
+      <Project>{67F855E7-AC2A-309F-A24B-2E8A85C23DE6}</Project>
+      <Name>LoggerTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\platform\MSWindowsClipboardTests.vcxproj">
+      <Project>{4A7A250D-9D05-3A84-AB98-12E637B4822E}</Project>
+      <Name>MSWindowsClipboardTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\core\NetworkMonitorTests.vcxproj">
+      <Project>{1ACA73F9-00E3-3329-BCD2-DEFE09264CFF}</Project>
+      <Name>NetworkMonitorTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\gui\config\ScreenTests.vcxproj">
+      <Project>{9A44FD47-899A-36A1-85FA-BF20201B0C1A}</Project>
+      <Name>ScreenTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\net\SecureUtilsTests.vcxproj">
+      <Project>{D63808ED-AA0B-3052-85C7-7D23AF314616}</Project>
+      <Name>SecureUtilsTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\server\ServerConfigTests.vcxproj">
+      <Project>{D2E3C532-945E-3F57-A621-8BF940615D97}</Project>
+      <Name>ServerConfigTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\server\ServerTests.vcxproj">
+      <Project>{0624AFC2-B955-3B66-AB0F-7B9DAD1DAEC3}</Project>
+      <Name>ServerTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\common\SettingsTests.vcxproj">
+      <Project>{9FE64723-FF80-35E7-8F0F-E81F707D981E}</Project>
+      <Name>SettingsTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\StringTests.vcxproj">
+      <Project>{76644683-EDF8-32DE-92FF-4C6BB85D9C54}</Project>
+      <Name>StringTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\unittests\base\UnicodeTests.vcxproj">
+      <Project>{308481E6-65C8-397E-BE20-21206192ECFF}</Project>
+      <Name>UnicodeTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Installer\src\apps\deskflow-gui\deskflow.vcxproj">
+      <Project>{20E62A74-A803-3479-B200-69F7183DD54E}</Project>
+      <Name>deskflow</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

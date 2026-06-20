@@ -1,0 +1,36 @@
+base_autogen/timestamp: \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/BaseException.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/BaseException.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/CMakeLists.txt \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/DirectionTypes.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/Event.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/EventQueue.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/EventQueue.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/EventQueueTimer.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/EventTypes.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/FinalAction.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/FunctionEventJob.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/FunctionEventJob.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/FunctionJob.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/FunctionJob.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/IEventQueue.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/IEventQueueBuffer.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/IJob.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/ILogOutputter.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/Log.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/Log.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/LogLevel.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/LogOutputters.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/LogOutputters.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/NetworkProtocol.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/PriorityQueue.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/SimpleEventQueueBuffer.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/SimpleEventQueueBuffer.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/Stopwatch.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/Stopwatch.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/String.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/String.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/TMethodJob.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/Unicode.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/base/Unicode.h \
+	/usr/bin/cmake

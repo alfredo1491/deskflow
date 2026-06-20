@@ -1,0 +1,32 @@
+-- Using cached openssl-openssl-openssl-3.4.1.tar.gz
+-- Extracting source C:/Users/gersan.munoz/AppData/Local/vcpkg/downloads/openssl-openssl-openssl-3.4.1.tar.gz
+-- Applying patch cmake-config.patch
+-- Applying patch command-line-length.patch
+-- Applying patch script-prefix.patch
+-- Applying patch windows/install-layout.patch
+-- Applying patch windows/install-pdbs.patch
+-- Applying patch unix/android-cc.patch
+-- Applying patch unix/move-openssldir.patch
+-- Applying patch unix/no-empty-dirs.patch
+-- Applying patch unix/no-static-libs-for-shared.patch
+-- Using source at C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/vcpkg/blds/openssl/src/nssl-3.4.1-9e512b8cf5.clean
+-- Getting CMake variables for x64-windows
+CMake Error at scripts/cmake/vcpkg_execute_required_process.cmake:127 (message):
+    Command failed: C:/Users/gersan.munoz/AppData/Local/vcpkg/downloads/tools/ninja/1.13.1-windows/ninja.exe -v
+    Working Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/vcpkg/blds/openssl/x64-windows-rel/vcpkg-parallel-configure
+    Error code: 1
+    See logs for more information:
+      C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\openssl\cmake-get-vars-x64-windows-dbg-CMakeCache.txt.log
+      C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\openssl\cmake-get-vars-x64-windows-rel-CMakeCache.txt.log
+      C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\openssl\cmake-get-vars-x64-windows-dbg-CMakeConfigureLog.yaml.log
+      C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\openssl\cmake-get-vars-x64-windows-rel-CMakeConfigureLog.yaml.log
+      C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\openssl\cmake-get-vars-x64-windows-out.log
+
+Call Stack (most recent call first):
+  C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/share/vcpkg-cmake/vcpkg_cmake_configure.cmake:269 (vcpkg_execute_required_process)
+  C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/share/vcpkg-cmake-get-vars/vcpkg_cmake_get_vars.cmake:15 (vcpkg_cmake_configure)
+  C:/Users/gersan.munoz/AppData/Local/vcpkg/registries/git-trees/d740be74dc7940c2b88e69db0b2d181024e1028c/windows/portfile.cmake:10 (vcpkg_cmake_get_vars)
+  C:/Users/gersan.munoz/AppData/Local/vcpkg/registries/git-trees/d740be74dc7940c2b88e69db0b2d181024e1028c/portfile.cmake:68 (include)
+  scripts/ports.cmake:206 (include)
+
+

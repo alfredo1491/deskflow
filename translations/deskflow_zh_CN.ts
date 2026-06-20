@@ -429,6 +429,329 @@ A bound IP is now invalid, you may need to restart the server.</source>
 绑定的IP地址现在无效，您可能需要重启服务器。</translation>
     </message>
     <message>
+        <source>transfer batch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Received batch from %1: %2 (%3 files, %4)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Folder received from %1: %2 (%3 files, %4)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transfer mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select how files should be transferred.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Source type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What do you want to transfer?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select source folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select files to transfer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No files were selected for transfer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1 selected items</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transfer complete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1 completed successfully.
+Items processed: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>P2P file transfer listener failed on port %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>P2P file transfer listening on TCP port %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Peer discovery failed on UDP port %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Manual entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select peer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Choose destination peer:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Destination peer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Destination IP or hostname:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Destination port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Peer transfer port:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unsupported protocol</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid offer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Peer not approved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot open destination</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Incoming</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Incoming batch accepted from %1: %2 (%3 files, %4)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Incoming transfer accepted from %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Receiving file from %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Checksum mismatch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Incoming transfer failed checksum validation: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot finalize destination file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Finalize failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Incoming transfer could not be finalized: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Completed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Received: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File received: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Incoming transfer failed: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sending files...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>P2P transfer failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transfer canceled by user.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot open source file: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot hash source file: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Outgoing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sending %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot connect to %1:%2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Connect failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hash failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed sending offer for: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Offer failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Peer rejected transfer for %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No reason</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Peer rejected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Read error for: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Network error while sending: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transfer failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Peer failed to finalize %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Finalize rejected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transferred but could not remove source file: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transferred but could not remove some empty source folders.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sent batch to %1:%2: %3 (%4 files, %5)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sent to %1:%2: %3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>P2P transfer finished with errors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sent: %1 of %2
+
+%3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Approve incoming transfer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Allow %1 to send &quot;%2&quot; (%3 files, %4)?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Allow %1 to send &quot;%2&quot; (%3)?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Accept transfer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reject</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remember this peer for future transfers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&amp;File</source>
         <translation>文件(&amp;F)</translation>
     </message>
@@ -468,6 +791,14 @@ A bound IP is now invalid, you may need to restart the server.</source>
     <message>
         <source>&amp;Preferences</source>
         <translation>首选项(&amp;P)</translation>
+    </message>
+    <message>
+        <source>Open &amp;Transfers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transfer &amp;Files...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Rest&amp;art</source>
@@ -1228,6 +1559,10 @@ Enabling this setting will disable the server config GUI.</source>
         <translation>保存日志文件到...</translation>
     </message>
     <message>
+        <source>Select receive folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Required messages</source>
         <translation>必要消息</translation>
     </message>
@@ -1339,6 +1674,26 @@ Enabling this setting will disable the server config GUI.</source>
         <source>Run command on exit</source>
         <translation type="unfinished">退出时运行命令</translation>
     </message>
+    <message>
+        <source>File Transfer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>P2P port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Receive folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Approved peers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>One host/IP per entry, separated by commas</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>StatusBar</name>
@@ -1410,6 +1765,53 @@ Enabling this setting will disable the server config GUI.</source>
     <message>
         <source>Encryption Disabled</source>
         <translation>加密已禁用</translation>
+    </message>
+</context>
+<context>
+    <name>deskflow::gui::TransferWindow</name>
+    <message>
+        <source>File Transfers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transfer queue</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Direction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation type="unfinished">名称</translation>
+    </message>
+    <message>
+        <source>Progress</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transfer events</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Running</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Incoming</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open save location</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

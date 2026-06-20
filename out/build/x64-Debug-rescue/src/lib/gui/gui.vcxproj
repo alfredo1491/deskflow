@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B4258FA4-31E4-31B9-AA9F-80BEA987FB3F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>gui</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gui.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">gui.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">gui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">gui.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">gui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Debug;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtCore" /external:I "C:/Qt/6.11.0/msvc2022_64/include" /external:I "C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtWidgets" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtGui" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtNetwork" /external:I "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/include" -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Debug;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Debug;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target gui</Message>
+      <Command>setlocal
+cd "C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/gui/CMakeFiles/gui_autogen.dir/AutogenInfo.json" Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/gui/gui_autogen/autouic_Debug.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Release;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtCore" /external:I "C:/Qt/6.11.0/msvc2022_64/include" /external:I "C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtWidgets" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtGui" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtNetwork" /external:I "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/include" -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Release;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Release;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target gui</Message>
+      <Command>setlocal
+cd "C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/gui/CMakeFiles/gui_autogen.dir/AutogenInfo.json" Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/gui/gui_autogen/autouic_Release.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_MinSizeRel;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtCore" /external:I "C:/Qt/6.11.0/msvc2022_64/include" /external:I "C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtWidgets" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtGui" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtNetwork" /external:I "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/include" -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_MinSizeRel;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_MinSizeRel;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target gui</Message>
+      <Command>setlocal
+cd "C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/gui/CMakeFiles/gui_autogen.dir/AutogenInfo.json" MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/gui/gui_autogen/autouic_MinSizeRel.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_RelWithDebInfo;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtCore" /external:I "C:/Qt/6.11.0/msvc2022_64/include" /external:I "C:/Qt/6.11.0/msvc2022_64/mkspecs/win32-msvc" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtWidgets" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtGui" /external:I "C:/Qt/6.11.0/msvc2022_64/include/QtNetwork" /external:I "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/include" -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_NO_KEYWORDS;_CRT_SECURE_NO_WARNINGS;_XKEYCHECK_H;HAVE_FORMAT;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_RelWithDebInfo;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_RelWithDebInfo;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib;C:\Qt\6.11.0\msvc2022_64\include\QtCore;C:\Qt\6.11.0\msvc2022_64\include;C:\Qt\6.11.0\msvc2022_64\mkspecs\win32-msvc;C:\Qt\6.11.0\msvc2022_64\include\QtWidgets;C:\Qt\6.11.0\msvc2022_64\include\QtGui;C:\Qt\6.11.0\msvc2022_64\include\QtNetwork;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target gui</Message>
+      <Command>setlocal
+cd "C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/gui/CMakeFiles/gui_autogen.dir/AutogenInfo.json" RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/gui/gui_autogen/autouic_RelWithDebInfo.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\CMakeFiles\fa46d40405c47cdf2eea712f6da98e70\autouic_(CONFIG).stamp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd "C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\MainWindow.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\AboutDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ActionDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ClientConfigDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\HotkeyDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ScreenSettingsDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ServerConfigDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\SettingsDialog.ui;C:\Qt\6.11.0\msvc2022_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\autouic_Debug.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd "C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\MainWindow.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\AboutDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ActionDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ClientConfigDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\HotkeyDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ScreenSettingsDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ServerConfigDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\SettingsDialog.ui;C:\Qt\6.11.0\msvc2022_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\autouic_Release.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd "C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\MainWindow.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\AboutDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ActionDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ClientConfigDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\HotkeyDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ScreenSettingsDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ServerConfigDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\SettingsDialog.ui;C:\Qt\6.11.0\msvc2022_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\autouic_MinSizeRel.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd "C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\MainWindow.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\AboutDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ActionDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ClientConfigDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\HotkeyDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ScreenSettingsDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ServerConfigDialog.ui;C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\SettingsDialog.ui;C:\Qt\6.11.0\msvc2022_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\autouic_RelWithDebInfo.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/gui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow" "-BC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue" --check-stamp-file "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/gui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/gui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow" "-BC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue" --check-stamp-file "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/gui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/gui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow" "-BC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue" --check-stamp-file "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/gui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/src/lib/gui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow" "-BC:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue" --check-stamp-file "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/out/build/x64-Debug-rescue/src/lib/gui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\Action.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\Action.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\Diagnostic.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\Diagnostic.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\FileTail.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\FileTail.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\Hotkey.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\Hotkey.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\KeySequence.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\KeySequence.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\Logger.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\Logger.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\MainWindow.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\MainWindow.h" />
+    <None Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\MainWindow.ui">
+    </None>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\Messages.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\Messages.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\ScreenSetupModel.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\ScreenSetupModel.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\StyleUtils.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\TlsUtility.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\TlsUtility.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\VersionChecker.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\VersionChecker.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\config\Screen.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\config\Screen.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\config\ScreenConfig.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\config\ScreenConfig.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\config\ScreenList.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\config\ScreenList.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\config\ServerConfig.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\config\ServerConfig.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\core\CoreProcess.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\core\CoreProcess.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\core\NetworkMonitor.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\core\NetworkMonitor.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\AboutDialog.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\AboutDialog.h" />
+    <None Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\AboutDialog.ui">
+    </None>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ActionDialog.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ActionDialog.h" />
+    <None Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ActionDialog.ui">
+    </None>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ClientConfigDialog.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ClientConfigDialog.cpp" />
+    <None Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ClientConfigDialog.ui">
+    </None>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\FingerprintDialog.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\FingerprintDialog.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\HotkeyDialog.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\HotkeyDialog.h" />
+    <None Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\HotkeyDialog.ui">
+    </None>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ScreenSettingsDialog.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ScreenSettingsDialog.h" />
+    <None Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ScreenSettingsDialog.ui">
+    </None>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ServerConfigDialog.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ServerConfigDialog.h" />
+    <None Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\ServerConfigDialog.ui">
+    </None>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\SettingsDialog.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\SettingsDialog.h" />
+    <None Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\dialogs\SettingsDialog.ui">
+    </None>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\ipc\IpcClient.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\ipc\IpcClient.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\ipc\DaemonIpcClient.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\ipc\DaemonIpcClient.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\ipc\CoreIpcClient.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\ipc\CoreIpcClient.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\AliasValidator.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\AliasValidator.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\ComputerNameValidator.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\ComputerNameValidator.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\EmptyStringValidator.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\EmptyStringValidator.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\IStringValidator.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\IStringValidator.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\LineEditValidator.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\LineEditValidator.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\ScreenDuplicationsValidator.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\ScreenDuplicationsValidator.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\ScreenNameValidator.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\ScreenNameValidator.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\SpacesValidator.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\SpacesValidator.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\ValidationError.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\ValidationError.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\IpAddressValidator.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\validators\IpAddressValidator.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\FingerprintPreview.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\FingerprintPreview.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\KeySequenceWidget.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\KeySequenceWidget.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\LogDock.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\LogDock.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\LogWidget.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\LogWidget.cpp" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\NewScreenWidget.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\NewScreenWidget.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\ScreenSetupView.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\ScreenSetupView.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\SearchWidget.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\SearchWidget.cpp" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\StatusBar.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\StatusBar.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\TransferWindow.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\TransferWindow.h" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\TrashScreenWidget.cpp" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\src\lib\gui\widgets\TrashScreenWidget.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Debug\ui_MainWindow.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Debug\dialogs\ui_AboutDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Debug\dialogs\ui_ActionDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Debug\dialogs\ui_ClientConfigDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Debug\dialogs\ui_HotkeyDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Debug\dialogs\ui_ScreenSettingsDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Debug\dialogs\ui_ServerConfigDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Debug\dialogs\ui_SettingsDialog.h" />
+    <None Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\autouic_Debug.stamp">
+    </None>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\x64-windows\include\openssl\applink.c" />
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Release\ui_MainWindow.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Release\dialogs\ui_AboutDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Release\dialogs\ui_ActionDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Release\dialogs\ui_ClientConfigDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Release\dialogs\ui_HotkeyDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Release\dialogs\ui_ScreenSettingsDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Release\dialogs\ui_ServerConfigDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_Release\dialogs\ui_SettingsDialog.h" />
+    <None Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\autouic_Release.stamp">
+    </None>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_MinSizeRel\ui_MainWindow.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_MinSizeRel\dialogs\ui_AboutDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_MinSizeRel\dialogs\ui_ActionDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_MinSizeRel\dialogs\ui_ClientConfigDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_MinSizeRel\dialogs\ui_HotkeyDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_MinSizeRel\dialogs\ui_ScreenSettingsDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_MinSizeRel\dialogs\ui_ServerConfigDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_MinSizeRel\dialogs\ui_SettingsDialog.h" />
+    <None Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\autouic_MinSizeRel.stamp">
+    </None>
+    <ClCompile Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_RelWithDebInfo\ui_MainWindow.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_RelWithDebInfo\dialogs\ui_AboutDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_RelWithDebInfo\dialogs\ui_ActionDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_RelWithDebInfo\dialogs\ui_ClientConfigDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_RelWithDebInfo\dialogs\ui_HotkeyDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_RelWithDebInfo\dialogs\ui_ScreenSettingsDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_RelWithDebInfo\dialogs\ui_ServerConfigDialog.h" />
+    <ClInclude Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\include_RelWithDebInfo\dialogs\ui_SettingsDialog.h" />
+    <None Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\gui\gui_autogen\autouic_RelWithDebInfo.stamp">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\ZERO_CHECK.vcxproj">
+      <Project>{93F1D2BF-3F97-324C-A727-30965398999C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\arch\arch.vcxproj">
+      <Project>{B2280A3D-61EB-36AA-BFA5-6D9F8DFF3705}</Project>
+      <Name>arch</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\base\base.vcxproj">
+      <Project>{B88E76BA-6AD7-3615-B9D8-0A78C1FEBCA2}</Project>
+      <Name>base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\client\client.vcxproj">
+      <Project>{B6BB4858-15E2-3E45-9E8A-38C8BC88D9DE}</Project>
+      <Name>client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\common\common.vcxproj">
+      <Project>{78BBA6DA-A392-31FE-89C9-51C78B5A2788}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\io\io.vcxproj">
+      <Project>{9C57457B-FE44-30D1-976B-8542B93C40FE}</Project>
+      <Name>io</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\mt\mt.vcxproj">
+      <Project>{E3E7039A-FF7E-3D45-962A-DA93BACDFA03}</Project>
+      <Name>mt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\net\net.vcxproj">
+      <Project>{FC775E14-6BB5-3F3E-889D-FCB27B7213EF}</Project>
+      <Name>net</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\out\build\x64-Debug-rescue\src\lib\platform\platform.vcxproj">
+      <Project>{B2A33A4E-0357-3154-AE40-0DA52A598300}</Project>
+      <Name>platform</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

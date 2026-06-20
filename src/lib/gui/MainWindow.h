@@ -9,9 +9,11 @@
 
 #pragma once
 
+#include <QDateTime>
+#include <QHash>
 #include <QMainWindow>
-#include <QProcess>
 #include <QRegularExpression>
+#include <QSet>
 #include <QSystemTrayIcon>
 
 #include "VersionChecker.h"
@@ -25,12 +27,22 @@
 #endif
 
 class QAction;
+class QCryptographicHash;
+class QFile;
+class QCheckBox;
+class QTcpServer;
+class QTcpSocket;
+class QUdpSocket;
 class QMenu;
 class QLocalServer;
+class QTimer;
 
 class DeskflowApplication;
 class LogDock;
 class StatusBar;
+namespace deskflow::gui {
+class TransferWindow;
+}
 
 namespace Ui {
 class MainWindow;
@@ -65,7 +77,7 @@ public:
   {
     return m_coreProcess.mode();
   }
-  void open();
+  void open(bool startHidden = false);
   ServerConfig &serverConfig()
   {
     return m_serverConfig;
@@ -98,6 +110,8 @@ private:
   void openHelpUrl() const;
   void openGetNewVersionUrl() const;
   void openSettings();
+  void openTransferWindow();
+  void transferFiles();
   void startCore();
   void stopCore();
   bool saveServerConfig();
@@ -141,6 +155,29 @@ private:
   void remoteHostChanged(const QString &newRemoteHost);
   void updateIpLabel(const QStringList &addresses);
   void updateTimeoutDelay(int newDelay);
+  void setupP2PFileTransfer();
+  void setupP2PDiscovery();
+  void announceP2PPresence();
+  void handleP2PDiscoveryDatagrams();
+  bool chooseP2PPeer(QString *peerHost, quint16 *peerPort);
+  void onIncomingP2PConnection();
+  void onIncomingP2PData(QTcpSocket *socket);
+  void onIncomingP2PDisconnected(QTcpSocket *socket);
+  bool sendFilesP2P(
+      const QList<QPair<QString, QString>> &transferItems, const QString &peerHost, quint16 peerPort, bool moveMode,
+      const QString &batchId, const QString &batchLabel, qint64 batchBytes, bool folderMode
+  );
+  QString transferReceiveDirectory() const;
+  quint16 transferPort() const;
+  quint16 transferDiscoveryPort() const;
+  bool isApprovedTransferPeer(const QString &peerHost) const;
+  void approveTransferPeer(const QString &peerHost);
+  bool confirmIncomingTransfer(
+      const QString &peerHost, const QString &displayName, qint64 totalBytes, const QString &batchId,
+      const QString &batchLabel, int batchCount, qint64 batchBytes
+  );
+  QString normalizedPeerHost(const QString &peerHost) const;
+  QString uniqueDestinationPath(const QString &relativePath, bool directoryHint = false) const;
 
   bool canRunCore() const;
 
@@ -197,6 +234,8 @@ private:
   QAction *m_actionTrayQuit = nullptr;
   QAction *m_actionRestore = nullptr;
   QAction *m_actionSettings = nullptr;
+  QAction *m_actionShowTransfers = nullptr;
+  QAction *m_actionTransferFiles = nullptr;
   QAction *m_actionStartCore = nullptr;
   QAction *m_actionRestartCore = nullptr;
   QAction *m_actionStopCore = nullptr;
@@ -208,4 +247,64 @@ private:
   // Server IP strategy optimization
   QStringList m_serverStartIPs;
   QString m_serverStartSuggestedIP;
+
+  QTcpServer *m_fileTransferServer = nullptr;
+  QUdpSocket *m_fileTransferDiscoverySocket = nullptr;
+  QTimer *m_fileTransferDiscoveryTimer = nullptr;
+  deskflow::gui::TransferWindow *m_transferWindow = nullptr;
+
+  struct P2PPeer
+  {
+    QString name;
+    QString host;
+    quint16 port = 0;
+    QDateTime seenAt;
+  };
+
+  struct IncomingTransfer
+  {
+    QByteArray buffer;
+    QFile *file = nullptr;
+    QCryptographicHash *hasher = nullptr;
+    qint64 remainingBytes = 0;
+    qint64 totalBytes = 0;
+    QByteArray expectedSha256;
+    QString senderHost;
+    QString displayName;
+    QString tempPath;
+    QString finalPath;
+    QString batchId;
+    QString batchLabel;
+    int batchCount = 1;
+    qint64 batchBytes = 0;
+    int transferRow = -1;
+    bool headerAccepted = false;
+  };
+
+  struct IncomingBatch
+  {
+    QString peerHost;
+    QString batchId;
+    QString batchLabel;
+    QString rootFinalPath;
+    QString rootFolderName;
+    bool folderBatch = false;
+    int expectedCount = 1;
+    int completedCount = 0;
+    qint64 totalBytes = 0;
+    qint64 receivedBytes = 0;
+    qint64 inFlightBytes = 0;
+    bool acceptedAnnounced = false;
+    int transferRow = -1;
+    QString openLocation;
+  };
+
+  void resetIncomingTransferState(IncomingTransfer &state);
+  void finishIncomingBatch(QTcpSocket *socket);
+  QString destinationPathForIncomingItem(const QString &relativePath, IncomingBatch &batch) const;
+
+  QHash<QString, P2PPeer> m_p2pPeers;
+  QHash<QTcpSocket *, IncomingTransfer> m_incomingTransfers;
+  QHash<QTcpSocket *, IncomingBatch> m_incomingBatches;
+  QHash<QString, bool> m_batchApprovalCache;
 };

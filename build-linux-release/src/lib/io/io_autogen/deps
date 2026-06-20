@@ -1,0 +1,10 @@
+io_autogen/timestamp: \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/io/CMakeLists.txt \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/io/IOException.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/io/IOException.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/io/IStream.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/io/StreamBuffer.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/io/StreamBuffer.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/io/StreamFilter.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/io/StreamFilter.h \
+	/usr/bin/cmake

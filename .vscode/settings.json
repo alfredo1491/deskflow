@@ -1,25 +1,28 @@
 {
-  "cmake.buildDirectory": "${workspaceFolder}/out/build/x64-Debug",
+  "cmake.buildDirectory": "${workspaceFolder}/build-linux-release",
   "cmake.generator": "Ninja",
   "cmake.configureOnOpen": true,
   "cmake.configureSettings": {
-    "CMAKE_BUILD_TYPE": "Debug",
+    "CMAKE_BUILD_TYPE": "Release",
     "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
-    "BUILD_INSTALLER": "OFF",
-    "BUILD_TESTS": "OFF",
-    "Qt6_DIR": "C:/Qt/6.11.0/msvc2022_64/lib/cmake/Qt6",
-    "OPENSSL_INCLUDE_DIR": "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/include",
-    "OPENSSL_CRYPTO_LIBRARY": "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/debug/lib/libcrypto.lib",
-    "OPENSSL_SSL_LIBRARY": "C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/deskflow-m/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/debug/lib/libssl.lib"
+    "CMAKE_INSTALL_PREFIX": "/usr",
+    "BUILD_INSTALLER": "ON",
+    "BUILD_TESTS": "OFF"
   },
-  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
-  "C_Cpp.default.compileCommands": "${workspaceFolder}/out/build/x64-Debug/compile_commands.json",
-  "C_Cpp.errorSquiggles": "EnabledIfIncludesResolve",
+  "C_Cpp.default.configurationProvider": "",
+  "C_Cpp.default.compileCommands": "",
+  "C_Cpp.errorSquiggles": "disabled",
+  "C_Cpp.exclusionPolicy": "checkFilesAndFolders",
   "C_Cpp.files.exclude": {
-    "**/deploy/windows/wix-custom.h.in": true
+    "**/deploy/windows/wix-custom.h.in": true,
+    "**/src/lib/arch/win32/**": true,
+    "**/src/lib/platform/MSWindows*.cpp": true,
+    "**/src/lib/platform/MSWindows*.h": true,
+    "**/src/apps/deskflow-daemon/win32/**": true
   },
   "files.associations": {
     "deploy/windows/wix-custom.h.in": "cmake",
     "*.h.in": "cmake"
-  }
+  },
+  "C_Cpp.default.intelliSenseMode": "windows-msvc-x64"
 }

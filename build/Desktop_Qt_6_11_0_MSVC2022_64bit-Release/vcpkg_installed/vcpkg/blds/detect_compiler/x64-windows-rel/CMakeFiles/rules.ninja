@@ -29,7 +29,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg\scripts\detect_compiler" -B"C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\deskflow-m\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\detect_compiler\x64-windows-rel"
+  command = "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg\scripts\detect_compiler" -B"C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\detect_compiler\x64-windows-rel"
   description = Re-running CMake...
   generator = 1
 

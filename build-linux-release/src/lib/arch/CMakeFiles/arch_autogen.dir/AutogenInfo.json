@@ -1,0 +1,180 @@
+{
+	"BUILD_DIR" : "/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/arch/arch_autogen",
+	"CMAKE_BINARY_DIR" : "/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/arch",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/CMakeLists.txt"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/gersan/Downloads/Programas_creados/Deskflow",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/arch/arch_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "arch_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/Arch.h",
+			"MU",
+			"EWIEGA46WW/moc_Arch.cpp",
+			null
+		],
+		[
+			"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/ArchException.h",
+			"MU",
+			"EWIEGA46WW/moc_ArchException.cpp",
+			null
+		],
+		[
+			"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/IArchDaemon.h",
+			"MU",
+			"EWIEGA46WW/moc_IArchDaemon.cpp",
+			null
+		],
+		[
+			"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/IArchLog.h",
+			"MU",
+			"EWIEGA46WW/moc_IArchLog.cpp",
+			null
+		],
+		[
+			"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/IArchMultithread.h",
+			"MU",
+			"EWIEGA46WW/moc_IArchMultithread.cpp",
+			null
+		],
+		[
+			"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/IArchNetwork.h",
+			"MU",
+			"EWIEGA46WW/moc_IArchNetwork.cpp",
+			null
+		],
+		[
+			"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/ArchLogUnix.h",
+			"MU",
+			"AN23VKH44Z/moc_ArchLogUnix.cpp",
+			null
+		],
+		[
+			"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/ArchMultithreadPosix.h",
+			"MU",
+			"AN23VKH44Z/moc_ArchMultithreadPosix.cpp",
+			null
+		],
+		[
+			"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/ArchNetworkBSD.h",
+			"MU",
+			"AN23VKH44Z/moc_ArchNetworkBSD.cpp",
+			null
+		],
+		[
+			"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/XArchUnix.h",
+			"MU",
+			"AN23VKH44Z/moc_XArchUnix.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/arch/arch_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/arch/arch_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"HAVE_FORMAT",
+		"NDEBUG",
+		"QT_CORE_LIB",
+		"QT_NO_DEBUG",
+		"QT_NO_KEYWORDS",
+		"WINAPI_XWINDOWS=1"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/usr/include/glib-2.0",
+		"/usr/lib/x86_64-linux-gnu/glib-2.0/include",
+		"/usr/include/sysprof-6",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib",
+		"/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib",
+		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
+		"/usr/include/x86_64-linux-gnu/qt6",
+		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
+		"/usr/include",
+		"/usr/include/c++/15",
+		"/usr/include/x86_64-linux-gnu/c++/15",
+		"/usr/include/c++/15/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/15/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-std=c++20",
+		"-w",
+		"-dM",
+		"-E",
+		"/usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/arch/arch_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/arch/CMakeFiles/arch_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 10,
+	"SETTINGS_FILE" : "/home/gersan/Downloads/Programas_creados/Deskflow/build-linux-release/src/lib/arch/CMakeFiles/arch_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/Arch.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/ArchLogUnix.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/ArchMultithreadPosix.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/ArchNetworkBSD.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/XArchUnix.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

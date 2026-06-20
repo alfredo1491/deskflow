@@ -1,0 +1,18 @@
+arch_autogen/timestamp: \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/Arch.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/Arch.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/ArchException.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/CMakeLists.txt \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/IArchDaemon.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/IArchLog.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/IArchMultithread.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/IArchNetwork.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/ArchLogUnix.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/ArchLogUnix.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/ArchMultithreadPosix.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/ArchMultithreadPosix.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/ArchNetworkBSD.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/ArchNetworkBSD.h \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/XArchUnix.cpp \
+	/home/gersan/Downloads/Programas_creados/Deskflow/src/lib/arch/unix/XArchUnix.h \
+	/usr/bin/cmake

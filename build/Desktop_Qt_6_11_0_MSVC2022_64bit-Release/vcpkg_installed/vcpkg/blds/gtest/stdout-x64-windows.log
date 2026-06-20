@@ -1,0 +1,25 @@
+-- Using cached google-googletest-v1.16.0.tar.gz
+-- Cleaning sources at C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/vcpkg/blds/gtest/src/v1.16.0-a2e0b328c1.clean. Use --editable to skip cleaning for the packages you specify.
+-- Extracting source C:/Users/gersan.munoz/AppData/Local/vcpkg/downloads/google-googletest-v1.16.0.tar.gz
+-- Applying patch 001-fix-UWP-death-test.patch
+-- Applying patch clang-tidy-no-lint.patch
+-- Applying patch fix-main-lib-path.patch
+-- Using source at C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/vcpkg/blds/gtest/src/v1.16.0-a2e0b328c1.clean
+-- Configuring x64-windows
+CMake Error at scripts/cmake/vcpkg_execute_required_process.cmake:127 (message):
+    Command failed: C:/Users/gersan.munoz/AppData/Local/vcpkg/downloads/tools/ninja/1.13.1-windows/ninja.exe -v
+    Working Directory: C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/vcpkg/blds/gtest/x64-windows-rel/vcpkg-parallel-configure
+    Error code: 1
+    See logs for more information:
+      C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\gtest\config-x64-windows-dbg-CMakeCache.txt.log
+      C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\gtest\config-x64-windows-rel-CMakeCache.txt.log
+      C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\gtest\config-x64-windows-dbg-CMakeConfigureLog.yaml.log
+      C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\gtest\config-x64-windows-rel-CMakeConfigureLog.yaml.log
+      C:\Users\gersan.munoz\Downloads\Programas Creados\deskflow-master\Deskflow\build\Desktop_Qt_6_11_0_MSVC2022_64bit-Release\vcpkg_installed\vcpkg\blds\gtest\config-x64-windows-out.log
+
+Call Stack (most recent call first):
+  C:/Users/gersan.munoz/Downloads/Programas Creados/deskflow-master/Deskflow/build/Desktop_Qt_6_11_0_MSVC2022_64bit-Release/vcpkg_installed/x64-windows/share/vcpkg-cmake/vcpkg_cmake_configure.cmake:269 (vcpkg_execute_required_process)
+  C:/Users/gersan.munoz/AppData/Local/vcpkg/registries/git-trees/7448391582abd4a7d61248894ef2979c8f065813/portfile.cmake:19 (vcpkg_cmake_configure)
+  scripts/ports.cmake:206 (include)
+
+

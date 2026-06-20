@@ -202,6 +202,24 @@ void XWindowsKeyState::pollPressedKeys(KeyButtonSet &pressedKeys) const
   }
 }
 
+void XWindowsKeyState::clearStaleModifiers()
+{
+  // XTest keeps its own virtual keyboard state. If Deskflow loses a key-up
+  // during a disconnect, the physical keyboard can be fine while applications
+  // continue to see a synthetic modifier as pressed.
+  static constexpr KeySym modifierKeysyms[] = {
+      XK_Shift_L, XK_Shift_R, XK_Control_L, XK_Control_R, XK_Alt_L, XK_Alt_R,
+      XK_Meta_L, XK_Meta_R, XK_Super_L, XK_Super_R, XK_ISO_Level3_Shift, XK_ISO_Level5_Shift,
+  };
+
+  for (const auto keysym : modifierKeysyms) {
+    if (const auto keycode = XKeysymToKeycode(m_display, keysym); keycode != 0) {
+      XTestFakeKeyEvent(m_display, keycode, False, CurrentTime);
+    }
+  }
+  XSync(m_display, False);
+}
+
 void XWindowsKeyState::getKeyMap(deskflow::KeyMap &keyMap)
 {
   // get autorepeat info.  we must use the global_auto_repeat told to

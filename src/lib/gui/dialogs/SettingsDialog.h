@@ -35,6 +35,7 @@ private:
   void regenCertificates();
   void browseCertificatePath();
   void browseLogPath();
+  void browseReceiveDirectory();
   void setLogToFile(bool logToFile);
   void accept() override;
   void showEvent(QShowEvent *event) override;
